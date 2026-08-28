@@ -4,8 +4,9 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 
 const navItems = [
-  { label: "Projects", path: "/work" },
-  { label: "About", path: "/about" },
+  { label: "Producties", path: "/producties" },
+  { label: "Studio", path: "/studio" },
+  { label: "Over", path: "/over" },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -43,21 +44,28 @@ export function Header({ revealMode = false }: HeaderProps) {
   };
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isVisible 
-          ? 'opacity-100 translate-y-0' 
-          : 'opacity-0 -translate-y-full pointer-events-none'
+        isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-full pointer-events-none"
       }`}
     >
       <div className="container-wide relative">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <Link 
-            to="/" 
-            className="font-display text-lg font-semibold tracking-tight text-foreground hover:opacity-70 transition-opacity"
+          <Link
+            to="/"
+            className="group flex items-center gap-2.5 text-foreground hover:opacity-80 transition-opacity"
+            aria-label="Bigeye Blue — naar de homepagina"
           >
-            Jordan Studio
+            <span className="relative flex h-3 w-3 items-center justify-center">
+              <span className="absolute inline-flex h-3 w-3 rounded-full bg-accent opacity-60 group-hover:animate-ping" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+            </span>
+            <span className="font-display text-lg font-semibold tracking-tight">
+              Bigeye Blue
+            </span>
           </Link>
 
           {/* Desktop Navigation - Centered */}
@@ -67,8 +75,8 @@ export function Header({ revealMode = false }: HeaderProps) {
                 key={item.path}
                 to={item.path}
                 className={`text-xs font-sans tracking-widest uppercase transition-all duration-300 hover:tracking-[0.2em] ${
-                  location.pathname === item.path
-                    ? "text-foreground"
+                  location.pathname.startsWith(item.path)
+                    ? "text-accent"
                     : "text-foreground/80 hover:text-foreground"
                 }`}
               >
@@ -82,7 +90,7 @@ export function Header({ revealMode = false }: HeaderProps) {
             <button
               onClick={toggleTheme}
               className="p-2 text-foreground/60 hover:text-foreground transition-colors"
-              aria-label="Toggle theme"
+              aria-label="Wissel tussen donker en licht thema"
             >
               {mounted && (theme === "dark" ? <Sun size={18} /> : <Moon size={18} />)}
             </button>
@@ -93,14 +101,15 @@ export function Header({ revealMode = false }: HeaderProps) {
             <button
               onClick={toggleTheme}
               className="p-2 text-foreground/60 hover:text-foreground transition-colors"
-              aria-label="Toggle theme"
+              aria-label="Wissel tussen donker en licht thema"
             >
               {mounted && (theme === "dark" ? <Sun size={18} /> : <Moon size={18} />)}
             </button>
             <button
               className="p-2 -mr-2 text-foreground"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label="Menu openen of sluiten"
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
