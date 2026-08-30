@@ -221,14 +221,6 @@ const Index = () => {
               </a>
             </div>
 
-            <div className="mt-20 md:mt-28 flex justify-center reveal">
-              <img
-                src={logoWhite.url}
-                alt="Bigeye Blue"
-                loading="lazy"
-                className="w-56 md:w-80 opacity-90"
-              />
-            </div>
           </div>
         </section>
       </main>
