@@ -83,7 +83,7 @@
   /* The two-line statement pairs used throughout the design:
      bold lead line, regular follow line. */
   .statement {
-    @apply text-lg md:text-xl leading-snug;
+    @apply text-2xl md:text-4xl leading-[1.15] tracking-tight;
   }
 
   .statement strong {
@@ -103,6 +103,15 @@
     content: '';
     @apply flex-1 h-px bg-foreground/20;
   }
+
+  /* Inverted section header for dark bands. */
+  .plate-label--invert {
+    @apply text-background;
+  }
+
+  .plate-label--invert::after {
+    @apply bg-background/25;
+  }
 }
 
 @layer utilities {
@@ -112,6 +121,16 @@
 
   .animate-fade-in-up {
     animation: fade-in-up 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  /* Slow cinematic settle for the hero photograph. */
+  .animate-hero-zoom img {
+    animation: hero-zoom 2.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes hero-zoom {
+    from { transform: scale(1.08); }
+    to { transform: scale(1); }
   }
 
   .animate-marquee {
