@@ -4,95 +4,49 @@
 
 @layer base {
   :root {
-    /* Light theme */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 5%;
+    /* Bigeye Blue — warm cream paper, near-black ink */
+    --background: 37 56% 92%;
+    --foreground: 0 0% 7%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
+    --card: 37 56% 92%;
+    --card-foreground: 0 0% 7%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover: 37 40% 96%;
+    --popover-foreground: 0 0% 7%;
 
-    --primary: 60 100% 45%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 0 0% 7%;
+    --primary-foreground: 37 56% 92%;
 
-    --secondary: 0 0% 92%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 37 30% 87%;
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 0 0% 90%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 37 25% 86%;
+    --muted-foreground: 0 0% 38%;
 
-    --accent: 66 100% 50%;
-    --accent-foreground: 0 0% 5%;
+    /* The blue in "Bigeye blue" — used sparingly */
+    --accent: 197 62% 42%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 85%;
-    --input: 0 0% 85%;
-    --ring: 60 100% 45%;
+    --border: 30 18% 80%;
+    --input: 30 18% 80%;
+    --ring: 197 62% 42%;
 
     --radius: 0rem;
 
-    /* Custom tokens */
-    --hover-bg: 0 0% 95%;
-    --separator: 0 0% 88%;
+    --hover-bg: 37 40% 88%;
+    --separator: 30 16% 82%;
 
-    /* Sidebar */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 5%;
-    --sidebar-primary: 60 100% 45%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 92%;
-    --sidebar-accent-foreground: 0 0% 15%;
-    --sidebar-border: 0 0% 88%;
-    --sidebar-ring: 60 100% 45%;
-  }
-
-  .dark {
-    /* Dark theme - Echelon style */
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
-
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 100%;
-
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 100%;
-
-    --primary: 60 100% 50%;
-    --primary-foreground: 0 0% 0%;
-
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
-
-    --accent: 66 100% 50%;
-    --accent-foreground: 0 0% 0%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 60 100% 50%;
-
-    /* Custom tokens */
-    --hover-bg: 0 0% 8%;
-    --separator: 0 0% 15%;
-
-    /* Sidebar */
-    --sidebar-background: 0 0% 3%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 60 100% 50%;
-    --sidebar-primary-foreground: 0 0% 0%;
-    --sidebar-accent: 0 0% 10%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 60 100% 50%;
+    --sidebar-background: 37 56% 92%;
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 0 0% 7%;
+    --sidebar-primary-foreground: 37 56% 92%;
+    --sidebar-accent: 37 30% 87%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 30 16% 82%;
+    --sidebar-ring: 197 62% 42%;
   }
 
   * {
@@ -105,123 +59,89 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sauce One', system-ui, sans-serif;
+    font-feature-settings: "kern" 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Open Sauce One', system-ui, sans-serif;
+    @apply font-bold tracking-tight;
+  }
+
+  ::selection {
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
   }
 }
 
 @layer components {
   .container-wide {
-    @apply mx-auto px-6 md:px-12 lg:px-20 xl:px-32;
-    max-width: 1600px;
+    @apply mx-auto px-6 md:px-12 lg:px-16;
+    max-width: 1280px;
   }
 
-  .text-display {
-    @apply text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight;
-    font-family: 'Syne', sans-serif;
+  /* The two-line statement pairs used throughout the design:
+     bold lead line, regular follow line. */
+  .statement {
+    @apply text-lg md:text-xl leading-snug;
   }
 
-  .text-headline {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
-    font-family: 'Syne', sans-serif;
+  .statement strong {
+    @apply block font-bold;
   }
 
-  .text-label {
-    @apply text-xs md:text-sm uppercase tracking-widest text-muted-foreground;
-    font-family: 'Inter', sans-serif;
+  .text-section-label {
+    @apply text-base md:text-lg font-bold tracking-tight;
   }
 
-  .hover-highlight {
-    @apply transition-colors duration-300;
-  }
-
-  .hover-highlight:hover {
-    color: hsl(var(--accent));
-  }
-
-  .link-underline {
-    @apply relative inline-block;
-  }
-
-  .link-underline::after {
-    content: '';
-    @apply absolute bottom-0 left-0 w-full h-px bg-current origin-left scale-x-0 transition-transform duration-300;
-  }
-
-  .link-underline:hover::after {
-    @apply scale-x-100;
-  }
-
-  .image-reveal {
-    @apply overflow-hidden;
-  }
-
-  .image-reveal img {
-    @apply transition-transform duration-700 ease-out;
-  }
-
-  .image-reveal:hover img {
-    @apply scale-105;
+  .body-copy {
+    @apply text-[15px] md:text-base leading-relaxed text-foreground/90;
   }
 }
 
 @layer utilities {
   .animate-fade-in {
-    animation: fade-in 0.6s ease-out forwards;
+    animation: fade-in 0.8s ease-out both;
   }
 
   .animate-fade-in-up {
-    animation: fade-in-up 0.6s ease-out forwards;
-  }
-
-  .animate-slide-in-right {
-    animation: slide-in-right 0.5s ease-out forwards;
-  }
-
-  .animate-marquee {
-    animation: marquee 30s linear infinite;
+    animation: fade-in-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 
   @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   @keyframes fade-in-up {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
-  @keyframes slide-in-right {
-    from {
-      opacity: 0;
-      transform: translateX(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  /* Scroll-reveal: elements start hidden, revealed by IntersectionObserver */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
   }
 
-  @keyframes marquee {
-    from {
-      transform: translateX(0);
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
     }
-    to {
-      transform: translateX(-50%);
+    .animate-fade-in,
+    .animate-fade-in-up {
+      animation: none;
     }
+    html { scroll-behavior: auto; }
   }
 }

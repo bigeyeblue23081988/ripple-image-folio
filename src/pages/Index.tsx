@@ -1,196 +1,274 @@
-import { useState, useRef } from "react";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-import { Layout } from "@/components/Layout";
-import { projects } from "@/data/projects";
-import studioHero from "@/assets/studio-hero.jpg";
+import { SiteNav } from "@/components/SiteNav";
+import { useReveal } from "@/hooks/use-reveal";
+import { clients } from "@/data/clients";
+
+import exterior from "@/assets/house/exterior.jpg";
+import hallway from "@/assets/house/hallway.jpg";
+import courtyardGreen from "@/assets/house/courtyard-green.jpg";
+import stairwell from "@/assets/house/stairwell.jpg";
+import gardenTable from "@/assets/house/garden-table.jpg";
+import guestCourtyard from "@/assets/house/guest-courtyard.jpg";
+import bedroom from "@/assets/house/bedroom.jpg";
+import lampSoftbox from "@/assets/house/lamp-softbox.png";
+import lampSpot from "@/assets/house/lamp-spot.png";
 
 const Index = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const gridImages = projects.slice(0, 8).map((p) => p.coverImage);
-  const featured = projects.slice(0, 3);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!containerRef.current) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    setMousePosition({
-      x: (e.clientX - rect.left - centerX) / centerX,
-      y: (e.clientY - rect.top - centerY) / centerY,
-    });
-  };
+  useReveal();
 
   return (
-    <Layout noPadding showEchelonFooter>
-      {/* Hero */}
-      <section
-        ref={containerRef}
-        onMouseMove={handleMouseMove}
-        className="relative h-screen overflow-hidden"
-      >
-        <div
-          className="absolute inset-0 flex items-center justify-center transition-transform duration-700 ease-out"
-          style={{
-            transform: `translate(${-mousePosition.x * 40}px, ${-mousePosition.y * 40}px)`,
-          }}
+    <div id="top" className="min-h-screen">
+      <SiteNav />
+
+      <main>
+        {/* ---------------- Hero ---------------- */}
+        <section className="container-wide pt-4 pb-24 md:pb-40">
+          <div className="md:grid md:grid-cols-12 md:gap-x-8">
+            {/* Exterior */}
+            <figure className="md:col-start-1 md:col-span-7 md:row-start-1 animate-fade-in">
+              <img
+                src={exterior}
+                alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
+                width={900}
+                height={600}
+                fetchPriority="high"
+                className="w-full h-auto"
+              />
+            </figure>
+
+            {/* Statement */}
+            <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-8 md:mt-1 animate-fade-in-up">
+              <h1 className="statement">
+                <strong>Looking beyond the obvious.</strong>
+                <span className="font-normal">
+                  A house where people and stories meet.
+                </span>
+              </h1>
+            </div>
+
+            {/* Hallway */}
+            <figure className="md:col-start-8 md:col-span-5 md:row-start-2 mt-10 md:mt-16 reveal">
+              <img
+                src={hallway}
+                alt="The entrance hall, with a floating staircase and a blue sculpture, looking through to the courtyard"
+                width={630}
+                height={420}
+                loading="lazy"
+                className="w-full h-auto"
+              />
+            </figure>
+          </div>
+        </section>
+
+        {/* ---------------- What we create ---------------- */}
+        <section
+          id="what-we-create"
+          className="container-wide pb-28 md:pb-48 scroll-mt-24"
         >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 p-12 md:p-16 w-full max-w-7xl">
-            {gridImages.map((image, index) => (
-              <div key={index} className="aspect-[3/4] overflow-hidden">
-                <img
-                  src={image}
-                  alt=""
-                  aria-hidden="true"
-                  className="w-full h-full object-cover opacity-40"
-                />
-              </div>
+          <div className="grid grid-cols-12 gap-x-4 md:gap-x-8 items-end">
+            <div className="col-span-4 sm:col-span-3 md:col-start-2 md:col-span-2 reveal">
+              <img
+                src={lampSoftbox}
+                alt=""
+                aria-hidden="true"
+                width={1344}
+                height={756}
+                loading="lazy"
+                className="w-full h-auto max-w-[190px]"
+              />
+            </div>
+
+            <div className="col-span-8 sm:col-span-9 md:col-start-4 md:col-span-6 pb-4 md:pb-8 reveal">
+              <h2 className="statement">
+                <strong>What we create.</strong>
+                <span className="font-normal">
+                  Interviews. Podcasts. Documentaries. Stories.
+                </span>
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------- How we work ---------------- */}
+        <section className="container-wide pb-28 md:pb-48">
+          <div className="md:grid md:grid-cols-12 md:gap-x-8">
+            <figure className="md:col-start-3 md:col-span-5 md:row-start-1 reveal">
+              <img
+                src={courtyardGreen}
+                alt="The inner courtyard, framed by a tall green hedge and whitewashed brick"
+                width={736}
+                height={491}
+                loading="lazy"
+                className="w-full h-auto"
+              />
+            </figure>
+
+            <div className="md:col-start-8 md:col-span-4 md:row-start-1 self-end mt-10 md:mt-0 md:pb-2 reveal">
+              <h2 className="statement">
+                <strong>How we work.</strong>
+                <span className="font-normal">Ideas. Stories. Impact.</span>
+              </h2>
+
+              <img
+                src={lampSpot}
+                alt=""
+                aria-hidden="true"
+                width={600}
+                height={901}
+                loading="lazy"
+                className="mt-6 w-auto h-40 md:h-56 ml-4 md:ml-10"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------- Filming location ---------------- */}
+        <section
+          id="filming-location"
+          className="container-wide pb-28 md:pb-48 scroll-mt-24"
+        >
+          <h2 className="text-section-label mb-8 md:mb-10 reveal">
+            Filming location
+          </h2>
+
+          <div className="md:grid md:grid-cols-12 md:gap-x-8">
+            <figure className="md:col-start-1 md:col-span-6 md:row-start-1 reveal">
+              <img
+                src={stairwell}
+                alt="Looking up through the industrial steel-and-glass stairwell towards the skylight"
+                width={810}
+                height={540}
+                loading="lazy"
+                className="w-full h-auto"
+              />
+            </figure>
+
+            <div className="md:col-start-7 md:col-span-4 md:row-start-1 mt-8 md:mt-0 reveal">
+              <p className="body-copy">
+                The whole house is available as a recording location for
+                documentaries, fiction, interviews, photo shoots and digital
+                content. A unique blend of historic character and contemporary
+                design creates a unique setting that is both authentic and
+                visually compelling.
+              </p>
+            </div>
+
+            <figure className="md:col-start-7 md:col-span-5 md:row-start-2 mt-8 md:mt-14 reveal">
+              <img
+                src={gardenTable}
+                alt="A long wooden table in the garden, sheltered between climbing green walls"
+                width={275}
+                height={183}
+                loading="lazy"
+                className="w-full h-auto"
+              />
+            </figure>
+          </div>
+        </section>
+
+        {/* ---------------- Guesthouse ---------------- */}
+        <section
+          id="guesthouse"
+          className="container-wide pb-28 md:pb-48 scroll-mt-24"
+        >
+          <h2 className="statement mb-8 md:mb-10 reveal">
+            <strong>Guesthouse,</strong>
+            <strong>where anyone is welcome.</strong>
+          </h2>
+
+          <div className="md:grid md:grid-cols-12 md:gap-x-8">
+            <figure className="md:col-start-1 md:col-span-5 md:row-start-1 reveal">
+              <img
+                src={guestCourtyard}
+                alt="The guesthouse terrace with turquoise chairs, enclosed by green climbing walls"
+                width={275}
+                height={183}
+                loading="lazy"
+                className="w-full h-auto"
+              />
+            </figure>
+
+            <figure className="md:col-start-5 md:col-span-4 md:row-start-1 self-end mt-6 md:mt-0 md:translate-y-16 md:z-10 reveal">
+              <img
+                src={bedroom}
+                alt="An attic bedroom under white timber beams, with a dark accent wall and warm lighting"
+                width={275}
+                height={183}
+                loading="lazy"
+                className="w-full h-auto"
+              />
+            </figure>
+
+            <div className="md:col-start-1 md:col-span-4 md:row-start-2 mt-10 md:mt-20 reveal">
+              <p className="body-copy">
+                Once a 19th-century coach house, The Industrial Loft has been
+                transformed into a distinctive guest house where heritage and
+                contemporary comfort exist in perfect balance.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------- Clients ---------------- */}
+        <section className="container-wide pb-28 md:pb-44">
+          <h2 className="text-section-label mb-10 md:mb-4 reveal">Clients</h2>
+
+          {/* Mobile: simple centred wrap */}
+          <ul className="md:hidden flex flex-wrap justify-center gap-x-6 gap-y-4 reveal">
+            {clients.map((client) => (
+              <li
+                key={client.name}
+                className="text-xs tracking-[0.12em] text-foreground/85"
+              >
+                {client.name}
+              </li>
+            ))}
+          </ul>
+
+          {/* Desktop: scattered constellation */}
+          <div
+            className="hidden md:block relative reveal"
+            style={{ height: 400 }}
+          >
+            {clients.map((client) => (
+              <span
+                key={client.name}
+                className="absolute -translate-x-1/2 whitespace-nowrap text-sm tracking-[0.12em] text-foreground/85"
+                style={{ left: `${client.x}%`, top: client.y }}
+              >
+                {client.name}
+              </span>
             ))}
           </div>
-        </div>
+        </section>
 
-        <div className="absolute inset-0 bg-background/60" />
+        {/* ---------------- Contact ---------------- */}
+        <section id="contact" className="container-wide pb-28 md:pb-40 scroll-mt-24">
+          <h2 className="text-section-label reveal">Contact</h2>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-6 text-center">
-          <p className="text-label mb-6 animate-fade-in">Productiehuis · Gent</p>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-foreground animate-fade-in-up">
-            Bigeye Blue
-          </h1>
-          <p
-            className="mt-6 max-w-2xl text-base md:text-xl text-foreground/80 leading-relaxed animate-fade-in-up"
-            style={{ animationDelay: "0.1s" }}
-          >
-            Journalistieke en audiovisuele producties die grote maatschappelijke
-            thema's persoonlijk maken. Met een eigen opnamestudio in Gent.
-          </p>
-          <div
-            className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-in-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            <Link
-              to="/producties"
-              className="group inline-flex items-center justify-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-sm uppercase tracking-widest transition-opacity hover:opacity-90"
+          <div className="mt-16 md:mt-24 text-center reveal">
+            <a
+              href="mailto:office@bigeyeblue.be"
+              className="block text-xl sm:text-2xl md:text-3xl font-normal tracking-tight hover:text-accent transition-colors break-all sm:break-normal"
             >
-              Bekijk producties
-              <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-            </Link>
-            <Link
-              to="/studio"
-              className="group inline-flex items-center justify-center gap-3 border border-foreground/30 text-foreground px-8 py-4 text-sm uppercase tracking-widest transition-colors hover:border-accent hover:text-accent"
+              office@bigeyeblue.be
+            </a>
+            <a
+              href="tel:+32472715544"
+              className="mt-1 block text-xl sm:text-2xl md:text-3xl font-normal tracking-tight hover:text-accent transition-colors"
             >
-              Onze studio
-              <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-            </Link>
+              +32 472 71 55 44
+            </a>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
-      {/* Twee pijlers */}
-      <section className="container-wide py-20 md:py-28 border-t border-separator">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
-          <div className="space-y-5">
-            <p className="text-label">01 — Producties</p>
-            <h2 className="text-headline">Verhalen die ertoe doen</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Van korte online reportages tot langere documentaires. We
-              onderzoeken, schrijven, filmen en monteren — voor omroepen,
-              cultuurhuizen en organisaties die een verhaal ernstig nemen.
-            </p>
-            <Link
-              to="/producties"
-              className="inline-flex items-center gap-3 text-accent hover:gap-4 transition-all"
-            >
-              Alle producties <ArrowRight size={16} />
-            </Link>
-          </div>
-
-          <div className="space-y-5">
-            <p className="text-label">02 — Studio</p>
-            <h2 className="text-headline">Een echte opnamestudio</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              In Gent beschikken we over een eigen studio voor video- en
-              audio-opnames. Interviews, podcasts, kennisclips — met of zonder
-              onze ploeg erbij.
-            </p>
-            <Link
-              to="/studio"
-              className="inline-flex items-center gap-3 text-accent hover:gap-4 transition-all"
-            >
-              Ontdek de studio <ArrowRight size={16} />
-            </Link>
-          </div>
+      <footer className="container-wide pb-12">
+        <div className="flex flex-col sm:flex-row justify-between gap-3 text-xs text-foreground/50">
+          <p>Bigeye Blue BV — Ghent, Belgium</p>
+          <p>© {new Date().getFullYear()} Bigeye Blue</p>
         </div>
-      </section>
-
-      {/* Uitgelicht werk */}
-      <section className="container-wide pb-20 md:pb-28">
-        <div className="flex items-end justify-between mb-10 gap-6">
-          <h2 className="text-headline">Uitgelicht</h2>
-          <Link
-            to="/producties"
-            className="text-sm text-muted-foreground hover:text-accent transition-colors whitespace-nowrap"
-          >
-            Alles bekijken
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {featured.map((project) => (
-            <Link
-              key={project.id}
-              to={`/producties/${project.id}`}
-              className="group block image-reveal"
-            >
-              <div className="aspect-[4/3] overflow-hidden bg-secondary">
-                <img
-                  src={project.coverImage}
-                  alt={project.title}
-                  loading="lazy"
-                  width={1200}
-                  height={900}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="pt-4 space-y-1">
-                <p className="text-label">
-                  {project.category} · {project.year}
-                </p>
-                <h3 className="font-display text-xl font-semibold group-hover:text-accent transition-colors">
-                  {project.title}
-                </h3>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Studio strip */}
-      <section className="relative overflow-hidden border-t border-separator">
-        <img
-          src={studioHero}
-          alt="De opnamestudio van Bigeye Blue in Gent"
-          loading="lazy"
-          width={1600}
-          height={900}
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
-        <div className="relative container-wide py-24 md:py-32 text-center">
-          <h2 className="text-headline mb-4">Iets op te nemen?</h2>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-8">
-            Boek de studio in Gent, of laat ons het volledige traject verzorgen —
-            van research tot eindmontage.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-sm uppercase tracking-widest transition-opacity hover:opacity-90"
-          >
-            Neem contact op <ArrowRight size={16} />
-          </Link>
-        </div>
-      </section>
-    </Layout>
+      </footer>
+    </div>
   );
 };
 
