@@ -4,7 +4,7 @@ import { Clients } from "@/components/Clients";
 import { useReveal } from "@/hooks/use-reveal";
 
 import exterior from "@/assets/house/exterior.jpg";
-import hallway from "@/assets/house/hall.jpg";
+import hallway from "@/assets/house/hallway.jpg";
 import courtyardGreen from "@/assets/house/courtyard-green.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
@@ -26,7 +26,7 @@ const Index = () => {
               src={exterior}
               alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
               width={900}
-              height={491}
+              height={600}
               index="01"
               caption="The house"
               sub="Ghent, Belgium"
