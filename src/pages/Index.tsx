@@ -26,7 +26,7 @@ const Index = () => {
               src={exterior}
               alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
               width={900}
-              height={600}
+              height={491}
               index="01"
               caption="The house"
               sub="Ghent, Belgium"

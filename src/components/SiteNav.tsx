@@ -32,7 +32,7 @@ export function SiteNav() {
               alt="Bigeye Blue"
               width={284}
               height={120}
-              className="h-9 md:h-11 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
           </a>
 
