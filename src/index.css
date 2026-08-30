@@ -90,22 +90,32 @@
     @apply block font-bold;
   }
 
-  .text-section-label {
-    @apply text-base md:text-lg font-bold tracking-tight;
-  }
-
   .body-copy {
     @apply text-[15px] md:text-base leading-relaxed text-foreground/90;
+  }
+
+  /* Gallery plate label: numeral, hairline rule, uppercase title. */
+  .plate-label {
+    @apply flex items-center gap-4 text-[10px] uppercase tracking-[0.22em] text-foreground/55;
+  }
+
+  .plate-label::after {
+    content: '';
+    @apply flex-1 h-px bg-separator;
   }
 }
 
 @layer utilities {
   .animate-fade-in {
-    animation: fade-in 0.8s ease-out both;
+    animation: fade-in 0.9s ease-out both;
   }
 
   .animate-fade-in-up {
-    animation: fade-in-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: fade-in-up 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-marquee {
+    animation: marquee 26s linear infinite;
   }
 
   @keyframes fade-in {
@@ -116,6 +126,11 @@
   @keyframes fade-in-up {
     from { opacity: 0; transform: translateY(24px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 
   /* Scroll-reveal: elements start hidden, revealed by IntersectionObserver */
@@ -132,6 +147,31 @@
     transform: translateY(0);
   }
 
+  /* Client constellation: staggered arrival, then an endless slow drift. */
+  .client-mark {
+    opacity: 0;
+    animation-name: mark-in, mark-drift;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1), ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards, none;
+    animation-play-state: paused, paused;
+  }
+
+  .reveal.is-visible .client-mark {
+    animation-play-state: running, running;
+  }
+
+  @keyframes mark-in {
+    from { opacity: 0; filter: blur(6px); }
+    to { opacity: 1; filter: blur(0); }
+  }
+
+  @keyframes mark-drift {
+    0%   { transform: translate3d(0, 0, 0); }
+    50%  { transform: translate3d(0, -7px, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .reveal {
       opacity: 1;
@@ -139,7 +179,12 @@
       transition: none;
     }
     .animate-fade-in,
-    .animate-fade-in-up {
+    .animate-fade-in-up,
+    .animate-marquee {
+      animation: none;
+    }
+    .client-mark {
+      opacity: 1;
       animation: none;
     }
     html { scroll-behavior: auto; }

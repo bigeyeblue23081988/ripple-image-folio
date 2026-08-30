@@ -1,6 +1,7 @@
 import { SiteNav } from "@/components/SiteNav";
+import { Figure } from "@/components/Figure";
+import { Clients } from "@/components/Clients";
 import { useReveal } from "@/hooks/use-reveal";
-import { clients } from "@/data/clients";
 
 import exterior from "@/assets/house/exterior.jpg";
 import hallway from "@/assets/house/hallway.jpg";
@@ -9,8 +10,6 @@ import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
 import guestCourtyard from "@/assets/house/guest-courtyard.jpg";
 import bedroom from "@/assets/house/bedroom.jpg";
-import lampSoftbox from "@/assets/house/lamp-softbox.png";
-import lampSpot from "@/assets/house/lamp-spot.png";
 
 const Index = () => {
   useReveal();
@@ -21,22 +20,20 @@ const Index = () => {
 
       <main>
         {/* ---------------- Hero ---------------- */}
-        <section className="container-wide pt-4 pb-24 md:pb-40">
+        <section className="container-wide pt-2 pb-28 md:pb-44">
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
-            {/* Exterior */}
-            <figure className="md:col-start-1 md:col-span-7 md:row-start-1 animate-fade-in">
-              <img
-                src={exterior}
-                alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
-                width={900}
-                height={600}
-                fetchPriority="high"
-                className="w-full h-auto"
-              />
-            </figure>
+            <Figure
+              src={exterior}
+              alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
+              width={900}
+              height={491}
+              index="01"
+              caption="The house — Ghent"
+              priority
+              className="md:col-start-1 md:col-span-7 md:row-start-1 animate-fade-in"
+            />
 
-            {/* Statement */}
-            <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-8 md:mt-1 animate-fade-in-up">
+            <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-1 animate-fade-in-up">
               <h1 className="statement">
                 <strong>Looking beyond the obvious.</strong>
                 <span className="font-normal">
@@ -45,39 +42,26 @@ const Index = () => {
               </h1>
             </div>
 
-            {/* Hallway */}
-            <figure className="md:col-start-8 md:col-span-5 md:row-start-2 mt-10 md:mt-16 reveal">
-              <img
-                src={hallway}
-                alt="The entrance hall, with a floating staircase and a blue sculpture, looking through to the courtyard"
-                width={630}
-                height={420}
-                loading="lazy"
-                className="w-full h-auto"
-              />
-            </figure>
+            <Figure
+              src={hallway}
+              alt="The entrance hall, with a floating staircase and a blue sculpture, looking through to the courtyard"
+              width={630}
+              height={344}
+              index="02"
+              caption="Entrance hall"
+              className="md:col-start-8 md:col-span-5 md:row-start-2 mt-12 md:mt-20 reveal"
+            />
           </div>
         </section>
 
         {/* ---------------- What we create ---------------- */}
         <section
           id="what-we-create"
-          className="container-wide pb-28 md:pb-48 scroll-mt-24"
+          className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
-          <div className="grid grid-cols-12 gap-x-4 md:gap-x-8 items-end">
-            <div className="col-span-4 sm:col-span-3 md:col-start-2 md:col-span-2 reveal">
-              <img
-                src={lampSoftbox}
-                alt=""
-                aria-hidden="true"
-                width={1344}
-                height={756}
-                loading="lazy"
-                className="w-full h-auto max-w-[190px]"
-              />
-            </div>
-
-            <div className="col-span-8 sm:col-span-9 md:col-start-4 md:col-span-6 pb-4 md:pb-8 reveal">
+          <div className="md:grid md:grid-cols-12">
+            <div className="md:col-start-3 md:col-span-8 reveal">
+              <p className="plate-label mb-8">I — What we create</p>
               <h2 className="statement">
                 <strong>What we create.</strong>
                 <span className="font-normal">
@@ -89,34 +73,24 @@ const Index = () => {
         </section>
 
         {/* ---------------- How we work ---------------- */}
-        <section className="container-wide pb-28 md:pb-48">
+        <section className="container-wide pb-28 md:pb-44">
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
-            <figure className="md:col-start-3 md:col-span-5 md:row-start-1 reveal">
-              <img
-                src={courtyardGreen}
-                alt="The inner courtyard, framed by a tall green hedge and whitewashed brick"
-                width={736}
-                height={491}
-                loading="lazy"
-                className="w-full h-auto"
-              />
-            </figure>
+            <Figure
+              src={courtyardGreen}
+              alt="The inner courtyard, framed by a tall green hedge and whitewashed brick"
+              width={736}
+              height={402}
+              index="03"
+              caption="Inner courtyard"
+              className="md:col-start-2 md:col-span-6 md:row-start-1 reveal"
+            />
 
-            <div className="md:col-start-8 md:col-span-4 md:row-start-1 self-end mt-10 md:mt-0 md:pb-2 reveal">
+            <div className="md:col-start-9 md:col-span-4 md:row-start-1 self-end mt-12 md:mt-0 md:pb-10 reveal">
+              <p className="plate-label mb-8">II — How we work</p>
               <h2 className="statement">
                 <strong>How we work.</strong>
                 <span className="font-normal">Ideas. Stories. Impact.</span>
               </h2>
-
-              <img
-                src={lampSpot}
-                alt=""
-                aria-hidden="true"
-                width={600}
-                height={901}
-                loading="lazy"
-                className="mt-6 w-auto h-40 md:h-56 ml-4 md:ml-10"
-              />
             </div>
           </div>
         </section>
@@ -124,81 +98,80 @@ const Index = () => {
         {/* ---------------- Filming location ---------------- */}
         <section
           id="filming-location"
-          className="container-wide pb-28 md:pb-48 scroll-mt-24"
+          className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
-          <h2 className="text-section-label mb-8 md:mb-10 reveal">
-            Filming location
-          </h2>
+          <p className="plate-label mb-10 reveal">III — Filming location</p>
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
-            <figure className="md:col-start-1 md:col-span-6 md:row-start-1 reveal">
-              <img
-                src={stairwell}
-                alt="Looking up through the industrial steel-and-glass stairwell towards the skylight"
-                width={810}
-                height={540}
-                loading="lazy"
-                className="w-full h-auto"
-              />
-            </figure>
+            <Figure
+              src={stairwell}
+              alt="Looking up through the industrial steel-and-glass stairwell towards the skylight"
+              width={810}
+              height={442}
+              index="04"
+              caption="Steel & glass stairwell"
+              className="md:col-start-1 md:col-span-6 md:row-start-1 reveal"
+            />
 
-            <div className="md:col-start-7 md:col-span-4 md:row-start-1 mt-8 md:mt-0 reveal">
+            <div className="md:col-start-8 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal">
+              <h2 className="statement mb-5">
+                <strong>A set that is already built.</strong>
+              </h2>
               <p className="body-copy">
                 The whole house is available as a recording location for
                 documentaries, fiction, interviews, photo shoots and digital
                 content. A unique blend of historic character and contemporary
-                design creates a unique setting that is both authentic and
-                visually compelling.
+                design creates a setting that is both authentic and visually
+                compelling.
               </p>
             </div>
 
-            <figure className="md:col-start-7 md:col-span-5 md:row-start-2 mt-8 md:mt-14 reveal">
-              <img
-                src={gardenTable}
-                alt="A long wooden table in the garden, sheltered between climbing green walls"
-                width={275}
-                height={183}
-                loading="lazy"
-                className="w-full h-auto"
-              />
-            </figure>
+            <Figure
+              src={gardenTable}
+              alt="A long wooden table in the garden, sheltered between climbing green walls"
+              width={242}
+              height={153}
+              index="05"
+              caption="The garden table"
+              className="md:col-start-8 md:col-span-4 md:row-start-2 mt-10 md:mt-16 reveal"
+            />
           </div>
         </section>
 
         {/* ---------------- Guesthouse ---------------- */}
         <section
           id="guesthouse"
-          className="container-wide pb-28 md:pb-48 scroll-mt-24"
+          className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
-          <h2 className="statement mb-8 md:mb-10 reveal">
+          <p className="plate-label mb-10 reveal">IV — Guesthouse</p>
+
+          <h2 className="statement mb-12 md:mb-16 reveal">
             <strong>Guesthouse,</strong>
             <strong>where anyone is welcome.</strong>
           </h2>
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
-            <figure className="md:col-start-1 md:col-span-5 md:row-start-1 reveal">
-              <img
-                src={guestCourtyard}
-                alt="The guesthouse terrace with turquoise chairs, enclosed by green climbing walls"
-                width={275}
-                height={183}
-                loading="lazy"
-                className="w-full h-auto"
-              />
-            </figure>
+            <Figure
+              src={guestCourtyard}
+              alt="The guesthouse terrace with turquoise chairs, enclosed by green climbing walls"
+              width={242}
+              height={153}
+              index="06"
+              caption="Terrace"
+              className="md:col-start-1 md:col-span-5 md:row-start-1 reveal"
+            />
 
-            <figure className="md:col-start-5 md:col-span-4 md:row-start-1 self-end mt-6 md:mt-0 md:translate-y-16 md:z-10 reveal">
-              <img
-                src={bedroom}
-                alt="An attic bedroom under white timber beams, with a dark accent wall and warm lighting"
-                width={275}
-                height={183}
-                loading="lazy"
-                className="w-full h-auto"
-              />
-            </figure>
+            <Figure
+              src={bedroom}
+              alt="An attic bedroom under white timber beams, with a dark accent wall and warm lighting"
+              width={242}
+              height={153}
+              index="07"
+              caption="Attic room"
+              className="md:col-start-7 md:col-span-4 md:row-start-1 self-end mt-10 md:mt-0 md:translate-y-20 reveal"
+            />
 
-            <div className="md:col-start-1 md:col-span-4 md:row-start-2 mt-10 md:mt-20 reveal">
+            <div className="md:col-start-1 md:col-span-4 md:row-start-2 mt-12 md:mt-24 reveal">
               <p className="body-copy">
                 Once a 19th-century coach house, The Industrial Loft has been
                 transformed into a distinctive guest house where heritage and
@@ -209,52 +182,28 @@ const Index = () => {
         </section>
 
         {/* ---------------- Clients ---------------- */}
-        <section className="container-wide pb-28 md:pb-44">
-          <h2 className="text-section-label mb-10 md:mb-4 reveal">Clients</h2>
+        <section className="container-wide pb-28 md:pb-40">
+          <p className="plate-label mb-14 md:mb-8 reveal">V — Clients</p>
 
-          {/* Mobile: simple centred wrap */}
-          <ul className="md:hidden flex flex-wrap justify-center gap-x-6 gap-y-4 reveal">
-            {clients.map((client) => (
-              <li
-                key={client.name}
-                className="text-xs tracking-[0.12em] text-foreground/85"
-              >
-                {client.name}
-              </li>
-            ))}
-          </ul>
-
-          {/* Desktop: scattered constellation */}
-          <div
-            className="hidden md:block relative reveal"
-            style={{ height: 400 }}
-          >
-            {clients.map((client) => (
-              <span
-                key={client.name}
-                className="absolute -translate-x-1/2 whitespace-nowrap text-sm tracking-[0.12em] text-foreground/85"
-                style={{ left: `${client.x}%`, top: client.y }}
-              >
-                {client.name}
-              </span>
-            ))}
+          <div className="reveal">
+            <Clients />
           </div>
         </section>
 
         {/* ---------------- Contact ---------------- */}
         <section id="contact" className="container-wide pb-28 md:pb-40 scroll-mt-24">
-          <h2 className="text-section-label reveal">Contact</h2>
+          <p className="plate-label mb-16 md:mb-24 reveal">VI — Contact</p>
 
-          <div className="mt-16 md:mt-24 text-center reveal">
+          <div className="text-center reveal">
             <a
               href="mailto:office@bigeyeblue.be"
-              className="block text-xl sm:text-2xl md:text-3xl font-normal tracking-tight hover:text-accent transition-colors break-all sm:break-normal"
+              className="block text-xl sm:text-3xl md:text-4xl font-normal tracking-tight hover:text-accent transition-colors break-all sm:break-normal"
             >
               office@bigeyeblue.be
             </a>
             <a
               href="tel:+32472715544"
-              className="mt-1 block text-xl sm:text-2xl md:text-3xl font-normal tracking-tight hover:text-accent transition-colors"
+              className="mt-2 block text-xl sm:text-3xl md:text-4xl font-normal tracking-tight hover:text-accent transition-colors"
             >
               +32 472 71 55 44
             </a>
@@ -263,8 +212,8 @@ const Index = () => {
       </main>
 
       <footer className="container-wide pb-12">
-        <div className="flex flex-col sm:flex-row justify-between gap-3 text-xs text-foreground/50">
-          <p>Bigeye Blue BV — Ghent, Belgium</p>
+        <div className="flex flex-col sm:flex-row justify-between gap-3 border-t border-separator pt-6 text-xs text-foreground/50">
+          <p>Bigeye Blue — Ghent, Belgium</p>
           <p>© {new Date().getFullYear()} Bigeye Blue</p>
         </div>
       </footer>
