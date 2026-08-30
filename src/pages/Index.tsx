@@ -39,7 +39,7 @@ const Index = () => {
                 priority
                 className="animate-hero-zoom"
               />
-              <SpinningBadge className="absolute -top-8 -right-4 md:-top-10 md:-right-10 hidden sm:block" />
+              <SpinningBadge className="absolute -bottom-10 -right-4 md:-bottom-12 md:-right-10 hidden sm:block" />
             </div>
 
             <div className="md:col-start-10 md:col-span-3 md:row-start-1 self-center mt-10 md:mt-0">
@@ -74,6 +74,8 @@ const Index = () => {
           </div>
         </section>
 
+        <TickerBand className="mb-28 md:mb-44" />
+
         {/* ---------------- What we create ---------------- */}
         <section
           id="what-we-create"
@@ -83,7 +85,9 @@ const Index = () => {
             <div className="md:col-start-3 md:col-span-8">
               <p className="plate-label mb-8 reveal">What we create</p>
               <h2 className="statement reveal reveal-delay-1">
-                <strong>What we create.</strong>
+                <strong>
+                  What we create<span className="text-accent">.</span>
+                </strong>
                 <span className="font-normal">
                   Interviews. Podcasts. Documentaries. Stories.
                 </span>
@@ -116,8 +120,14 @@ const Index = () => {
             <div className="md:col-start-9 md:col-span-4 md:row-start-1 self-end mt-12 md:mt-0 md:pb-10 reveal reveal--right reveal-delay-1">
               <p className="plate-label mb-8">How we work</p>
               <h2 className="statement">
-                <strong>How we work.</strong>
-                <span className="font-normal">Ideas. Stories. Impact.</span>
+                <strong>
+                  How we work<span className="text-accent">.</span>
+                </strong>
+                <span className="font-normal">
+                  Ideas<span className="text-accent">.</span> Stories
+                  <span className="text-accent">.</span> Impact
+                  <span className="text-accent">.</span>
+                </span>
               </h2>
             </div>
           </div>
@@ -143,7 +153,10 @@ const Index = () => {
 
             <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal reveal--right reveal-delay-1">
               <h2 className="statement mb-5">
-                <strong>A set that is already built.</strong>
+                <strong>
+                  A set that is already built
+                  <span className="text-accent">.</span>
+                </strong>
               </h2>
               <p className="body-copy">
                 The whole house is available as a filming location and
@@ -176,7 +189,9 @@ const Index = () => {
 
           <h2 className="statement mb-12 md:mb-16 reveal">
             <strong>Guesthouse,</strong>
-            <strong>where anyone is welcome.</strong>
+            <strong>
+              where anyone is welcome<span className="text-accent">.</span>
+            </strong>
           </h2>
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
@@ -220,6 +235,7 @@ const Index = () => {
         </section>
 
         {/* ---------------- Contact ---------------- */}
+        <TickerBand />
         <section id="contact" className="bg-foreground text-background scroll-mt-24">
           <div className="container-wide py-24 md:py-40">
             <p className="plate-label plate-label--invert mb-16 md:mb-24 reveal">Contact</p>
@@ -227,13 +243,13 @@ const Index = () => {
             <div className="text-center reveal">
               <a
                 href="mailto:office@bigeyeblue.be"
-                className="block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:text-accent transition-colors break-all sm:break-normal"
+                className="u-sweep inline-block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:text-accent break-all sm:break-normal"
               >
                 office@bigeyeblue.be
               </a>
               <a
                 href="tel:+32472715544"
-                className="mt-4 block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent transition-colors"
+                className="u-sweep mt-4 inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
               >
                 +32 472 71 55 44
               </a>
