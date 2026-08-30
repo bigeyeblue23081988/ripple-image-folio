@@ -10,13 +10,13 @@ export interface ClientMark {
 }
 
 export const clients: ClientMark[] = [
-  { name: "VRT INNOVATIE", x: 47, y: 0 },
-  { name: "LUMIERE", x: 30, y: 88 },
-  { name: "LUCKY LEMON", x: 64, y: 88 },
-  { name: "VRT MAX", x: 17, y: 164 },
-  { name: "BNP PARIBAS", x: 45, y: 164 },
-  { name: "DE ZENDELINGEN", x: 78, y: 164 },
-  { name: "DELOITTE", x: 28, y: 252 },
-  { name: "CANVAS", x: 63, y: 252 },
-  { name: "VRT NWS", x: 45, y: 340 },
+  { name: "VRT INNOVATIE", x: 48, y: 0 },
+  { name: "LUMIERE", x: 26, y: 120 },
+  { name: "LUCKY LEMON", x: 70, y: 120 },
+  { name: "VRT MAX", x: 14, y: 240 },
+  { name: "BNP PARIBAS", x: 46, y: 240 },
+  { name: "DE ZENDELINGEN", x: 80, y: 240 },
+  { name: "DELOITTE", x: 24, y: 360 },
+  { name: "CANVAS", x: 66, y: 360 },
+  { name: "VRT NWS", x: 46, y: 480 },
 ];
