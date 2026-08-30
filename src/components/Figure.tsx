@@ -66,7 +66,7 @@ export function Figure({
             </div>
           </div>
           {index && (
-            <span className="shrink-0 bg-foreground px-1.5 py-0.5 font-mono text-[10px] tracking-tight tabular-nums text-background">
+            <span className="shrink-0 bg-foreground px-1.5 py-0.5 font-mono text-[10px] tracking-tight tabular-nums text-background transition-colors duration-500 group-hover:bg-accent group-hover:text-accent-foreground">
               {index} / {PLATE_TOTAL}
             </span>
           )}
