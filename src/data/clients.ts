@@ -15,7 +15,7 @@ export const clients: ClientMark[] = [
   { name: "LUCKY LEMON", x: 70, y: 120 },
   { name: "VRT MAX", x: 14, y: 240 },
   { name: "BNP PARIBAS", x: 46, y: 240 },
-  { name: "DE ZENDELINGEN", x: 80, y: 240 },
+  { name: "MOTIONMAKERS", x: 80, y: 240 },
   { name: "DELOITTE", x: 24, y: 360 },
   { name: "CANVAS", x: 66, y: 360 },
   { name: "VRT NWS", x: 46, y: 480 },
