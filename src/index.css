@@ -24,8 +24,8 @@
     --muted-foreground: 0 0% 38%;
 
     /* A bright, Oscar-statue gold accent: hover states, index chips,
-       selection highlight. Saturated and warm for a glinstering moment. */
-    --accent: 43 88% 58%;
+       selection highlight. Brushed metallic, high-key gold. */
+    --accent: 43 92% 64%;
     --accent-foreground: 0 0% 7%;
 
     --destructive: 0 72% 45%;
@@ -233,7 +233,7 @@
       115deg,
       transparent 0%,
       transparent 30%,
-      hsl(43 96% 78% / 0.7) 50%,
+      hsl(43 96% 82% / 0.75) 50%,
       transparent 70%,
       transparent 100%
     );
@@ -256,7 +256,7 @@
   .group:hover .gold-glow,
   .gold-glow:hover {
     color: hsl(var(--accent));
-    text-shadow: 0 0 18px hsl(43 90% 65% / 0.45);
+    text-shadow: 0 0 22px hsl(43 92% 68% / 0.5);
   }
 
   @media (prefers-reduced-motion: reduce) {
