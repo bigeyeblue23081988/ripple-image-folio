@@ -5,7 +5,7 @@ import { useEffect } from "react";
  * vertically as it travels through the viewport. Used on figure image
  * wrappers (which are pre-scaled so no gaps appear). Calm, not showy.
  */
-export function useParallax() {
+export function useParallax(dep?: unknown) {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
@@ -41,5 +41,5 @@ export function useParallax() {
       window.removeEventListener("resize", onScroll);
       if (raf) cancelAnimationFrame(raf);
     };
-  }, []);
+  }, [dep]);
 }

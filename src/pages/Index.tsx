@@ -16,8 +16,8 @@ import guestRoom from "@/assets/house/guest-room.jpg";
 
 const Index = () => {
   const { t, lang } = useLang();
-  useReveal();
-  useParallax();
+  useReveal(lang);
+  useParallax(lang);
 
   return (
     <div id="top" key={lang} className="min-h-screen">
