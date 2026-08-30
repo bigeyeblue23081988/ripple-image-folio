@@ -47,7 +47,7 @@ const Index = () => {
               src={hallway}
               alt="The entrance hall, with a floating staircase, looking through to the courtyard"
               width={630}
-              height={344}
+              height={296}
               index="02"
               caption="Entrance hall"
               className="md:col-start-8 md:col-span-5 md:row-start-2 mt-12 md:mt-20 reveal"
