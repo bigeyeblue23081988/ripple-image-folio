@@ -30,9 +30,9 @@ export function SiteNav() {
             <img
               src={logo}
               alt="Bigeye Blue"
-              width={210}
-              height={100}
-              className="h-10 md:h-12 w-auto"
+              width={284}
+              height={120}
+              className="h-9 md:h-11 w-auto"
             />
           </a>
 
