@@ -1,7 +1,10 @@
 import { SiteNav } from "@/components/SiteNav";
 import { Figure } from "@/components/Figure";
 import { Clients } from "@/components/Clients";
+import { TickerBand } from "@/components/TickerBand";
+import { SpinningBadge } from "@/components/SpinningBadge";
 import { useReveal } from "@/hooks/use-reveal";
+import { useParallax } from "@/hooks/use-parallax";
 
 import exterior from "@/assets/house/exterior.jpg";
 import hallway from "@/assets/house/hallway.jpg";
@@ -14,6 +17,7 @@ import guestRoom from "@/assets/house/guest-room.jpg";
 
 const Index = () => {
   useReveal();
+  useParallax();
 
   return (
     <div id="top" className="min-h-screen">
@@ -23,23 +27,37 @@ const Index = () => {
         {/* ---------------- Hero ---------------- */}
         <section className="container-wide pt-2 pb-28 md:pb-44">
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
-            <Figure
-              src={exterior}
-              alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
-              width={900}
-              height={491}
-              index="01"
-              caption="The house"
-              sub="Ghent, Belgium"
-              priority
-              className="md:col-start-1 md:col-span-8 md:row-start-1 animate-hero-zoom"
-            />
+            <div className="relative md:col-start-1 md:col-span-8 md:row-start-1">
+              <Figure
+                src={exterior}
+                alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
+                width={900}
+                height={491}
+                index="01"
+                caption="The house"
+                sub="Ghent, Belgium"
+                priority
+                className="animate-hero-zoom"
+              />
+              <SpinningBadge className="absolute bottom-14 right-2 md:-right-8 hidden sm:block" />
+            </div>
 
-            <div className="md:col-start-10 md:col-span-3 md:row-start-1 self-center mt-10 md:mt-0 animate-fade-in-up">
+            <div className="md:col-start-10 md:col-span-3 md:row-start-1 self-center mt-10 md:mt-0">
               <h1 className="statement">
-                <strong>Looking beyond the obvious.</strong>
-                <span className="font-normal">
-                  A house where people and stories meet.
+                <strong>
+                  <span className="hero-mask">
+                    <span className="hero-line">Looking beyond</span>
+                  </span>
+                  <span className="hero-mask">
+                    <span className="hero-line hero-line--2">
+                      the obvious<span className="text-accent">.</span>
+                    </span>
+                  </span>
+                </strong>
+                <span className="font-normal hero-mask">
+                  <span className="hero-line hero-line--2">
+                    A house where people and stories meet.
+                  </span>
                 </span>
               </h1>
             </div>
@@ -56,6 +74,8 @@ const Index = () => {
           </div>
         </section>
 
+        <TickerBand className="mb-28 md:mb-44" />
+
         {/* ---------------- What we create ---------------- */}
         <section
           id="what-we-create"
@@ -65,7 +85,9 @@ const Index = () => {
             <div className="md:col-start-3 md:col-span-8">
               <p className="plate-label mb-8 reveal">What we create</p>
               <h2 className="statement reveal reveal-delay-1">
-                <strong>What we create.</strong>
+                <strong>
+                  What we create<span className="text-accent">.</span>
+                </strong>
                 <span className="font-normal">
                   Interviews. Podcasts. Documentaries. Stories.
                 </span>
@@ -98,8 +120,14 @@ const Index = () => {
             <div className="md:col-start-9 md:col-span-4 md:row-start-1 self-end mt-12 md:mt-0 md:pb-10 reveal reveal--right reveal-delay-1">
               <p className="plate-label mb-8">How we work</p>
               <h2 className="statement">
-                <strong>How we work.</strong>
-                <span className="font-normal">Ideas. Stories. Impact.</span>
+                <strong>
+                  How we work<span className="text-accent">.</span>
+                </strong>
+                <span className="font-normal">
+                  Ideas<span className="text-accent">.</span> Stories
+                  <span className="text-accent">.</span> Impact
+                  <span className="text-accent">.</span>
+                </span>
               </h2>
             </div>
           </div>
@@ -125,7 +153,10 @@ const Index = () => {
 
             <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal reveal--right reveal-delay-1">
               <h2 className="statement mb-5">
-                <strong>A set that is already built.</strong>
+                <strong>
+                  A set that is already built
+                  <span className="text-accent">.</span>
+                </strong>
               </h2>
               <p className="body-copy">
                 The whole house is available as a filming location and
@@ -158,7 +189,9 @@ const Index = () => {
 
           <h2 className="statement mb-12 md:mb-16 reveal">
             <strong>Guesthouse,</strong>
-            <strong>where anyone is welcome.</strong>
+            <strong>
+              where anyone is welcome<span className="text-accent">.</span>
+            </strong>
           </h2>
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
@@ -202,23 +235,28 @@ const Index = () => {
         </section>
 
         {/* ---------------- Contact ---------------- */}
+        <TickerBand />
         <section id="contact" className="bg-foreground text-background scroll-mt-24">
           <div className="container-wide py-24 md:py-40">
             <p className="plate-label plate-label--invert mb-16 md:mb-24 reveal">Contact</p>
 
             <div className="text-center reveal">
-              <a
-                href="mailto:office@bigeyeblue.be"
-                className="block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:text-accent transition-colors break-all sm:break-normal"
-              >
-                office@bigeyeblue.be
-              </a>
-              <a
-                href="tel:+32472715544"
-                className="mt-4 block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent transition-colors"
-              >
-                +32 472 71 55 44
-              </a>
+              <div>
+                <a
+                  href="mailto:office@bigeyeblue.be"
+                  className="u-sweep inline-block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:text-accent break-all sm:break-normal"
+                >
+                  office@bigeyeblue.be
+                </a>
+              </div>
+              <div className="mt-4">
+                <a
+                  href="tel:+32472715544"
+                  className="u-sweep inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
+                >
+                  +32 472 71 55 44
+                </a>
+              </div>
             </div>
 
           </div>

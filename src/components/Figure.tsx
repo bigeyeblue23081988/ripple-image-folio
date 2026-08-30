@@ -34,7 +34,8 @@ export function Figure({
   return (
     <figure className={`group ${className}`}>
       <div className="overflow-hidden bg-secondary">
-        <img
+        <div data-parallax className="parallax-inner scale-[1.07]">
+          <img
           src={src}
           alt={alt}
           width={width}
@@ -42,7 +43,8 @@ export function Figure({
           loading={priority ? "eager" : "lazy"}
           {...(priority ? { fetchpriority: "high" } : {})}
           className="w-full h-auto transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.035]"
-        />
+          />
+        </div>
       </div>
 
       {(index || caption) && (
