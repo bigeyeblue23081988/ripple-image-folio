@@ -208,7 +208,7 @@ const Index = () => {
         </section>
 
         {/* ---------------- Contact ---------------- */}
-        <section id="contact" className="bg-foreground text-background scroll-mt-24">
+        <section id="contact" className="bg-accent text-accent-foreground scroll-mt-24">
           <div className="container-wide py-24 md:py-40">
             <p className="plate-label plate-label--invert mb-16 md:mb-24 reveal">Contact</p>
 
