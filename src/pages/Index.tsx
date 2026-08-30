@@ -2,7 +2,6 @@ import { SiteNav } from "@/components/SiteNav";
 import { Figure } from "@/components/Figure";
 import { Clients } from "@/components/Clients";
 import { TickerBand } from "@/components/TickerBand";
-import { SpinningBadge } from "@/components/SpinningBadge";
 import { useReveal } from "@/hooks/use-reveal";
 import { useParallax } from "@/hooks/use-parallax";
 
@@ -39,7 +38,6 @@ const Index = () => {
                 priority
                 className="animate-hero-zoom"
               />
-              <SpinningBadge className="absolute bottom-14 right-2 md:-right-8 hidden sm:block" />
             </div>
 
             <div className="md:col-start-10 md:col-span-3 md:row-start-1 self-center mt-10 md:mt-0">
@@ -154,7 +152,7 @@ const Index = () => {
             <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal reveal--right reveal-delay-1">
               <h2 className="statement mb-5">
                 <strong>
-                  A set that is already built
+                  Filming location
                   <span className="text-accent">.</span>
                 </strong>
               </h2>
