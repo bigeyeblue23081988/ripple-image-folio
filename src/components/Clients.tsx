@@ -73,7 +73,7 @@ export function Clients() {
             style={{ left: `${client.x}%`, top: client.y }}
           >
             <span
-              className="client-mark block text-2xl lg:text-3xl font-semibold tracking-[0.1em] text-foreground/90 cursor-default transition-[opacity,color,letter-spacing,font-weight] duration-500 group-hover/field:opacity-25 hover:!opacity-100 hover:text-foreground hover:tracking-[0.2em] hover:font-bold"
+              className="client-mark block text-2xl lg:text-3xl font-semibold tracking-[0.1em] text-foreground/90 cursor-default transition-[opacity,color,letter-spacing,font-weight] duration-500 group-hover/field:opacity-25 hover:!opacity-100 hover:text-accent hover:tracking-[0.2em] hover:font-bold"
               style={{
                 animationDelay: `${i * 0.1}s, ${0.9 + i * 0.1}s`,
                 animationDuration: `1.1s, ${10 + (i % 4) * 2.5}s`,

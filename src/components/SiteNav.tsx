@@ -42,7 +42,7 @@ export function SiteNav() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="hidden sm:inline-block text-xs md:text-sm font-bold uppercase tracking-tight text-foreground hover:opacity-50 transition-opacity"
+                    className="hidden sm:inline-block text-xs md:text-sm font-bold uppercase tracking-tight text-foreground transition-colors duration-300 hover:text-accent"
                   >
                     {link.label}
                   </a>

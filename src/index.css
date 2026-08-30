@@ -23,9 +23,10 @@
     --muted: 37 25% 86%;
     --muted-foreground: 0 0% 38%;
 
-    /* The blue in "Bigeye blue" — used sparingly */
-    --accent: 197 62% 42%;
-    --accent-foreground: 0 0% 100%;
+    /* The blue in "Bigeye Blue" — a deep inky gallery blue, used
+       sparingly: hover states, index chips, the contact band. */
+    --accent: 215 58% 30%;
+    --accent-foreground: 37 56% 94%;
 
     --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
@@ -69,8 +70,8 @@
   }
 
   ::selection {
-    background: hsl(var(--foreground));
-    color: hsl(var(--background));
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
   }
 }
 
