@@ -31,10 +31,10 @@ const Index = () => {
               caption="The house"
               sub="Ghent, Belgium"
               priority
-              className="md:col-start-1 md:col-span-7 md:row-start-1 animate-fade-in"
+              className="md:col-start-1 md:col-span-8 md:row-start-1 animate-hero-zoom"
             />
 
-            <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-1 animate-fade-in-up">
+            <div className="md:col-start-10 md:col-span-3 md:row-start-1 self-center mt-10 md:mt-0 animate-fade-in-up">
               <h1 className="statement">
                 <strong>Looking beyond the obvious.</strong>
                 <span className="font-normal">
@@ -119,10 +119,10 @@ const Index = () => {
               height={442}
               index="04"
               caption="Steel & glass stairwell"
-              className="md:col-start-1 md:col-span-6 md:row-start-1 reveal"
+              className="md:col-start-1 md:col-span-7 md:row-start-1 reveal"
             />
 
-            <div className="md:col-start-8 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal">
+            <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal">
               <h2 className="statement mb-5">
                 <strong>A set that is already built.</strong>
               </h2>
@@ -143,7 +143,7 @@ const Index = () => {
               height={153}
               index="05"
               caption="The garden table"
-              className="md:col-start-8 md:col-span-4 md:row-start-2 mt-10 md:mt-16 reveal"
+              className="md:col-start-9 md:col-span-4 md:row-start-2 mt-10 md:mt-16 reveal"
             />
           </div>
         </section>
@@ -168,7 +168,7 @@ const Index = () => {
               height={153}
               index="06"
               caption="Terrace"
-              className="md:col-start-1 md:col-span-5 md:row-start-1 reveal"
+              className="md:col-start-1 md:col-span-6 md:row-start-1 reveal"
             />
 
             <Figure
@@ -178,7 +178,7 @@ const Index = () => {
               height={153}
               index="07"
               caption="Attic room"
-              className="md:col-start-7 md:col-span-4 md:row-start-1 self-end mt-10 md:mt-0 md:translate-y-20 reveal"
+              className="md:col-start-8 md:col-span-5 md:row-start-1 self-end mt-10 md:mt-0 md:translate-y-20 reveal"
             />
 
             <div className="md:col-start-1 md:col-span-4 md:row-start-2 mt-12 md:mt-24 reveal">
@@ -201,22 +201,24 @@ const Index = () => {
         </section>
 
         {/* ---------------- Contact ---------------- */}
-        <section id="contact" className="container-wide pb-28 md:pb-40 scroll-mt-24">
-          <p className="plate-label mb-16 md:mb-24 reveal">Contact</p>
+        <section id="contact" className="bg-foreground text-background scroll-mt-24">
+          <div className="container-wide py-24 md:py-40">
+            <p className="plate-label plate-label--invert mb-16 md:mb-24 reveal">Contact</p>
 
-          <div className="text-center reveal">
-            <a
-              href="mailto:office@bigeyeblue.be"
-              className="block text-xl sm:text-3xl md:text-4xl font-normal tracking-tight hover:text-accent transition-colors break-all sm:break-normal"
-            >
-              office@bigeyeblue.be
-            </a>
-            <a
-              href="tel:+32472715544"
-              className="mt-2 block text-xl sm:text-3xl md:text-4xl font-normal tracking-tight hover:text-accent transition-colors"
-            >
-              +32 472 71 55 44
-            </a>
+            <div className="text-center reveal">
+              <a
+                href="mailto:office@bigeyeblue.be"
+                className="block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:opacity-60 transition-opacity break-all sm:break-normal"
+              >
+                office@bigeyeblue.be
+              </a>
+              <a
+                href="tel:+32472715544"
+                className="mt-4 block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:opacity-60 transition-opacity"
+              >
+                +32 472 71 55 44
+              </a>
+            </div>
           </div>
         </section>
       </main>
