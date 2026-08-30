@@ -232,7 +232,7 @@ const Index = () => {
               <div>
                 <a
                   href="mailto:office@bigeyeblue.be"
-                  className="u-sweep inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
+                  className="inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
                 >
                   office@bigeyeblue.be
                 </a>
@@ -240,10 +240,11 @@ const Index = () => {
               <div className="mt-4">
                 <a
                   href="tel:+32472715544"
-                  className="u-sweep inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
+                  className="inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
                 >
                   +32 472 71 55 44
                 </a>
+
               </div>
             </div>
           </div>
