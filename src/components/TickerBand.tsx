@@ -3,7 +3,6 @@ const items = [
   "Podcast",
   "Reportage",
   "Interviews",
-  "Branded stories",
   "Studio",
   "Guesthouse",
 ];
