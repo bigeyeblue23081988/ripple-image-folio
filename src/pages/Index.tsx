@@ -45,7 +45,7 @@ const Index = () => {
 
             <Figure
               src={hallway}
-              alt="The entrance hall, with a floating staircase and a blue sculpture, looking through to the courtyard"
+              alt="The entrance hall, with a floating staircase, looking through to the courtyard"
               width={630}
               height={344}
               index="02"
