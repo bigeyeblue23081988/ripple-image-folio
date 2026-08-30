@@ -8,8 +8,8 @@ import hallway from "@/assets/house/hallway.jpg";
 import courtyardGreen from "@/assets/house/courtyard-green.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
-import guestCourtyard from "@/assets/house/guest-courtyard.jpg";
-import bedroom from "@/assets/house/bedroom.jpg";
+import kitchen from "@/assets/house/kitchen.jpg";
+import guestRoom from "@/assets/house/guest-room.jpg";
 
 const Index = () => {
   useReveal();
@@ -73,7 +73,7 @@ const Index = () => {
                 Bigeye Blue is a production house led by journalist and
                 director Marieke Dermul. We tell stories for broadcasters,
                 brands and organisations — from documentary and reportage to
-                podcast series and branded content. Come to us with an idea;
+                podcast series and online content. Come to us with an idea;
                 we develop it, record it in our own studio in Ghent, and
                 produce it from first conversation to final cut.
               </p>
@@ -162,22 +162,22 @@ const Index = () => {
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
             <Figure
-              src={guestCourtyard}
-              alt="The guesthouse terrace with turquoise chairs, enclosed by green climbing walls"
-              width={242}
-              height={153}
+              src={kitchen}
+              alt="The kitchen under whitewashed timber beams, with a wooden worktop and a long dining table"
+              width={900}
+              height={478}
               index="06"
-              caption="Terrace"
+              caption="The kitchen"
               className="md:col-start-1 md:col-span-6 md:row-start-1 reveal"
             />
 
             <Figure
-              src={bedroom}
-              alt="An attic bedroom under white timber beams, with a dark accent wall and warm lighting"
-              width={242}
-              height={153}
+              src={guestRoom}
+              alt="The guest room under white timber trusses, with a box-spring bed and skylights"
+              width={1536}
+              height={1024}
               index="07"
-              caption="Attic room"
+              caption="Guest room"
               className="md:col-start-8 md:col-span-5 md:row-start-1 self-end mt-10 md:mt-0 md:translate-y-20 reveal"
             />
 
