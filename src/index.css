@@ -23,9 +23,9 @@
     --muted: 37 25% 86%;
     --muted-foreground: 0 0% 38%;
 
-    /* A warm gold accent used sparingly: hover states, index chips,
-       selection highlight. Keeps the site minimal but daring. */
-    --accent: 43 55% 52%;
+    /* A bright, Oscar-statue gold accent: hover states, index chips,
+       selection highlight. Saturated and warm for a glinstering moment. */
+    --accent: 43 88% 58%;
     --accent-foreground: 0 0% 7%;
 
     --destructive: 0 72% 45%;
@@ -217,6 +217,46 @@
     0%   { transform: translate3d(0, 0, 0); }
     50%  { transform: translate3d(0, -10px, 0); }
     100% { transform: translate3d(0, 0, 0); }
+  }
+
+  /* Glinstering gold shimmer: a moving metallic highlight for hover states. */
+  .gold-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gold-shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      115deg,
+      transparent 0%,
+      transparent 30%,
+      hsl(43 96% 78% / 0.7) 50%,
+      transparent 70%,
+      transparent 100%
+    );
+    transform: translateX(-100%);
+    transition: transform 0s;
+    pointer-events: none;
+  }
+
+  .group:hover .gold-shimmer::after,
+  .gold-shimmer:hover::after {
+    transform: translateX(100%);
+    transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* A subtle gold glow for text hover states — like light catching polished metal. */
+  .gold-glow {
+    transition: color 0.35s ease, text-shadow 0.35s ease;
+  }
+
+  .group:hover .gold-glow,
+  .gold-glow:hover {
+    color: hsl(var(--accent));
+    text-shadow: 0 0 18px hsl(43 90% 65% / 0.45);
   }
 
   @media (prefers-reduced-motion: reduce) {
