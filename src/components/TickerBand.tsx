@@ -1,11 +1,4 @@
-const items = [
-  "Documentary",
-  "Podcast",
-  "Reportage",
-  "Interviews",
-  "Studio",
-  "Guesthouse",
-];
+import { useLang } from "@/i18n/LanguageProvider";
 
 /**
  * A full-bleed black ticker band: the disciplines scroll endlessly,
@@ -13,7 +6,8 @@ const items = [
  * calm gallery sections.
  */
 export function TickerBand({ className = "" }: { className?: string }) {
-  const row = [...items, ...items];
+  const { t } = useLang();
+  const row = [...t.ticker, ...t.ticker];
   return (
     <div
       aria-hidden

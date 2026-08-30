@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import logo from "@/assets/house/logo-black.png";
-
-const links = [
-  { label: "What we create", href: "#what-we-create" },
-  { label: "Filming location", href: "#filming-location" },
-  { label: "Guesthouse", href: "#guesthouse" },
-  { label: "Contact", href: "#contact" },
-];
+import { useLang } from "@/i18n/LanguageProvider";
 
 export function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
+  const { t, lang, setLang } = useLang();
+
+  const links = [
+    { label: t.nav.create, href: "#what-we-create" },
+    { label: t.nav.location, href: "#filming-location" },
+    { label: t.nav.guesthouse, href: "#guesthouse" },
+    { label: t.nav.contact, href: "#contact" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -17,6 +19,21 @@ export function SiteNav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const langBtn = (code: "en" | "nl") => (
+    <button
+      key={code}
+      type="button"
+      onClick={() => setLang(code)}
+      aria-pressed={lang === code}
+      aria-label={code === "en" ? "English" : "Nederlands"}
+      className={`text-xs md:text-sm font-bold uppercase tracking-tight transition-colors duration-300 hover:text-accent ${
+        lang === code ? "text-foreground" : "text-foreground/35"
+      }`}
+    >
+      {code}
+    </button>
+  );
 
   return (
     <header
@@ -30,11 +47,7 @@ export function SiteNav() {
             scrolled ? "py-3 md:py-4" : "py-6 md:py-8"
           }`}
         >
-          <a
-            href="#top"
-            aria-label="Bigeye Blue — back to top"
-            className="shrink-0 group"
-          >
+          <a href="#top" aria-label={t.nav.backToTop} className="shrink-0 group">
             <img
               src={logo}
               alt="Bigeye Blue"
@@ -61,8 +74,15 @@ export function SiteNav() {
                   href="#contact"
                   className="text-[13px] font-bold uppercase text-foreground"
                 >
-                  Contact
+                  {t.nav.contact}
                 </a>
+              </li>
+              <li className="flex items-center gap-1.5">
+                {langBtn("en")}
+                <span aria-hidden className="text-foreground/25 text-xs">
+                  /
+                </span>
+                {langBtn("nl")}
               </li>
             </ul>
           </nav>
