@@ -87,7 +87,7 @@ export const translations = {
     },
     hero: {
       line1: "Kijken voorbij",
-      line2: "het vanzelfsprekende",
+      line2: "de evidentie",
       sub: "Een huis waar mensen en verhalen elkaar ontmoeten.",
     },
     figures: {
