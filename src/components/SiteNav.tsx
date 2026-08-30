@@ -31,12 +31,11 @@ export function SiteNav() {
             aria-label="Bigeye Blue — back to top"
             className="shrink-0 group"
           >
-            <span className="text-[1.65rem] md:text-[2.15rem] font-black tracking-[-0.06em] text-foreground uppercase leading-none">
-              bigeye
-              <span className="inline-block transition-colors duration-300 group-hover:text-accent group-hover:[text-shadow:0_0_18px_hsl(43_90%_65%_/_.4)]">
-                blue
-              </span>
-            </span>
+            <img
+              src={logo}
+              alt="Bigeye Blue"
+              className="h-10 md:h-14 w-auto transition-[filter,transform] duration-300 group-hover:scale-[1.02]"
+            />
           </a>
 
           <nav aria-label="Main" className="flex-1">
