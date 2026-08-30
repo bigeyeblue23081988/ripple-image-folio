@@ -83,11 +83,11 @@
   /* The two-line statement pairs used throughout the design:
      bold lead line, regular follow line. */
   .statement {
-    @apply text-2xl md:text-4xl leading-[1.15] tracking-tight;
+    @apply text-3xl md:text-5xl lg:text-[3.5rem] leading-[1.05] tracking-[-0.035em];
   }
 
   .statement strong {
-    @apply block font-bold;
+    @apply block font-black;
   }
 
   .body-copy {
