@@ -256,7 +256,7 @@
   .group:hover .gold-glow,
   .gold-glow:hover {
     color: hsl(var(--accent));
-    text-shadow: 0 0 22px hsl(43 92% 68% / 0.5);
+    text-shadow: 0 0 22px hsl(46 45% 59% / 0.5);
   }
 
   @media (prefers-reduced-motion: reduce) {
