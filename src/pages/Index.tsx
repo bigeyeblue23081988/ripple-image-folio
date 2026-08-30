@@ -28,7 +28,8 @@ const Index = () => {
               width={900}
               height={491}
               index="01"
-              caption="The house — Ghent"
+              caption="The house"
+              sub="Ghent, Belgium"
               priority
               className="md:col-start-1 md:col-span-7 md:row-start-1 animate-fade-in"
             />
@@ -61,7 +62,7 @@ const Index = () => {
         >
           <div className="md:grid md:grid-cols-12">
             <div className="md:col-start-3 md:col-span-8 reveal">
-              <p className="plate-label mb-8">I — What we create</p>
+              <p className="plate-label mb-8">What we create</p>
               <h2 className="statement">
                 <strong>What we create.</strong>
                 <span className="font-normal">
@@ -86,7 +87,7 @@ const Index = () => {
             />
 
             <div className="md:col-start-9 md:col-span-4 md:row-start-1 self-end mt-12 md:mt-0 md:pb-10 reveal">
-              <p className="plate-label mb-8">II — How we work</p>
+              <p className="plate-label mb-8">How we work</p>
               <h2 className="statement">
                 <strong>How we work.</strong>
                 <span className="font-normal">Ideas. Stories. Impact.</span>
@@ -100,7 +101,7 @@ const Index = () => {
           id="filming-location"
           className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
-          <p className="plate-label mb-10 reveal">III — Filming location</p>
+          <p className="plate-label mb-10 reveal">Filming location</p>
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
             <Figure
@@ -143,7 +144,7 @@ const Index = () => {
           id="guesthouse"
           className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
-          <p className="plate-label mb-10 reveal">IV — Guesthouse</p>
+          <p className="plate-label mb-10 reveal">Guesthouse</p>
 
           <h2 className="statement mb-12 md:mb-16 reveal">
             <strong>Guesthouse,</strong>
@@ -183,7 +184,7 @@ const Index = () => {
 
         {/* ---------------- Clients ---------------- */}
         <section className="container-wide pb-28 md:pb-40">
-          <p className="plate-label mb-14 md:mb-8 reveal">V — Clients</p>
+          <p className="plate-label mb-14 md:mb-8 reveal">Clients</p>
 
           <div className="reveal">
             <Clients />
@@ -192,7 +193,7 @@ const Index = () => {
 
         {/* ---------------- Contact ---------------- */}
         <section id="contact" className="container-wide pb-28 md:pb-40 scroll-mt-24">
-          <p className="plate-label mb-16 md:mb-24 reveal">VI — Contact</p>
+          <p className="plate-label mb-16 md:mb-24 reveal">Contact</p>
 
           <div className="text-center reveal">
             <a

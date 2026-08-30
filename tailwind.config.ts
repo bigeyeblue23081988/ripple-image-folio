@@ -21,6 +21,7 @@ export default {
       fontFamily: {
         sans: ['Open Sauce One', 'system-ui', 'sans-serif'],
         display: ['Open Sauce One', 'system-ui', 'sans-serif'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",
