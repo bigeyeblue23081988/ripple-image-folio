@@ -57,7 +57,7 @@ const Index = () => {
               height={296}
               index="02"
               caption="Entrance hall"
-              className="md:col-start-8 md:col-span-5 mt-12 md:mt-0 reveal"
+              className="md:col-start-8 md:col-span-5 mt-12 md:mt-0 reveal reveal--right"
             />
           </div>
         </section>
@@ -68,9 +68,9 @@ const Index = () => {
           className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
           <div className="md:grid md:grid-cols-12">
-            <div className="md:col-start-3 md:col-span-8 reveal">
-              <p className="plate-label mb-8">What we create</p>
-              <h2 className="statement">
+            <div className="md:col-start-3 md:col-span-8">
+              <p className="plate-label mb-8 reveal">What we create</p>
+              <h2 className="statement reveal reveal-delay-1">
                 <strong>What we create.</strong>
                 <span className="font-normal">
                   Interviews. Podcasts. Documentaries. Stories.
