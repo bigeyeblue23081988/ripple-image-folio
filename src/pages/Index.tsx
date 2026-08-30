@@ -10,7 +10,7 @@ import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
 import kitchen from "@/assets/house/kitchen.jpg";
 import guestRoom from "@/assets/house/guest-room.jpg";
-import logoWhite from "@/assets/bigeyeblue-logo-white.png.asset.json";
+
 
 const Index = () => {
   useReveal();
