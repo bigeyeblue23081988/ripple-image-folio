@@ -96,39 +96,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ---------------- How we work ---------------- */}
-        <section className="container-wide pb-28 md:pb-44">
-          <div className="md:grid md:grid-cols-12 md:gap-x-8">
-            <Figure
-              src={courtyardGreen}
-              alt={t.figures.courtyardAlt}
-              width={736}
-              height={402}
-              index="03"
-              caption={t.figures.courtyardCaption}
-              className="md:col-start-2 md:col-span-6 md:row-start-1 reveal reveal--left"
-            />
-
-            <div className="md:col-start-9 md:col-span-4 md:row-start-1 self-end mt-12 md:mt-0 md:pb-10 reveal reveal--right reveal-delay-1">
-              <p className="plate-label mb-8">{t.how.label}</p>
-              <h2 className="statement">
-                <strong>
-                  {t.how.titleStrong}
-                  <span className="text-accent">.</span>
-                </strong>
-                <span className="font-normal">
-                  {t.how.words.map((word) => (
-                    <span key={word}>
-                      {word}
-                      <span className="text-accent">.</span>{" "}
-                    </span>
-                  ))}
-                </span>
-              </h2>
-            </div>
-          </div>
-        </section>
-
         {/* ---------------- Filming location ---------------- */}
         <section
           id="filming-location"
@@ -138,16 +105,16 @@ const Index = () => {
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
             <Figure
-              src={stairwell}
-              alt={t.figures.stairwellAlt}
-              width={810}
-              height={442}
-              index="04"
-              caption={t.figures.stairwellCaption}
-              className="md:col-start-1 md:col-span-7 md:row-start-1 reveal reveal--scale"
+              src={patio}
+              alt={t.figures.patioAlt}
+              width={736}
+              height={402}
+              index="03"
+              caption={t.figures.patioCaption}
+              className="md:col-start-1 md:col-span-6 md:row-start-1 reveal reveal--left"
             />
 
-            <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal reveal--right reveal-delay-1">
+            <div className="md:col-start-8 md:col-span-5 md:row-start-1 self-end mt-10 md:mt-0 reveal reveal--right reveal-delay-1">
               <h2 className="statement mb-5">
                 <strong>
                   {t.location.titleStrong}
@@ -158,13 +125,23 @@ const Index = () => {
             </div>
 
             <Figure
+              src={stairwell}
+              alt={t.figures.stairwellAlt}
+              width={810}
+              height={442}
+              index="04"
+              caption={t.figures.stairwellCaption}
+              className="md:col-start-1 md:col-span-7 md:row-start-2 mt-10 md:mt-16 reveal reveal--scale reveal-delay-2"
+            />
+
+            <Figure
               src={gardenTable}
               alt={t.figures.gardenAlt}
               width={242}
               height={153}
               index="05"
               caption={t.figures.gardenCaption}
-              className="md:col-start-9 md:col-span-4 md:row-start-2 mt-10 md:mt-16 reveal reveal--tilt-r reveal-delay-2"
+              className="md:col-start-9 md:col-span-4 md:row-start-2 mt-10 md:mt-16 reveal reveal--tilt-r reveal-delay-3"
             />
           </div>
         </section>
