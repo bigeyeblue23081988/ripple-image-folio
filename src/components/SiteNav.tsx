@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/house/logo.png";
 
 const links = [
   { label: "What we create", href: "#what-we-create" },
@@ -26,14 +25,17 @@ export function SiteNav() {
     >
       <div className="container-wide">
         <div className="flex items-center justify-between py-6 md:py-8">
-          <a href="#top" aria-label="Bigeye Blue — back to top" className="shrink-0">
-            <img
-              src={logo}
-              alt="Bigeye Blue"
-              width={284}
-              height={120}
-              className="h-12 md:h-16 w-auto"
-            />
+          <a
+            href="#top"
+            aria-label="Bigeye Blue — back to top"
+            className="shrink-0 group"
+          >
+            <span className="text-[1.65rem] md:text-[2.15rem] font-black tracking-[-0.06em] text-foreground uppercase leading-none">
+              bigeye
+              <span className="inline-block transition-colors duration-300 group-hover:text-accent group-hover:[text-shadow:0_0_18px_hsl(43_90%_65%_/_.4)]">
+                blue
+              </span>
+            </span>
           </a>
 
           <nav aria-label="Main" className="flex-1">
