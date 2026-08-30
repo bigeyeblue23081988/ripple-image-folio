@@ -201,20 +201,20 @@ const Index = () => {
         </section>
 
         {/* ---------------- Contact ---------------- */}
-        <section id="contact" className="bg-accent text-accent-foreground scroll-mt-24">
+        <section id="contact" className="bg-foreground text-background scroll-mt-24">
           <div className="container-wide py-24 md:py-40">
             <p className="plate-label plate-label--invert mb-16 md:mb-24 reveal">Contact</p>
 
             <div className="text-center reveal">
               <a
                 href="mailto:office@bigeyeblue.be"
-                className="block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:opacity-60 transition-opacity break-all sm:break-normal"
+                className="block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:text-accent transition-colors break-all sm:break-normal"
               >
                 office@bigeyeblue.be
               </a>
               <a
                 href="tel:+32472715544"
-                className="mt-4 block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:opacity-60 transition-opacity"
+                className="mt-4 block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent transition-colors"
               >
                 +32 472 71 55 44
               </a>
