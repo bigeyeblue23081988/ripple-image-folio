@@ -10,6 +10,7 @@ import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
 import kitchen from "@/assets/house/kitchen.jpg";
 import guestRoom from "@/assets/house/guest-room.jpg";
+import logoWhite from "@/assets/bigeyeblue-logo-white.png.asset.json";
 
 const Index = () => {
   useReveal();
@@ -219,9 +220,19 @@ const Index = () => {
                 +32 472 71 55 44
               </a>
             </div>
+
+            <div className="mt-20 md:mt-28 flex justify-center reveal">
+              <img
+                src={logoWhite.url}
+                alt="Bigeye Blue"
+                loading="lazy"
+                className="w-56 md:w-80 opacity-90"
+              />
+            </div>
           </div>
         </section>
       </main>
+
 
       <footer className="container-wide pb-12">
         <div className="flex flex-col sm:flex-row justify-between gap-3 border-t border-separator pt-6 text-xs text-foreground/50">
