@@ -29,18 +29,12 @@ export function SiteNav() {
           <a
             href="#top"
             aria-label="Bigeye Blue — back to top"
-            className="relative shrink-0 group"
+            className="shrink-0 group"
           >
             <img
-              src={logoBlack}
+              src={logo}
               alt="Bigeye Blue"
-              className="h-10 md:h-14 w-auto transition-[opacity,transform] duration-300 group-hover:scale-[1.02]"
-            />
-            <img
-              src={logoBlueGold}
-              alt=""
-              aria-hidden="true"
-              className="absolute inset-0 h-10 md:h-14 w-auto opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"
+              className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-[1.02]"
             />
           </a>
 
