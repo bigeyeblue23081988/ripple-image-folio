@@ -131,7 +131,7 @@ const Index = () => {
               height={442}
               index="04"
               caption={t.figures.stairwellCaption}
-              className="md:col-start-2 md:col-span-7 lg:col-span-6 md:row-start-2 reveal reveal--scale reveal-delay-2"
+              className="md:col-start-1 md:col-span-7 lg:col-span-6 md:row-start-2 reveal reveal--scale reveal-delay-2"
             />
 
             <Figure
@@ -141,7 +141,7 @@ const Index = () => {
               height={153}
               index="05"
               caption={t.figures.gardenCaption}
-              className="md:col-start-10 md:col-span-3 lg:col-span-2 md:row-start-2 self-end mt-16 md:mt-0 reveal reveal--tilt-r reveal-delay-3"
+              className="md:col-start-8 lg:col-start-7 md:col-span-5 lg:col-span-4 md:row-start-2 self-end mt-16 md:mt-0 reveal reveal--tilt-r reveal-delay-3"
             />
           </div>
         </section>
