@@ -36,13 +36,13 @@ export function SiteNav() {
             />
           </a>
 
-          <nav aria-label="Main">
-            <ul className="flex items-center gap-5 md:gap-9">
+          <nav aria-label="Main" className="flex-1">
+            <ul className="flex items-center justify-end sm:justify-between sm:pl-10 md:pl-24 gap-5">
               {links.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="hidden sm:inline-block text-[13px] md:text-sm text-foreground/70 hover:text-foreground transition-colors"
+                    className="hidden sm:inline-block text-xs md:text-sm font-bold uppercase tracking-tight text-foreground hover:opacity-50 transition-opacity"
                   >
                     {link.label}
                   </a>
@@ -51,7 +51,7 @@ export function SiteNav() {
               <li className="sm:hidden">
                 <a
                   href="#contact"
-                  className="text-[13px] font-bold text-foreground"
+                  className="text-[13px] font-bold uppercase text-foreground"
                 >
                   Contact
                 </a>
