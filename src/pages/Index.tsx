@@ -26,7 +26,7 @@ const Index = () => {
             alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
             width={900}
             height={491}
-            fetchpriority="high"
+            fetchPriority="high"
             className="w-full h-[70vh] md:h-[85vh] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
