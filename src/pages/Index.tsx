@@ -4,6 +4,7 @@ import { Clients } from "@/components/Clients";
 import { TickerBand } from "@/components/TickerBand";
 import { useReveal } from "@/hooks/use-reveal";
 import { useParallax } from "@/hooks/use-parallax";
+import { useLang } from "@/i18n/LanguageProvider";
 
 import exterior from "@/assets/house/exterior.jpg";
 import hallway from "@/assets/house/hallway.jpg";
@@ -13,13 +14,13 @@ import gardenTable from "@/assets/house/garden-table.jpg";
 import kitchen from "@/assets/house/kitchen.jpg";
 import guestRoom from "@/assets/house/guest-room.jpg";
 
-
 const Index = () => {
+  const { t, lang } = useLang();
   useReveal();
   useParallax();
 
   return (
-    <div id="top" className="min-h-screen">
+    <div id="top" key={lang} className="min-h-screen">
       <SiteNav />
 
       <main>
@@ -29,12 +30,12 @@ const Index = () => {
             <div className="relative md:col-start-1 md:col-span-8 md:row-start-1">
               <Figure
                 src={exterior}
-                alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
+                alt={t.figures.houseAlt}
                 width={900}
                 height={491}
                 index="01"
-                caption="The house"
-                sub="Ghent, Belgium"
+                caption={t.figures.houseCaption}
+                sub={t.figures.houseSub}
                 priority
                 className="animate-hero-zoom"
               />
@@ -44,29 +45,28 @@ const Index = () => {
               <h1 className="statement">
                 <strong>
                   <span className="hero-mask">
-                    <span className="hero-line">Looking beyond</span>
+                    <span className="hero-line">{t.hero.line1}</span>
                   </span>
                   <span className="hero-mask">
                     <span className="hero-line hero-line--2">
-                      the obvious<span className="text-accent">.</span>
+                      {t.hero.line2}
+                      <span className="text-accent">.</span>
                     </span>
                   </span>
                 </strong>
                 <span className="font-normal hero-mask">
-                  <span className="hero-line hero-line--2">
-                    A house where people and stories meet.
-                  </span>
+                  <span className="hero-line hero-line--2">{t.hero.sub}</span>
                 </span>
               </h1>
             </div>
 
             <Figure
               src={hallway}
-              alt="The entrance hall, with a floating staircase, looking through to the courtyard"
+              alt={t.figures.hallAlt}
               width={630}
               height={296}
               index="02"
-              caption="Entrance hall"
+              caption={t.figures.hallCaption}
               className="md:col-start-8 md:col-span-5 md:row-start-2 mt-12 md:mt-20 reveal reveal--right"
             />
           </div>
@@ -81,22 +81,16 @@ const Index = () => {
         >
           <div className="md:grid md:grid-cols-12">
             <div className="md:col-start-3 md:col-span-8">
-              <p className="plate-label mb-8 reveal">What we create</p>
+              <p className="plate-label mb-8 reveal">{t.create.label}</p>
               <h2 className="statement reveal reveal-delay-1">
                 <strong>
-                  What we create<span className="text-accent">.</span>
+                  {t.create.titleStrong}
+                  <span className="text-accent">.</span>
                 </strong>
-                <span className="font-normal">
-                  Interviews. Podcasts. Documentaries. Stories.
-                </span>
+                <span className="font-normal">{t.create.titleLight}</span>
               </h2>
               <p className="body-copy mt-8 max-w-xl reveal reveal-delay-2">
-                Bigeye Blue is a production house led by journalist and
-                director Marieke Dermul. We tell stories for broadcasters,
-                brands and organisations — from documentary and reportage to
-                podcast series and online content. Come to us with an idea;
-                we develop it, record it in our own studio in Ghent, and
-                produce it from first conversation to final cut.
+                {t.create.body}
               </p>
             </div>
           </div>
@@ -107,24 +101,28 @@ const Index = () => {
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
             <Figure
               src={courtyardGreen}
-              alt="The inner courtyard, framed by a tall green hedge and whitewashed brick"
+              alt={t.figures.courtyardAlt}
               width={736}
               height={402}
               index="03"
-              caption="Inner courtyard"
+              caption={t.figures.courtyardCaption}
               className="md:col-start-2 md:col-span-6 md:row-start-1 reveal reveal--left"
             />
 
             <div className="md:col-start-9 md:col-span-4 md:row-start-1 self-end mt-12 md:mt-0 md:pb-10 reveal reveal--right reveal-delay-1">
-              <p className="plate-label mb-8">How we work</p>
+              <p className="plate-label mb-8">{t.how.label}</p>
               <h2 className="statement">
                 <strong>
-                  How we work<span className="text-accent">.</span>
+                  {t.how.titleStrong}
+                  <span className="text-accent">.</span>
                 </strong>
                 <span className="font-normal">
-                  Ideas<span className="text-accent">.</span> Stories
-                  <span className="text-accent">.</span> Impact
-                  <span className="text-accent">.</span>
+                  {t.how.words.map((word) => (
+                    <span key={word}>
+                      {word}
+                      <span className="text-accent">.</span>{" "}
+                    </span>
+                  ))}
                 </span>
               </h2>
             </div>
@@ -136,43 +134,36 @@ const Index = () => {
           id="filming-location"
           className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
-          <p className="plate-label mb-10 reveal">Filming location</p>
+          <p className="plate-label mb-10 reveal">{t.location.label}</p>
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
             <Figure
               src={stairwell}
-              alt="Looking up through the industrial steel-and-glass stairwell towards the skylight"
+              alt={t.figures.stairwellAlt}
               width={810}
               height={442}
               index="04"
-              caption="Steel & glass stairwell"
+              caption={t.figures.stairwellCaption}
               className="md:col-start-1 md:col-span-7 md:row-start-1 reveal reveal--scale"
             />
 
             <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal reveal--right reveal-delay-1">
               <h2 className="statement mb-5">
                 <strong>
-                  Filming location
+                  {t.location.titleStrong}
                   <span className="text-accent">.</span>
                 </strong>
               </h2>
-              <p className="body-copy">
-                The whole house is available as a filming location and
-                recording studio for documentaries, fiction, interviews,
-                podcasts, photo shoots and digital content. A unique blend of
-                historic character and contemporary design creates a setting
-                that is both authentic and visually compelling — fifteen
-                minutes from Ghent's historic centre.
-              </p>
+              <p className="body-copy">{t.location.body}</p>
             </div>
 
             <Figure
               src={gardenTable}
-              alt="A long wooden table in the garden, sheltered between climbing green walls"
+              alt={t.figures.gardenAlt}
               width={242}
               height={153}
               index="05"
-              caption="The garden table"
+              caption={t.figures.gardenCaption}
               className="md:col-start-9 md:col-span-4 md:row-start-2 mt-10 md:mt-16 reveal reveal--tilt-r reveal-delay-2"
             />
           </div>
@@ -183,49 +174,46 @@ const Index = () => {
           id="guesthouse"
           className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
-          <p className="plate-label mb-10 reveal">Guesthouse</p>
+          <p className="plate-label mb-10 reveal">{t.guesthouse.label}</p>
 
           <h2 className="statement mb-12 md:mb-16 reveal">
-            <strong>Guesthouse,</strong>
+            <strong>{t.guesthouse.titleLine1}</strong>
             <strong>
-              where anyone is welcome<span className="text-accent">.</span>
+              {t.guesthouse.titleLine2}
+              <span className="text-accent">.</span>
             </strong>
           </h2>
 
           <div className="md:grid md:grid-cols-12 md:gap-x-8">
             <Figure
               src={kitchen}
-              alt="The kitchen under whitewashed timber beams, with a wooden worktop and a long dining table"
+              alt={t.figures.kitchenAlt}
               width={900}
               height={478}
               index="06"
-              caption="The kitchen"
+              caption={t.figures.kitchenCaption}
               className="md:col-start-1 md:col-span-6 md:row-start-1 reveal reveal--left"
             />
 
             <Figure
               src={guestRoom}
-              alt="The guest room under white timber trusses, with a box-spring bed and skylights"
+              alt={t.figures.guestRoomAlt}
               width={1536}
               height={1024}
               index="07"
-              caption="Guest room"
+              caption={t.figures.guestRoomCaption}
               className="md:col-start-8 md:col-span-5 md:row-start-1 self-end mt-10 md:mt-0 md:translate-y-20 reveal reveal--right reveal-delay-1"
             />
 
             <div className="md:col-start-1 md:col-span-4 md:row-start-2 mt-12 md:mt-24 reveal reveal--tilt-l reveal-delay-2">
-              <p className="body-copy">
-                Once a 19th-century coach house, The Industrial Loft has been
-                transformed into a distinctive guest house where heritage and
-                contemporary comfort exist in perfect balance.
-              </p>
+              <p className="body-copy">{t.guesthouse.body}</p>
             </div>
           </div>
         </section>
 
         {/* ---------------- Clients ---------------- */}
         <section className="container-wide pb-28 md:pb-40">
-          <p className="plate-label mb-14 md:mb-8 reveal">Clients</p>
+          <p className="plate-label mb-14 md:mb-8 reveal">{t.clients.label}</p>
 
           <div className="reveal">
             <Clients />
@@ -236,13 +224,15 @@ const Index = () => {
         <TickerBand />
         <section id="contact" className="bg-foreground text-background scroll-mt-24">
           <div className="container-wide py-24 md:py-40">
-            <p className="plate-label plate-label--invert mb-16 md:mb-24 reveal">Contact</p>
+            <p className="plate-label plate-label--invert mb-16 md:mb-24 reveal">
+              {t.contact.label}
+            </p>
 
             <div className="text-center reveal">
               <div>
                 <a
                   href="mailto:office@bigeyeblue.be"
-                  className="u-sweep inline-block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:text-accent break-all sm:break-normal"
+                  className="u-sweep inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
                 >
                   office@bigeyeblue.be
                 </a>
@@ -256,15 +246,13 @@ const Index = () => {
                 </a>
               </div>
             </div>
-
           </div>
         </section>
       </main>
 
-
       <footer className="container-wide pb-12">
         <div className="flex flex-col sm:flex-row justify-between gap-3 border-t border-separator pt-6 text-xs text-foreground/50">
-          <p>Bigeye Blue — Ghent, Belgium</p>
+          <p>{t.footer.place}</p>
           <p>© {new Date().getFullYear()} Bigeye Blue</p>
         </div>
       </footer>
