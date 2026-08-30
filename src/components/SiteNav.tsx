@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/house/logo-black.png";
+import logoBlack from "@/assets/house/logo-black.png";
+import logoBlueGold from "@/assets/house/logo-blue-gold.png";
 
 const links = [
   { label: "What we create", href: "#what-we-create" },
