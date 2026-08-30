@@ -55,7 +55,7 @@ export function Clients() {
   }, []);
 
   // Row index per mark (y positions ascend row by row).
-  const rowOf = (y: number) => Math.round(y / 84);
+  const rowOf = (y: number) => Math.round(y / 120);
 
   return (
     <>
@@ -63,7 +63,7 @@ export function Clients() {
       <div
         ref={fieldRef}
         className="hidden md:block relative group/field"
-        style={{ height: 400 }}
+        style={{ height: 540 }}
       >
         {clients.map((client, i) => (
           <span
@@ -73,10 +73,10 @@ export function Clients() {
             style={{ left: `${client.x}%`, top: client.y }}
           >
             <span
-              className="client-mark block text-sm tracking-[0.18em] text-foreground/85 cursor-default transition-[opacity,color,letter-spacing] duration-500 group-hover/field:opacity-30 hover:!opacity-100 hover:text-foreground hover:tracking-[0.26em]"
+              className="client-mark block text-2xl lg:text-3xl font-semibold tracking-[0.1em] text-foreground/90 cursor-default transition-[opacity,color,letter-spacing,font-weight] duration-500 group-hover/field:opacity-25 hover:!opacity-100 hover:text-foreground hover:tracking-[0.2em] hover:font-bold"
               style={{
                 animationDelay: `${i * 0.1}s, ${0.9 + i * 0.1}s`,
-                animationDuration: `1.1s, ${9 + (i % 4) * 2.5}s`,
+                animationDuration: `1.1s, ${10 + (i % 4) * 2.5}s`,
               }}
             >
               {client.name}
@@ -87,12 +87,12 @@ export function Clients() {
 
       {/* Mobile — endless ticker */}
       <div className="md:hidden relative overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]">
-        <ul className="flex w-max animate-marquee gap-8 py-1">
+        <ul className="flex w-max animate-marquee gap-10 py-2">
           {[...clients, ...clients].map((client, i) => (
             <li
               key={`${client.name}-${i}`}
               aria-hidden={i >= clients.length}
-              className="text-xs tracking-[0.18em] text-foreground/85 whitespace-nowrap"
+              className="text-lg font-medium tracking-[0.1em] text-foreground/90 whitespace-nowrap"
             >
               {client.name}
             </li>
