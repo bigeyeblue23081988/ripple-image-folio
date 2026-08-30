@@ -20,29 +20,36 @@ const Index = () => {
 
       <main>
         {/* ---------------- Hero ---------------- */}
-        <section className="container-wide pt-2 pb-28 md:pb-44">
-          <div className="md:grid md:grid-cols-12 md:gap-x-8">
-            <Figure
-              src={exterior}
-              alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
-              width={900}
-              height={491}
-              index="01"
-              caption="The house"
-              sub="Ghent, Belgium"
-              priority
-              className="md:col-start-1 md:col-span-8 md:row-start-1 animate-hero-zoom"
-            />
-
-            <div className="md:col-start-10 md:col-span-3 md:row-start-1 self-center mt-10 md:mt-0 animate-fade-in-up">
-              <h1 className="statement">
-                <strong>Looking beyond the obvious.</strong>
-                <span className="font-normal">
-                  A house where people and stories meet.
-                </span>
+        <section className="relative animate-hero-zoom overflow-hidden">
+          <img
+            src={exterior}
+            alt="The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert"
+            width={900}
+            height={491}
+            fetchpriority="high"
+            className="w-full h-[70vh] md:h-[85vh] object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0">
+            <div className="container-wide pb-10 md:pb-16 animate-fade-in-up">
+              <p className="text-[11px] md:text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-3 md:mb-4">
+                Production house — Ghent
+              </p>
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] text-white">
+                Looking beyond
+                <br />
+                the obvious.
               </h1>
+              <p className="mt-4 md:mt-6 text-base md:text-lg text-white/85 max-w-md">
+                A house where people and stories meet.
+              </p>
             </div>
+          </div>
+        </section>
 
+        {/* ---------------- Entrance hall ---------------- */}
+        <section className="container-wide pt-16 md:pt-28 pb-28 md:pb-44">
+          <div className="md:grid md:grid-cols-12 md:gap-x-8">
             <Figure
               src={hallway}
               alt="The entrance hall, with a floating staircase, looking through to the courtyard"
@@ -50,7 +57,7 @@ const Index = () => {
               height={296}
               index="02"
               caption="Entrance hall"
-              className="md:col-start-8 md:col-span-5 md:row-start-2 mt-12 md:mt-20 reveal"
+              className="md:col-start-8 md:col-span-5 mt-12 md:mt-0 reveal"
             />
           </div>
         </section>
