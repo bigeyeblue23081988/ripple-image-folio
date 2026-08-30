@@ -4,7 +4,7 @@ import { Clients } from "@/components/Clients";
 import { useReveal } from "@/hooks/use-reveal";
 
 import exterior from "@/assets/house/exterior.jpg";
-import hallway from "@/assets/house/hallway.jpg";
+import hallway from "@/assets/house/hall.jpg";
 import courtyardGreen from "@/assets/house/courtyard-green.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
@@ -45,7 +45,7 @@ const Index = () => {
 
             <Figure
               src={hallway}
-              alt="The entrance hall, with a floating staircase and a blue sculpture, looking through to the courtyard"
+              alt="The entrance hall, with a floating staircase, looking through to the courtyard"
               width={630}
               height={344}
               index="02"
