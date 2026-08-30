@@ -94,14 +94,14 @@
     @apply text-[15px] md:text-base leading-relaxed text-foreground/90;
   }
 
-  /* Gallery plate label: numeral, hairline rule, uppercase title. */
+  /* Section header: bold uppercase title with a hairline running out. */
   .plate-label {
-    @apply flex items-center gap-4 text-[10px] uppercase tracking-[0.22em] text-foreground/55;
+    @apply flex items-center gap-6 text-sm font-bold uppercase tracking-tight text-foreground;
   }
 
   .plate-label::after {
     content: '';
-    @apply flex-1 h-px bg-separator;
+    @apply flex-1 h-px bg-foreground/20;
   }
 }
 

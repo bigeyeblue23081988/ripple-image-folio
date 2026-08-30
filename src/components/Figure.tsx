@@ -3,18 +3,22 @@ interface FigureProps {
   alt: string;
   width: number;
   height: number;
-  /** Gallery-style plate number, e.g. "01". */
+  /** Gallery index number, e.g. "01". Shown as a "01 / 07" chip. */
   index?: string;
-  /** Short caption shown beside the plate number. */
+  /** Work title shown next to the hairline tick. */
   caption?: string;
+  /** Small secondary line under the title (e.g. location). */
+  sub?: string;
   className?: string;
   priority?: boolean;
 }
 
+/** Total number of plates in the series, for the "01 / 07" chip. */
+const PLATE_TOTAL = "07";
+
 /**
- * A framed photograph. The frame clips a slow zoom on hover and a
- * hairline caption sits underneath, the way a plate is labelled in a
- * gallery guide.
+ * A framed photograph labelled the way a contemporary gallery labels a
+ * work: a hairline tick, the title in small caps, and a dark index chip.
  */
 export function Figure({
   src,
@@ -23,6 +27,7 @@ export function Figure({
   height,
   index,
   caption,
+  sub,
   className = "",
   priority = false,
 }: FigureProps) {
@@ -41,15 +46,28 @@ export function Figure({
       </div>
 
       {(index || caption) && (
-        <figcaption className="mt-3 flex items-baseline gap-3 border-t border-separator pt-2">
+        <figcaption className="mt-5 flex items-start justify-between gap-4">
+          <div className="flex items-start gap-3">
+            <span
+              aria-hidden
+              className="mt-0.5 block h-9 w-px shrink-0 bg-foreground"
+            />
+            <div>
+              {caption && (
+                <p className="text-xs font-semibold uppercase tracking-wider">
+                  {caption}
+                </p>
+              )}
+              {sub && (
+                <p className="mt-1 text-[10px] font-light uppercase tracking-[0.18em] text-foreground/50">
+                  {sub}
+                </p>
+              )}
+            </div>
+          </div>
           {index && (
-            <span className="text-[10px] tabular-nums tracking-[0.2em] text-foreground/45">
-              {index}
-            </span>
-          )}
-          {caption && (
-            <span className="text-[10px] uppercase tracking-[0.2em] text-foreground/55">
-              {caption}
+            <span className="shrink-0 bg-foreground px-1.5 py-0.5 font-mono text-[10px] tracking-tight tabular-nums text-background">
+              {index} / {PLATE_TOTAL}
             </span>
           )}
         </figcaption>
