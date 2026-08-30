@@ -23,10 +23,10 @@
     --muted: 37 25% 86%;
     --muted-foreground: 0 0% 38%;
 
-    /* The blue in "Bigeye Blue" — a deep inky gallery blue, used
-       sparingly: hover states, index chips, the contact band. */
-    --accent: 215 58% 30%;
-    --accent-foreground: 37 56% 94%;
+    /* A warm gold accent used sparingly: hover states, index chips,
+       selection highlight. Keeps the site minimal but daring. */
+    --accent: 43 55% 52%;
+    --accent-foreground: 0 0% 7%;
 
     --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
