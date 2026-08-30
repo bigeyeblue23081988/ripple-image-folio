@@ -233,7 +233,7 @@
       115deg,
       transparent 0%,
       transparent 30%,
-      hsl(43 96% 78% / 0.7) 50%,
+      hsl(43 96% 82% / 0.75) 50%,
       transparent 70%,
       transparent 100%
     );
@@ -256,7 +256,7 @@
   .group:hover .gold-glow,
   .gold-glow:hover {
     color: hsl(var(--accent));
-    text-shadow: 0 0 18px hsl(43 90% 65% / 0.45);
+    text-shadow: 0 0 22px hsl(43 92% 68% / 0.5);
   }
 
   @media (prefers-reduced-motion: reduce) {
