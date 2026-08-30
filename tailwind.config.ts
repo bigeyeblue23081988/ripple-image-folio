@@ -19,8 +19,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Open Sauce One', 'system-ui', 'sans-serif'],
-        display: ['Open Sauce One', 'system-ui', 'sans-serif'],
+        sans: ['Inter Tight Variable', 'system-ui', 'sans-serif'],
+        display: ['Inter Tight Variable', 'system-ui', 'sans-serif'],
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
       colors: {
