@@ -69,6 +69,14 @@ const Index = () => {
                   Interviews. Podcasts. Documentaries. Stories.
                 </span>
               </h2>
+              <p className="body-copy mt-8 max-w-xl">
+                Bigeye Blue is a production house led by journalist and
+                director Marieke Dermul. We tell stories for broadcasters,
+                brands and organisations — from documentary and reportage to
+                podcast series and branded content. Come to us with an idea;
+                we develop it, record it in our own studio in Ghent, and
+                produce it from first conversation to final cut.
+              </p>
             </div>
           </div>
         </section>
@@ -119,11 +127,12 @@ const Index = () => {
                 <strong>A set that is already built.</strong>
               </h2>
               <p className="body-copy">
-                The whole house is available as a recording location for
-                documentaries, fiction, interviews, photo shoots and digital
-                content. A unique blend of historic character and contemporary
-                design creates a setting that is both authentic and visually
-                compelling.
+                The whole house is available as a filming location and
+                recording studio for documentaries, fiction, interviews,
+                podcasts, photo shoots and digital content. A unique blend of
+                historic character and contemporary design creates a setting
+                that is both authentic and visually compelling — fifteen
+                minutes from Ghent's historic centre.
               </p>
             </div>
 
