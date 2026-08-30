@@ -86,8 +86,8 @@ export const translations = {
       backToTop: "Bigeye Blue — terug naar boven",
     },
     hero: {
-      line1: "Kijken voorbij",
-      line2: "de evidentie",
+      line1: "Looking beyond",
+      line2: "the obvious",
       sub: "Een huis waar mensen en verhalen elkaar ontmoeten.",
     },
     figures: {
@@ -128,7 +128,7 @@ export const translations = {
     location: {
       label: "Filmlocatie",
       titleStrong: "Filmlocatie",
-      body: "Het volledige huis is beschikbaar als filmlocatie en opnamestudio voor documentaires, fictie, interviews, podcasts, fotoshoots en digitale content. Een unieke mix van historisch karakter en hedendaags design zorgt voor een decor dat authentiek én visueel sterk is — op vijftien minuten van het historische centrum van Gent.",
+      body: "Het volledige huis is beschikbaar als filmlocatie en opnamestudio voor documentaires, fictie, interviews, podcasts, fotoshoots en digitale content. Een unieke mix van historisch karakter en hedendaags design zorgt voor een decor dat authentiek én visueel sterk is — op vijf minuten van het historische centrum van Gent.",
     },
     guesthouse: {
       label: "Gastenverblijf",
