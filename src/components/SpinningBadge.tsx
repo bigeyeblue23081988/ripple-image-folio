@@ -7,7 +7,7 @@ export function SpinningBadge({ className = "" }: { className?: string }) {
   return (
     <div
       aria-hidden
-      className={`pointer-events-none relative h-28 w-28 md:h-36 md:w-36 ${className}`}
+      className={`pointer-events-none block h-28 w-28 md:h-36 md:w-36 ${className}`}
     >
       <svg
         viewBox="0 0 100 100"
