@@ -57,7 +57,7 @@ const Index = () => {
               height={296}
               index="02"
               caption="Entrance hall"
-              className="md:col-start-8 md:col-span-5 mt-12 md:mt-0 reveal"
+              className="md:col-start-8 md:col-span-5 mt-12 md:mt-0 reveal reveal--right"
             />
           </div>
         </section>
@@ -68,15 +68,15 @@ const Index = () => {
           className="container-wide pb-28 md:pb-44 scroll-mt-24"
         >
           <div className="md:grid md:grid-cols-12">
-            <div className="md:col-start-3 md:col-span-8 reveal">
-              <p className="plate-label mb-8">What we create</p>
-              <h2 className="statement">
+            <div className="md:col-start-3 md:col-span-8">
+              <p className="plate-label mb-8 reveal">What we create</p>
+              <h2 className="statement reveal reveal-delay-1">
                 <strong>What we create.</strong>
                 <span className="font-normal">
                   Interviews. Podcasts. Documentaries. Stories.
                 </span>
               </h2>
-              <p className="body-copy mt-8 max-w-xl">
+              <p className="body-copy mt-8 max-w-xl reveal reveal-delay-2">
                 Bigeye Blue is a production house led by journalist and
                 director Marieke Dermul. We tell stories for broadcasters,
                 brands and organisations — from documentary and reportage to
@@ -98,10 +98,10 @@ const Index = () => {
               height={402}
               index="03"
               caption="Inner courtyard"
-              className="md:col-start-2 md:col-span-6 md:row-start-1 reveal"
+              className="md:col-start-2 md:col-span-6 md:row-start-1 reveal reveal--left"
             />
 
-            <div className="md:col-start-9 md:col-span-4 md:row-start-1 self-end mt-12 md:mt-0 md:pb-10 reveal">
+            <div className="md:col-start-9 md:col-span-4 md:row-start-1 self-end mt-12 md:mt-0 md:pb-10 reveal reveal--right reveal-delay-1">
               <p className="plate-label mb-8">How we work</p>
               <h2 className="statement">
                 <strong>How we work.</strong>
@@ -126,10 +126,10 @@ const Index = () => {
               height={442}
               index="04"
               caption="Steel & glass stairwell"
-              className="md:col-start-1 md:col-span-7 md:row-start-1 reveal"
+              className="md:col-start-1 md:col-span-7 md:row-start-1 reveal reveal--scale"
             />
 
-            <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal">
+            <div className="md:col-start-9 md:col-span-4 md:row-start-1 mt-10 md:mt-0 reveal reveal--right reveal-delay-1">
               <h2 className="statement mb-5">
                 <strong>A set that is already built.</strong>
               </h2>
@@ -150,7 +150,7 @@ const Index = () => {
               height={153}
               index="05"
               caption="The garden table"
-              className="md:col-start-9 md:col-span-4 md:row-start-2 mt-10 md:mt-16 reveal"
+              className="md:col-start-9 md:col-span-4 md:row-start-2 mt-10 md:mt-16 reveal reveal--tilt-r reveal-delay-2"
             />
           </div>
         </section>
@@ -175,7 +175,7 @@ const Index = () => {
               height={478}
               index="06"
               caption="The kitchen"
-              className="md:col-start-1 md:col-span-6 md:row-start-1 reveal"
+              className="md:col-start-1 md:col-span-6 md:row-start-1 reveal reveal--left"
             />
 
             <Figure
@@ -185,10 +185,10 @@ const Index = () => {
               height={1024}
               index="07"
               caption="Guest room"
-              className="md:col-start-8 md:col-span-5 md:row-start-1 self-end mt-10 md:mt-0 md:translate-y-20 reveal"
+              className="md:col-start-8 md:col-span-5 md:row-start-1 self-end mt-10 md:mt-0 md:translate-y-20 reveal reveal--right reveal-delay-1"
             />
 
-            <div className="md:col-start-1 md:col-span-4 md:row-start-2 mt-12 md:mt-24 reveal">
+            <div className="md:col-start-1 md:col-span-4 md:row-start-2 mt-12 md:mt-24 reveal reveal--tilt-l reveal-delay-2">
               <p className="body-copy">
                 Once a 19th-century coach house, The Industrial Loft has been
                 transformed into a distinctive guest house where heritage and
