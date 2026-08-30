@@ -21,10 +21,10 @@ export const translations = {
         "The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert",
       hallCaption: "Entrance hall",
       hallAlt:
-        "The entrance hall, with a floating staircase, looking through to the courtyard",
-      courtyardCaption: "Inner courtyard",
-      courtyardAlt:
-        "The inner courtyard, framed by a tall green hedge and whitewashed brick",
+        "The entrance hall, with a floating staircase, looking through to the patio",
+      patioCaption: "Patio",
+      patioAlt:
+        "The patio, a quiet outdoor courtyard framed by whitewashed brick and green planting",
       stairwellCaption: "Steel & glass stairwell",
       stairwellAlt:
         "Looking up through the industrial steel-and-glass stairwell towards the skylight",
@@ -43,11 +43,6 @@ export const translations = {
       titleStrong: "What we create",
       titleLight: "Interviews. Podcasts. Documentaries. Stories.",
       body: "Bigeye Blue is a production house led by journalist and director Marieke Dermul. We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content. Come to us with an idea; we develop it, record it in our own studio in Ghent, and produce it from first conversation to final cut.",
-    },
-    how: {
-      label: "How we work",
-      titleStrong: "How we work",
-      words: ["Ideas", "Stories", "Impact"],
     },
     location: {
       label: "Filming location",
@@ -97,10 +92,10 @@ export const translations = {
         "Het Bigeye Blue-huis in Gent bij valavond, een 19de-eeuwse bakstenen gevel met een hedendaagse glaspartij",
       hallCaption: "Inkomhal",
       hallAlt:
-        "De inkomhal met zwevende trap en doorkijk naar de binnenkoer",
-      courtyardCaption: "Binnenkoer",
-      courtyardAlt:
-        "De binnenkoer, omkaderd door een hoge groene haag en witgekalkte baksteen",
+        "De inkomhal met zwevende trap en doorkijk naar de patio",
+      patioCaption: "Patio",
+      patioAlt:
+        "De patio, een rustige buitenruimte omkaderd door witgekalkte baksteen en groen",
       stairwellCaption: "Trappenhuis in staal & glas",
       stairwellAlt:
         "Zicht omhoog door het industriële trappenhuis in staal en glas richting het dakraam",
@@ -119,11 +114,6 @@ export const translations = {
       titleStrong: "Wat we maken",
       titleLight: "Interviews. Podcasts. Documentaires. Verhalen.",
       body: "Bigeye Blue is een productiehuis onder leiding van journaliste en regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content. Kom bij ons met een idee; wij ontwikkelen het, nemen het op in onze eigen studio in Gent en produceren het van eerste gesprek tot finale montage.",
-    },
-    how: {
-      label: "Hoe we werken",
-      titleStrong: "Hoe we werken",
-      words: ["Ideeën", "Verhalen", "Impact"],
     },
     location: {
       label: "Filmlocatie",

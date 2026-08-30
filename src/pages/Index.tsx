@@ -8,7 +8,7 @@ import { useLang } from "@/i18n/LanguageProvider";
 
 import exterior from "@/assets/house/exterior.jpg";
 import hallway from "@/assets/house/hallway.jpg";
-import courtyardGreen from "@/assets/house/courtyard-green.jpg";
+import patio from "@/assets/house/patio.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
 import kitchen from "@/assets/house/kitchen.jpg";
