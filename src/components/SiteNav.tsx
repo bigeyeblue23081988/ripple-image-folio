@@ -25,7 +25,11 @@ export function SiteNav() {
       }`}
     >
       <div className="container-wide">
-        <div className="flex items-center justify-between py-6 md:py-8">
+        <div
+          className={`flex items-center justify-between transition-all duration-500 ${
+            scrolled ? "py-3 md:py-4" : "py-6 md:py-8"
+          }`}
+        >
           <a
             href="#top"
             aria-label="Bigeye Blue — back to top"
@@ -34,7 +38,9 @@ export function SiteNav() {
             <img
               src={logo}
               alt="Bigeye Blue"
-              className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-[1.02]"
+              className={`w-auto transition-all duration-500 group-hover:scale-[1.02] ${
+                scrolled ? "h-8 md:h-10" : "h-10 md:h-14"
+              }`}
             />
           </a>
 
@@ -44,7 +50,7 @@ export function SiteNav() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="hidden sm:inline-block text-xs md:text-sm font-bold uppercase tracking-tight text-foreground transition-[color,text-shadow] duration-300 hover:text-accent hover:[text-shadow:0_0_18px_hsl(43_90%_65%_/_.4)]"
+                    className="nav-link hidden sm:inline-block text-xs md:text-sm font-bold uppercase tracking-tight text-foreground transition-colors duration-300 hover:text-accent"
                   >
                     {link.label}
                   </a>

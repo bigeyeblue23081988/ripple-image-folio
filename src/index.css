@@ -354,9 +354,13 @@
     }
     .animate-fade-in,
     .animate-fade-in-up,
-    .animate-marquee {
+    .animate-marquee,
+    .animate-spin-slow,
+    .hero-line {
       animation: none;
     }
+    .hero-line { transform: none; }
+    [data-parallax] { transform: none !important; }
     .client-mark {
       opacity: 1;
       animation: none;
