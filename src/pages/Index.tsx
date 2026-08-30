@@ -39,7 +39,7 @@ const Index = () => {
                 priority
                 className="animate-hero-zoom"
               />
-              <SpinningBadge className="absolute -bottom-10 -right-4 md:-bottom-12 md:-right-10 hidden sm:block" />
+              <SpinningBadge className="absolute bottom-14 right-2 md:-right-8 hidden sm:block" />
             </div>
 
             <div className="md:col-start-10 md:col-span-3 md:row-start-1 self-center mt-10 md:mt-0">
@@ -241,18 +241,22 @@ const Index = () => {
             <p className="plate-label plate-label--invert mb-16 md:mb-24 reveal">Contact</p>
 
             <div className="text-center reveal">
-              <a
-                href="mailto:office@bigeyeblue.be"
-                className="u-sweep inline-block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:text-accent break-all sm:break-normal"
-              >
-                office@bigeyeblue.be
-              </a>
-              <a
-                href="tel:+32472715544"
-                className="u-sweep mt-4 inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
-              >
-                +32 472 71 55 44
-              </a>
+              <div>
+                <a
+                  href="mailto:office@bigeyeblue.be"
+                  className="u-sweep inline-block text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight hover:text-accent break-all sm:break-normal"
+                >
+                  office@bigeyeblue.be
+                </a>
+              </div>
+              <div className="mt-4">
+                <a
+                  href="tel:+32472715544"
+                  className="u-sweep inline-block text-2xl sm:text-4xl md:text-5xl font-light tracking-tight hover:text-accent"
+                >
+                  +32 472 71 55 44
+                </a>
+              </div>
             </div>
 
           </div>
