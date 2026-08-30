@@ -23,9 +23,9 @@
     --muted: 37 25% 86%;
     --muted-foreground: 0 0% 38%;
 
-    /* A warm gold accent used sparingly: hover states, index chips,
-       selection highlight. Keeps the site minimal but daring. */
-    --accent: 43 55% 52%;
+    /* A bright, Oscar-statue gold accent: hover states, index chips,
+       selection highlight. Saturated and warm for a glinstering moment. */
+    --accent: 43 82% 56%;
     --accent-foreground: 0 0% 7%;
 
     --destructive: 0 72% 45%;
