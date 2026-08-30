@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/house/logo.png";
 
 const links = [
   { label: "What we create", href: "#what-we-create" },
