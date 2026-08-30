@@ -23,9 +23,9 @@
     --muted: 37 25% 86%;
     --muted-foreground: 0 0% 38%;
 
-    /* A bright, Oscar-statue gold accent: hover states, index chips,
-       selection highlight. Brushed metallic, high-key gold. */
-    --accent: 43 92% 64%;
+    /* Softer gallery gold (#C5AF68): hover states, index chips,
+       selection highlight. Warm, muted, art-world gold. */
+    --accent: 46 45% 59%;
     --accent-foreground: 0 0% 7%;
 
     --destructive: 0 72% 45%;
