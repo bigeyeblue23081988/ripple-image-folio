@@ -34,25 +34,25 @@ export const translations = {
       houseCaption: "The house",
       houseSub: "Ghent, Belgium",
       houseAlt:
-        "The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert",
+        "The Bigeye Blue urban villa in Ghent at dusk, a filming location and guesthouse in a 19th-century building with a contemporary glass insert",
       hallCaption: "Entrance hall",
       hallAlt:
-        "The entrance hall, with a floating staircase, looking through to the patio",
+        "Entrance hall of the filming location in Ghent, with a floating staircase and a view through to the patio",
       patioCaption: "Patio",
       patioAlt:
-        "The patio, a quiet outdoor courtyard framed by whitewashed brick and green planting",
+        "The patio, a quiet outdoor courtyard for film shoots, framed by whitewashed brick and green planting",
       stairwellCaption: "Steel & glass stairwell",
       stairwellAlt:
-        "Looking up through the industrial steel-and-glass stairwell towards the skylight",
+        "Industrial steel-and-glass stairwell with skylight, a striking photo shoot location in Ghent",
       gardenCaption: "The garden table",
       gardenAlt:
-        "A long wooden table in the garden, sheltered between climbing green walls",
+        "A long wooden table in the garden of the urban villa in Ghent, sheltered between climbing green walls",
       kitchenCaption: "The kitchen",
       kitchenAlt:
-        "The kitchen under whitewashed timber beams, with a wooden worktop and a long dining table",
+        "The kitchen under whitewashed timber beams, with a wooden worktop and a long dining table — available for film productions and commercials",
       guestRoomCaption: "Guest room",
       guestRoomAlt:
-        "The guest room under white timber trusses, with a box-spring bed and skylights",
+        "Guest room of the Ghent guesthouse under white timber trusses, with a box-spring bed and skylights",
     },
     create: {
       label: "What we create",
@@ -63,7 +63,7 @@ export const translations = {
     location: {
       label: "Filming location",
       titleStrong: "Filming location",
-      body: "The whole house is available as a filming location and recording studio for documentaries, fiction, interviews, podcasts, photo shoots and digital content. A unique blend of historic character and contemporary design creates a setting that is both authentic and visually compelling — fifteen minutes from Ghent's historic centre.",
+      body: "The whole house is available as a filming location and recording studio for documentaries, fiction, interviews, podcasts, photo shoots and digital content. A unique blend of historic character and contemporary design creates a setting that is both authentic and visually compelling — five minutes from Ghent's historic centre.",
     },
     guesthouse: {
       label: "Guesthouse",
@@ -121,25 +121,25 @@ export const translations = {
       houseCaption: "Het huis",
       houseSub: "Gent, België",
       houseAlt:
-        "Het Bigeye Blue-huis in Gent bij valavond, een 19de-eeuwse bakstenen gevel met een hedendaagse glaspartij",
+        "De Bigeye Blue urban villa in Gent bij valavond, een filmlocatie en gastenverblijf in een 19de-eeuws pand met een hedendaagse glaspartij",
       hallCaption: "Inkomhal",
       hallAlt:
-        "De inkomhal met zwevende trap en doorkijk naar de patio",
+        "Inkomhal van de filmlocatie in Gent, met zwevende trap en doorkijk naar de patio",
       patioCaption: "Patio",
       patioAlt:
-        "De patio, een rustige buitenruimte omkaderd door witgekalkte baksteen en groen",
+        "De patio, een rustige buitenruimte voor filmopnames, omkaderd door witgekalkte baksteen en groen",
       stairwellCaption: "Trappenhuis in staal & glas",
       stairwellAlt:
-        "Zicht omhoog door het industriële trappenhuis in staal en glas richting het dakraam",
+        "Industrieel trappenhuis in staal en glas met dakraam, een opvallende fotoshootlocatie in Gent",
       gardenCaption: "De tuintafel",
       gardenAlt:
-        "Een lange houten tafel in de tuin, beschut tussen begroeide muren",
+        "Een lange houten tafel in de tuin van de urban villa in Gent, beschut tussen begroeide muren",
       kitchenCaption: "De keuken",
       kitchenAlt:
-        "De keuken onder witgekalkte balken, met houten werkblad en een lange eettafel",
+        "De keuken onder witgekalkte balken, met houten werkblad en een lange eettafel — beschikbaar voor filmproducties en commercials",
       guestRoomCaption: "Gastenkamer",
       guestRoomAlt:
-        "De gastenkamer onder witte houten spanten, met boxspringbed en dakramen",
+        "Gastenkamer van het gastenverblijf in Gent onder witte houten spanten, met boxspringbed en dakramen",
     },
     create: {
       label: "Wat we maken",
