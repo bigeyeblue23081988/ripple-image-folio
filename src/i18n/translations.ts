@@ -14,6 +14,7 @@ export const translations = {
       line2: "the obvious",
       sub: "A house where people and stories meet.",
       ctaPrimary: "Book the location",
+      ctaAvailability: "Check availability",
       ctaSecondary: "Talk to us",
     },
     facts: {
@@ -82,9 +83,9 @@ export const translations = {
     ],
     footer: { place: "Bigeye Blue — Ghent, Belgium" },
     meta: {
-      title: "Bigeye Blue — Production house & filming location in Ghent",
+      title: "Bigeye Blue | Production house for audiovisual content and filming location & guesthouse in Ghent",
       description:
-        "Bigeye Blue is a production house in Ghent led by journalist and director Marieke Dermul: documentary, podcast and reportage, plus a filming location, recording studio and guesthouse.",
+        "Unique urban villa in Ghent available for film productions, photography, interviews, commercials and guest stays — with an in-house recording studio and production house.",
     },
   },
   nl: {
@@ -100,6 +101,7 @@ export const translations = {
       line2: "the obvious",
       sub: "Een huis waar mensen en verhalen elkaar ontmoeten.",
       ctaPrimary: "Boek de locatie",
+      ctaAvailability: "Check beschikbaarheid",
       ctaSecondary: "Praat met ons",
     },
     facts: {
@@ -168,9 +170,9 @@ export const translations = {
     ],
     footer: { place: "Bigeye Blue — Gent, België" },
     meta: {
-      title: "Bigeye Blue — Productiehuis & filmlocatie in Gent",
+      title: "Bigeye Blue | Productiehuis voor audiovisuele content, filmlocatie & gastenverblijf in Gent",
       description:
-        "Bigeye Blue is een productiehuis in Gent onder leiding van journaliste en regisseur Marieke Dermul: documentaire, podcast en reportage, plus filmlocatie, opnamestudio en gastenverblijf.",
+        "Unieke stadsvilla in Gent beschikbaar voor filmproducties, fotografie, interviews, commercials en gastenverblijf — met eigen opnamestudio en productiehuis.",
     },
   },
 } as const;

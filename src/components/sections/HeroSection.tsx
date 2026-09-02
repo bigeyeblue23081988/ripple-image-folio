@@ -43,7 +43,7 @@ export function HeroSection() {
 
           <div className="mt-8 flex flex-col items-start gap-3">
             <a href="#contact" className="btn-solid">
-              {t.hero.ctaPrimary}
+              {t.hero.ctaAvailability}
             </a>
             <a href="#practical" className="btn-quiet">
               {t.hero.ctaSecondary}
