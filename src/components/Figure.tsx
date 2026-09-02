@@ -34,7 +34,7 @@ export function Figure({
   return (
     <figure className={`group ${className}`}>
       <div className="overflow-hidden bg-secondary">
-        <div data-parallax className="parallax-inner scale-[1.07]">
+        <div className="parallax-inner">
           <img
           src={src}
           alt={alt}

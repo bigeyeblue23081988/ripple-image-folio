@@ -8,7 +8,6 @@ import { PracticalSection } from "@/components/sections/PracticalSection";
 import { ClientsSection } from "@/components/sections/ClientsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { useReveal } from "@/hooks/use-reveal";
-import { useParallax } from "@/hooks/use-parallax";
 import { useLang } from "@/i18n/LanguageProvider";
 
 const currentYear = new Date().getFullYear();
@@ -16,7 +15,6 @@ const currentYear = new Date().getFullYear();
 const Index = () => {
   const { t, lang } = useLang();
   useReveal(lang);
-  useParallax(lang);
 
   return (
     <div id="top" key={lang} className="min-h-screen">
