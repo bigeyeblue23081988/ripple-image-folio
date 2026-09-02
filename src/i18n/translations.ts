@@ -63,7 +63,7 @@ export const translations = {
     location: {
       label: "Filming location",
       titleStrong: "Filming location",
-      body: "The whole house is available as a filming location and recording studio for documentaries, fiction, interviews, podcasts, photo shoots and digital content. A unique blend of historic character and contemporary design creates a setting that is both authentic and visually compelling — fifteen minutes from Ghent's historic centre.",
+      body: "The whole house is available as a filming location and recording studio for documentaries, fiction, interviews, podcasts, photo shoots and digital content. A unique blend of historic character and contemporary design creates a setting that is both authentic and visually compelling — five minutes from Ghent's historic centre.",
     },
     guesthouse: {
       label: "Guesthouse",
