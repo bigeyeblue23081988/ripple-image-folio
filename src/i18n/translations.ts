@@ -121,25 +121,25 @@ export const translations = {
       houseCaption: "Het huis",
       houseSub: "Gent, België",
       houseAlt:
-        "Het Bigeye Blue-huis in Gent bij valavond, een 19de-eeuwse bakstenen gevel met een hedendaagse glaspartij",
+        "De Bigeye Blue urban villa in Gent bij valavond, een filmlocatie en gastenverblijf in een 19de-eeuws pand met een hedendaagse glaspartij",
       hallCaption: "Inkomhal",
       hallAlt:
-        "De inkomhal met zwevende trap en doorkijk naar de patio",
+        "Inkomhal van de filmlocatie in Gent, met zwevende trap en doorkijk naar de patio",
       patioCaption: "Patio",
       patioAlt:
-        "De patio, een rustige buitenruimte omkaderd door witgekalkte baksteen en groen",
+        "De patio, een rustige buitenruimte voor filmopnames, omkaderd door witgekalkte baksteen en groen",
       stairwellCaption: "Trappenhuis in staal & glas",
       stairwellAlt:
-        "Zicht omhoog door het industriële trappenhuis in staal en glas richting het dakraam",
+        "Industrieel trappenhuis in staal en glas met dakraam, een opvallende fotoshootlocatie in Gent",
       gardenCaption: "De tuintafel",
       gardenAlt:
-        "Een lange houten tafel in de tuin, beschut tussen begroeide muren",
+        "Een lange houten tafel in de tuin van de urban villa in Gent, beschut tussen begroeide muren",
       kitchenCaption: "De keuken",
       kitchenAlt:
-        "De keuken onder witgekalkte balken, met houten werkblad en een lange eettafel",
+        "De keuken onder witgekalkte balken, met houten werkblad en een lange eettafel — beschikbaar voor filmproducties en commercials",
       guestRoomCaption: "Gastenkamer",
       guestRoomAlt:
-        "De gastenkamer onder witte houten spanten, met boxspringbed en dakramen",
+        "Gastenkamer van het gastenverblijf in Gent onder witte houten spanten, met boxspringbed en dakramen",
     },
     create: {
       label: "Wat we maken",
