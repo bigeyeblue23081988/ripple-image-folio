@@ -41,6 +41,7 @@ export function Figure({
           width={width}
           height={height}
           loading={priority ? "eager" : "lazy"}
+          decoding={priority ? "sync" : "async"}
           {...(priority ? { fetchpriority: "high" } : {})}
           className="w-full h-auto transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.035]"
           />
