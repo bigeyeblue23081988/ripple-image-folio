@@ -105,6 +105,30 @@
     @apply flex-1 h-px bg-foreground/20;
   }
 
+  /* Buttons: quiet, gallery-like calls to action. */
+  .btn-solid {
+    @apply inline-block bg-foreground px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-background transition-colors duration-300;
+  }
+
+  .btn-solid:hover {
+    @apply bg-accent text-accent-foreground;
+  }
+
+  .btn-quiet {
+    @apply inline-block border-b border-foreground/40 pb-1 text-xs font-bold uppercase tracking-[0.14em] text-foreground transition-colors duration-300;
+  }
+
+  .btn-quiet:hover {
+    @apply border-accent text-accent;
+  }
+
+  /* Visible keyboard focus everywhere. */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-background;
+  }
+
   /* Inverted section header for dark bands. */
   .plate-label--invert {
     @apply text-background;
@@ -164,26 +188,6 @@
     will-change: opacity, transform;
   }
 
-  .reveal--left {
-    transform: translateX(-40px) translateY(10px);
-  }
-
-  .reveal--right {
-    transform: translateX(40px) translateY(10px);
-  }
-
-  .reveal--scale {
-    transform: scale(0.96) translateY(14px);
-  }
-
-  .reveal--tilt-l {
-    transform: translateY(24px) rotate(-1.2deg);
-  }
-
-  .reveal--tilt-r {
-    transform: translateY(24px) rotate(1.2deg);
-  }
-
   .reveal.is-visible {
     opacity: 1;
     transform: translateY(0) translateX(0) scale(1) rotate(0deg);
@@ -192,7 +196,6 @@
   /* Stagger steps — pair with .reveal for grouped elements. */
   .reveal-delay-1 { transition-delay: 0.12s; }
   .reveal-delay-2 { transition-delay: 0.24s; }
-  .reveal-delay-3 { transition-delay: 0.36s; }
 
   /* Client constellation: staggered arrival, then an endless slow drift. */
   .client-mark {
