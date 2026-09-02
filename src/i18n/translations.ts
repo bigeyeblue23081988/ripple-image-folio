@@ -34,25 +34,25 @@ export const translations = {
       houseCaption: "The house",
       houseSub: "Ghent, Belgium",
       houseAlt:
-        "The Bigeye Blue house in Ghent at dusk, a 19th-century brick facade with a contemporary glass insert",
+        "The Bigeye Blue urban villa in Ghent at dusk, a filming location and guesthouse in a 19th-century building with a contemporary glass insert",
       hallCaption: "Entrance hall",
       hallAlt:
-        "The entrance hall, with a floating staircase, looking through to the patio",
+        "Entrance hall of the filming location in Ghent, with a floating staircase and a view through to the patio",
       patioCaption: "Patio",
       patioAlt:
-        "The patio, a quiet outdoor courtyard framed by whitewashed brick and green planting",
+        "The patio, a quiet outdoor courtyard for film shoots, framed by whitewashed brick and green planting",
       stairwellCaption: "Steel & glass stairwell",
       stairwellAlt:
-        "Looking up through the industrial steel-and-glass stairwell towards the skylight",
+        "Industrial steel-and-glass stairwell with skylight, a striking photo shoot location in Ghent",
       gardenCaption: "The garden table",
       gardenAlt:
-        "A long wooden table in the garden, sheltered between climbing green walls",
+        "A long wooden table in the garden of the urban villa in Ghent, sheltered between climbing green walls",
       kitchenCaption: "The kitchen",
       kitchenAlt:
-        "The kitchen under whitewashed timber beams, with a wooden worktop and a long dining table",
+        "The kitchen under whitewashed timber beams, with a wooden worktop and a long dining table — available for film productions and commercials",
       guestRoomCaption: "Guest room",
       guestRoomAlt:
-        "The guest room under white timber trusses, with a box-spring bed and skylights",
+        "Guest room of the Ghent guesthouse under white timber trusses, with a box-spring bed and skylights",
     },
     create: {
       label: "What we create",
