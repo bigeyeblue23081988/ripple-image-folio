@@ -60,7 +60,7 @@ export const translations = {
       label: "What we create",
       titleStrong: "What we create",
       titleLight: "Interviews. Podcasts. Documentaries. Stories.",
-      body: "Bigeye Blue is a production house led by director Marieke Dermul. We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content. Come to us with an idea; we develop it, record it in our own studio in Ghent, and produce it from first conversation to final cut. The location itself is also available for other film crews. Bigeye Blue already made reportages for VRT NWS, Canvas, VRT MAX and Motionmakers. The production house also made content ideas for Deloitte and BNP Paribas.",
+      body: "Bigeye Blue is a production house led by director Marieke Dermul. We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content. Come to us with an idea; we develop it, record it in our own studio in Ghent, and produce it from first conversation to final cut. The location itself is also available for other film crews. Bigeye Blue already made reportages for VRT NWS, Canvas, VRT MAX and Motionmakers. The production house also made content ideas for different companies as Deloitte and BNP Paribas.",
     },
     location: {
       label: "Filming location",
@@ -149,7 +149,7 @@ export const translations = {
       label: "Wat we maken",
       titleStrong: "Wat we maken",
       titleLight: "Interviews. Podcasts. Documentaires. Verhalen.",
-      body: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content. Kom bij ons met een idee; wij ontwikkelen het, nemen het op in onze eigen studio in Gent en produceren het van eerste gesprek tot finale montage. De locatie is als filmlocatie ook beschikbaar voor andere filmploegen. Bigeye Blue maakte al reportages voor VRT NWS, Canvas, VRT MAX en Motionmakers. Het productiehuis bedacht ook content voor Deloitte en BNP Paribas.",
+      body: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content. Kom bij ons met een idee; wij ontwikkelen het, nemen het op in onze eigen studio in Gent en produceren het van eerste gesprek tot finale montage. De locatie is als filmlocatie ook beschikbaar voor andere filmploegen. Bigeye Blue maakte al reportages voor VRT NWS, Canvas, VRT MAX en Motionmakers. Het productiehuis bedacht ook content voor verschillende bedrijven zoals Deloitte en BNP Paribas.",
     },
     location: {
       label: "Filmlocatie",
