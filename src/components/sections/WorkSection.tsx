@@ -6,8 +6,8 @@ import jongEenzaam from "@/assets/jong-en-eenzaam.jpg";
 
 const images = [rainbowNation, popsong, jongEenzaam];
 
-// Per-image crop focus: popsong keeps the person fully in frame.
-const objectPositions = ["50% 50%", "25% 50%", "50% 50%"];
+// Per-image crop focus: popsong centres the main character instead of the foreground.
+const objectPositions = ["50% 50%", "76% 52%", "50% 50%"];
 
 /**
  * Recent work: three cases carrying the proof — image, client, one line.
