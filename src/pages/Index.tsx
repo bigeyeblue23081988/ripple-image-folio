@@ -30,6 +30,7 @@ const Index = () => {
         <PracticalSection />
         <ClientsSection />
         <TickerBand className="hidden md:block" />
+        <SeoTextSection />
         <ContactSection />
       </main>
 
