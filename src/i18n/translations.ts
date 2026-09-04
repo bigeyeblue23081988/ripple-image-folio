@@ -20,6 +20,13 @@ export const translations = {
       ctaSecondary: "Talk to us",
       ctaWork: "See our work",
     },
+    showreel: {
+      caption: "Showreel",
+      sub: "38 seconds of Bigeye Blue",
+      soundOn: "Sound on",
+      soundOff: "Sound off",
+      ariaLabel: "Bigeye Blue showreel — fragments of our documentaries and productions",
+    },
     facts: {
       label: "Practical",
       title: "Good to know",
@@ -197,6 +204,13 @@ export const translations = {
       ctaPrimary: "Boek de locatie",
       ctaSecondary: "Praat met ons",
       ctaWork: "Bekijk ons werk",
+    },
+    showreel: {
+      caption: "Showreel",
+      sub: "38 seconden Bigeye Blue",
+      soundOn: "Geluid aan",
+      soundOff: "Geluid uit",
+      ariaLabel: "Showreel van Bigeye Blue — fragmenten uit onze documentaires en producties",
     },
     facts: {
       label: "Praktisch",
