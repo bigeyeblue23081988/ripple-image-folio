@@ -3,6 +3,7 @@ export type Lang = "en" | "nl";
 export const translations = {
   en: {
     nav: {
+      work: "Work",
       create: "What we create",
       location: "Filming location",
       guesthouse: "Guesthouse",
@@ -180,6 +181,7 @@ export const translations = {
   },
   nl: {
     nav: {
+      work: "Werk",
       create: "Wat we maken",
       location: "Filmlocatie",
       guesthouse: "Gastenverblijf",
