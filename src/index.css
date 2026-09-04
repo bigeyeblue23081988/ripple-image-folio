@@ -325,6 +325,23 @@
   }
   ::-webkit-scrollbar-thumb:hover { background: hsl(var(--accent)); }
 
+  /* Hide Netlify badge / HUD injected by Netlify hosting until disabled in the dashboard. */
+  [data-netlify-badge],
+  [class*="netlify-badge"],
+  [class*="nl-badge"],
+  [class*="nl-card"],
+  .netlify-hud,
+  .nl-hud,
+  #netlify-badge,
+  #nl-badge,
+  a[href*="netlify.com"][target="_blank"] img,
+  img[src*="netlify-badge"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .reveal {
       opacity: 1;
