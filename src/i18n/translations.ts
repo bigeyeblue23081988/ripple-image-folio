@@ -21,11 +21,8 @@ export const translations = {
       title: "Good to know",
       items: [
         { k: "Location", v: "Ghent, Belgium — 5 minutes from the historic centre" },
-        { k: "Available", v: "The whole house: entrance hall, patio, stairwell, garden, kitchen and guest rooms" },
         { k: "On site", v: "Recording studio for video, interviews and podcast" },
-        { k: "Production", v: "From first conversation to final cut, in house" },
         { k: "Stay over", v: "Guesthouse rooms for crew and guests" },
-        { k: "Rates", v: "On request — tell us your dates and we send a quote" },
       ],
       cta: "Request rates & availability",
     },
@@ -110,11 +107,8 @@ export const translations = {
       title: "Goed om te weten",
       items: [
         { k: "Locatie", v: "Gent, België — op 5 minuten van het historische centrum" },
-        { k: "Beschikbaar", v: "Het hele huis: inkomhal, patio, trappenhuis, tuin, keuken en gastenkamers" },
         { k: "Ter plaatse", v: "Opnamestudio voor video, interviews en podcast" },
-        { k: "Productie", v: "Van eerste gesprek tot finale montage, in eigen huis" },
         { k: "Overnachten", v: "Gastenkamers voor crew en gasten" },
-        { k: "Tarieven", v: "Op aanvraag — geef je data door en je krijgt een offerte" },
       ],
       cta: "Tarieven & beschikbaarheid aanvragen",
     },
