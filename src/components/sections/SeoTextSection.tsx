@@ -12,7 +12,7 @@ export function SeoTextSection() {
   return (
     <section
       id="services"
-      className="container-wide pb-28 md:pb-40 scroll-mt-24"
+      className="container-wide py-28 md:py-40 scroll-mt-24"
       aria-label={t.seo.ariaLabel}
     >
       <div className="md:grid md:grid-cols-12 gap-y-10">
