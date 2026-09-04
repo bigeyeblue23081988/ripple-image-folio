@@ -14,7 +14,7 @@ interface FigureProps {
 }
 
 /** Total number of plates in the series, for the "01 / 07" chip. */
-const PLATE_TOTAL = "07";
+const PLATE_TOTAL = "08";
 
 /**
  * A framed photograph labelled the way a contemporary gallery labels a

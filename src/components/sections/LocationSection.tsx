@@ -19,8 +19,8 @@ export function LocationSection() {
         <Figure
           src={patio}
           alt={t.figures.patioAlt}
-          width={736}
-          height={402}
+          width={1920}
+          height={1277}
           index="03"
           caption={t.figures.patioCaption}
           className="md:col-start-1 md:col-span-6 lg:col-span-5 md:row-start-1 reveal"
@@ -52,8 +52,8 @@ export function LocationSection() {
         <Figure
           src={gardenTable}
           alt={t.figures.gardenAlt}
-          width={242}
-          height={153}
+          width={1920}
+          height={1277}
           index="05"
           caption={t.figures.gardenCaption}
           className="md:col-start-8 lg:col-start-7 md:col-span-5 lg:col-span-4 md:row-start-2 self-end mt-16 md:mt-0 reveal reveal-delay-1"

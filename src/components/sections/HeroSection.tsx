@@ -43,9 +43,6 @@ export function HeroSection() {
 
           <div className="mt-8 flex flex-col items-start gap-3">
             <a href="#contact" className="btn-solid">
-              {t.hero.ctaAvailability}
-            </a>
-            <a href="#practical" className="btn-quiet">
               {t.hero.ctaSecondary}
             </a>
           </div>
@@ -54,8 +51,8 @@ export function HeroSection() {
         <Figure
           src={hallway}
           alt={t.figures.hallAlt}
-          width={630}
-          height={296}
+          width={1920}
+          height={1279}
           index="02"
           caption={t.figures.hallCaption}
           className="md:col-start-8 md:col-span-5 md:row-start-2 mt-12 md:mt-20 reveal"
