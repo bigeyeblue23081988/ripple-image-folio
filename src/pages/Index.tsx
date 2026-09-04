@@ -28,8 +28,8 @@ const Index = () => {
       <SiteNav />
 
       <main>
-        <IntroSection />
         <HeroSection />
+        <IntroSection />
         <TickerBand className="mb-28 md:mb-44" />
         <ShowreelSection />
         <WorkSection />

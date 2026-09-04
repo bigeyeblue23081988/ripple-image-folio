@@ -12,7 +12,7 @@ export const translations = {
     },
     intro: {
       label: "Bigeye Blue",
-      lead: "A production house led by director Marieke Dermul.",
+      lead: "A production house led by director Marieke Dermul",
       body1:
         "We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content.",
       body2:
@@ -209,7 +209,7 @@ export const translations = {
     },
     intro: {
       label: "Bigeye Blue",
-      lead: "Een productiehuis onder leiding van regisseur Marieke Dermul.",
+      lead: "Een productiehuis onder leiding van regisseur Marieke Dermul",
       body1:
         "We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content.",
       body2:
