@@ -10,7 +10,7 @@ export function StatementBand() {
 
   return (
     <section className="bg-ink text-ink-foreground">
-      <div className="container-wide py-20 md:py-32">
+      <div className="container-wide pt-20 md:pt-32 pb-28 md:pb-44">
         <div className="flex items-start gap-5 md:gap-8 reveal">
           <span
             aria-hidden
