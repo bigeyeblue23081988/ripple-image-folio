@@ -190,8 +190,11 @@ export const translations = {
       line1: "Looking beyond",
       line2: "the obvious",
       sub: "Een huis waar mensen en verhalen elkaar ontmoeten.",
+      tagline:
+        "Bigeye Blue is een productiehuis in Gent voor documentaires, branded content, reportages en verhalen die verder gaan dan het voor de hand liggende.",
       ctaPrimary: "Boek de locatie",
       ctaSecondary: "Praat met ons",
+      ctaWork: "Bekijk ons werk",
     },
     facts: {
       label: "Praktisch",
@@ -250,6 +253,57 @@ export const translations = {
         },
       ],
     },
+    work: {
+      label: "Recent werk",
+      title: "Recent werk",
+      cta: "Praat met ons over jouw project",
+      items: [
+        {
+          title: "Rainbow Nation",
+          meta: "Documentaire — Canvas",
+          text: "Een documentaire over de lgbt-rechten in Zuid-Afrika. Genomineerd voor de Africa Movie Academy Awards 2024.",
+          alt: "Affiche van de documentaire Rainbow Nation van Marieke Dermul, over de lgbt-rechten in Zuid-Afrika",
+        },
+        {
+          title: "European Citizen Popsong",
+          meta: "Creatief documentaireproject",
+          text: "Een creatief documentaireproject waarin de eenheid in Europa onder de loep genomen wordt. Genomineerd voor de Filipa Bragança Award op het Edinburgh Festival Fringe en daarna op tour door heel Europa en daarbuiten.",
+          alt: "Een zangeres met micro en draagbare versterker op een kiezelstrand naast opspattende golven, uit European Citizen Popsong",
+        },
+        {
+          title: "Jong & Eenzaam",
+          meta: "Docureeks — VRT MAX",
+          text: "Een docureeks voor VRT MAX, naar aanleiding van De Warmste Week.",
+          alt: "Een jonge man die danst op een brug in Gent, beeld uit de docureeks Jong & Eenzaam voor VRT MAX",
+        },
+      ],
+    },
+    proof: {
+      label: "Bewijs",
+      title: "Werk dat verder ging",
+      items: [
+        {
+          k: "Africa Movie Academy Awards 2024",
+          v: "Nominatie — Rainbow Nation, documentaire voor Canvas",
+        },
+        {
+          k: "Edinburgh Festival Fringe",
+          v: "Nominatie Filipa Bragança Award — European Citizen Popsong",
+        },
+        {
+          k: "Europa en daarbuiten",
+          v: "European Citizen Popsong tourde internationaal na de première",
+        },
+      ],
+    },
+    about: {
+      label: "De mensen",
+      title: "Onder leiding van regisseur Marieke Dermul",
+      quote:
+        "We zijn nieuwsgierig naar mensen. Naar wat hen beweegt, wat ze niet meteen vertellen en naar verhalen die blijven hangen.",
+      body: "Bigeye Blue is bewust klein: de inhoudelijke blik van een documentairemaker, de flexibiliteit van een kleine ploeg en een eigen plek in Gent waar een idee kan uitgroeien tot een afgewerkte productie.",
+      cta: "Praat met ons",
+    },
     location: {
       label: "Filmlocatie",
       titleStrong: "Filmlocatie",
@@ -257,19 +311,24 @@ export const translations = {
     },
     guesthouse: {
       label: "Gastenverblijf",
-      titleLine1: "Gastenverblijf,",
-      titleLine2: "waar iedereen welkom is",
-      body: "Ooit een 19de-eeuws koetshuis, vandaag The Industrial Loft: een bijzonder gastenverblijf waar erfgoed en hedendaags comfort perfect in balans zijn.",
+      titleLine1: "Een productieplek",
+      titleLine2: "waar je kan blijven",
+      body: "Studio, filmlocatie, patio en gastenkamers in één 19de-eeuws koetshuis in Gent. Handig voor draaidagen die uitlopen, interviewdagen met meerdere gasten, podcastopnames en ploegen die van verder komen — beneden werken, boven slapen.",
     },
     clients: { label: "Klanten" },
-    contact: { label: "Contact" },
+    contact: {
+      label: "Contact",
+      title: "Heb je een verhaal?",
+      body: "Een documentaire, een reportage, een bedrijfsfilm, een podcast — of gewoon een idee dat nog alle kanten uit kan? Vertel het ons.",
+      cta: "Praat met ons",
+    },
     ticker: [
-      "Documentaire",
-      "Podcast",
-      "Reportage",
-      "Interviews",
-      "Studio",
-      "Gastenverblijf",
+      { label: "Documentaire", href: "#work" },
+      { label: "Podcast", href: "#what-we-create" },
+      { label: "Reportage", href: "#work" },
+      { label: "Interviews", href: "#filming-location" },
+      { label: "Studio", href: "#filming-location" },
+      { label: "Gastenverblijf", href: "#guesthouse" },
     ],
     footer: { place: "Bigeye Blue — Gent, België" },
     seo: {
