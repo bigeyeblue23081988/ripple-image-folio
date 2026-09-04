@@ -20,7 +20,8 @@ export const translations = {
       ctaSecondary: "Talk to us",
       ctaWork: "See our work",
       ctaLocation: "See the location",
-      overlay: "A production house in Ghent, and a place where people and stories meet.",
+      overlayLine1: "A production house in Ghent",
+      overlayLine2: "A place where people and stories meet.",
     },
     showreel: {
       caption: "Showreel",
