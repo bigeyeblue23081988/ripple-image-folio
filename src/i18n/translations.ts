@@ -13,8 +13,11 @@ export const translations = {
       line1: "Looking beyond",
       line2: "the obvious",
       sub: "A house where people and stories meet.",
+      tagline:
+        "Bigeye Blue is a production house in Ghent for documentary, branded content, reportage and stories that go further than the obvious.",
       ctaPrimary: "Book the location",
       ctaSecondary: "Talk to us",
+      ctaWork: "See our work",
     },
     facts: {
       label: "Practical",
@@ -73,6 +76,57 @@ export const translations = {
         },
       ],
     },
+    work: {
+      label: "Recent work",
+      title: "Recent work",
+      cta: "Talk to us about your project",
+      items: [
+        {
+          title: "Rainbow Nation",
+          meta: "Documentary — Canvas",
+          text: "A documentary about LGBT rights in South Africa. Nominated for the Africa Movie Academy Awards 2024.",
+          alt: "Poster of the documentary Rainbow Nation by Marieke Dermul, about LGBT rights in South Africa",
+        },
+        {
+          title: "European Citizen Popsong",
+          meta: "Creative documentary project",
+          text: "A creative documentary project putting the unity of Europe under the magnifying glass. Nominated for the Filipa Bragança Award at the Edinburgh Festival Fringe and toured across Europe and beyond.",
+          alt: "A singer with a microphone and a portable amplifier on a pebble beach beside crashing waves, from European Citizen Popsong",
+        },
+        {
+          title: "Jong & Eenzaam",
+          meta: "Docuseries — VRT MAX",
+          text: "A documentary series for VRT MAX, made for De Warmste Week.",
+          alt: "A young man dancing on a bridge in Ghent, still from the docuseries Jong & Eenzaam for VRT MAX",
+        },
+      ],
+    },
+    proof: {
+      label: "Proof",
+      title: "Work that travelled",
+      items: [
+        {
+          k: "Africa Movie Academy Awards 2024",
+          v: "Nomination — Rainbow Nation, documentary for Canvas",
+        },
+        {
+          k: "Edinburgh Festival Fringe",
+          v: "Nomination Filipa Bragança Award — European Citizen Popsong",
+        },
+        {
+          k: "Europe and beyond",
+          v: "European Citizen Popsong toured internationally after its premiere",
+        },
+      ],
+    },
+    about: {
+      label: "The people",
+      title: "Led by director Marieke Dermul",
+      quote:
+        "We are curious about people. About what moves them, what they do not say right away, and about the stories that stay with you.",
+      body: "Bigeye Blue is small on purpose: a documentary maker's eye for content, the flexibility of a compact crew, and a place of our own in Ghent where an idea can grow into a finished production.",
+      cta: "Talk to us",
+    },
     location: {
       label: "Filming location",
       titleStrong: "Filming location",
@@ -80,19 +134,24 @@ export const translations = {
     },
     guesthouse: {
       label: "Guesthouse",
-      titleLine1: "Guesthouse,",
-      titleLine2: "where anyone is welcome",
-      body: "Once a 19th-century coach house, The Industrial Loft has been transformed into a distinctive guest house where heritage and contemporary comfort exist in perfect balance.",
+      titleLine1: "A production place",
+      titleLine2: "where you can stay",
+      body: "Studio, filming location, patio and guest rooms in one 19th-century coach house in Ghent. Handy for shooting days that run long, interview days with several guests, podcast recordings, and crews travelling in from further away — work downstairs, sleep upstairs.",
     },
     clients: { label: "Clients" },
-    contact: { label: "Contact" },
+    contact: {
+      label: "Contact",
+      title: "Do you have a story?",
+      body: "A documentary, a reportage, a company film, a podcast — or just an idea that could still go anywhere? Tell us about it.",
+      cta: "Talk to us",
+    },
     ticker: [
-      "Documentary",
-      "Podcast",
-      "Reportage",
-      "Interviews",
-      "Studio",
-      "Guesthouse",
+      { label: "Documentary", href: "#work" },
+      { label: "Podcast", href: "#what-we-create" },
+      { label: "Reportage", href: "#work" },
+      { label: "Interviews", href: "#filming-location" },
+      { label: "Studio", href: "#filming-location" },
+      { label: "Guesthouse", href: "#guesthouse" },
     ],
     footer: { place: "Bigeye Blue — Ghent, Belgium" },
     seo: {
