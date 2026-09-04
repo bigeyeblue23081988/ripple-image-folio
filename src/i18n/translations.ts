@@ -14,7 +14,6 @@ export const translations = {
       line2: "the obvious",
       sub: "A house where people and stories meet.",
       ctaPrimary: "Book the location",
-      ctaAvailability: "Check availability",
       ctaSecondary: "Talk to us",
     },
     facts: {
@@ -104,7 +103,6 @@ export const translations = {
       line2: "the obvious",
       sub: "Een huis waar mensen en verhalen elkaar ontmoeten.",
       ctaPrimary: "Boek de locatie",
-      ctaAvailability: "Check beschikbaarheid",
       ctaSecondary: "Praat met ons",
     },
     facts: {
