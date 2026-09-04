@@ -320,6 +320,7 @@ export const translations = {
         "We zijn nieuwsgierig naar mensen. Naar wat hen beweegt, wat ze niet meteen vertellen en naar verhalen die blijven hangen.",
       body: "Bigeye Blue is bewust klein: de inhoudelijke blik van een documentairemaker, de flexibiliteit van een kleine ploeg en een eigen plek in Gent waar een idee kan uitgroeien tot een afgewerkte productie.",
       cta: "Praat met ons",
+      photoAlt: "Portret van regisseur Marieke Dermul, oprichter van Bigeye Blue",
     },
     location: {
       label: "Filmlocatie",
