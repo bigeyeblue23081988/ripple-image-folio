@@ -1,7 +1,9 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
+import mariekeAsset from "@/assets/marieke-dermul.jpg.asset.json";
+
 /**
- * The human side: who leads Bigeye Blue, in her own words.
+ * The human side: who leads Bigeye Blue, in her own words — with her portrait.
  */
 export function AboutSection() {
   const { t } = useLang();
@@ -17,6 +19,22 @@ export function AboutSection() {
             {t.about.quote}
             <span className="text-accent">”</span>
           </blockquote>
+
+          <div className="mt-12 md:mt-16 max-w-md">
+            <figure className="group">
+              <div className="overflow-hidden bg-secondary">
+                <img
+                  src={mariekeAsset.url}
+                  alt={t.about.photoAlt}
+                  width={828}
+                  height={1080}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.035]"
+                />
+              </div>
+            </figure>
+          </div>
         </div>
 
         <div className="md:col-start-9 md:col-span-4 mt-10 md:mt-3 reveal reveal-delay-1">

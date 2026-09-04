@@ -8,8 +8,8 @@
 - Ticker words are now links
 - Warmer contact section
 - Guesthouse reframed as production ecosystem
+- Showreel (38s) integrated as autoplay-muted looping player with sound toggle (CDN asset)
+- Portrait of Marieke added to the About section (CDN asset)
 
 ## Open / needs material from Marieke
-- Video fragment (8-15s) for the hero
-- Portrait photo of Marieke
 - Photos framed as production use (interview setup, crew, workspace) instead of real-estate style

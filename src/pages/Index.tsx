@@ -1,6 +1,7 @@
 import { SiteNav } from "@/components/SiteNav";
 import { TickerBand } from "@/components/TickerBand";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { ShowreelSection } from "@/components/sections/ShowreelSection";
 import { WorkSection } from "@/components/sections/WorkSection";
 import { CreateSection } from "@/components/sections/CreateSection";
 import { AboutSection } from "@/components/sections/AboutSection";
@@ -27,6 +28,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <TickerBand className="mb-28 md:mb-44" />
+        <ShowreelSection />
         <WorkSection />
         <CreateSection />
         <AboutSection />
