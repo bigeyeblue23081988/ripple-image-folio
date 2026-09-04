@@ -143,12 +143,15 @@ export const translations = {
       guestRoomCaption: "Gastenkamer",
       guestRoomAlt:
         "Gastenkamer van het gastenverblijf in Gent onder witte houten spanten, met boxspringbed en dakramen",
+      bathroomCaption: "Badkamer",
+      bathroomAlt:
+        "Private badkamer van het gastenverblijf in Gent met inloopdouche, lavabo en toilet",
     },
     create: {
       label: "Wat we maken",
       titleStrong: "Wat we maken",
       titleLight: "Interviews. Podcasts. Documentaires. Verhalen.",
-      body: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content. Kom bij ons met een idee; wij ontwikkelen het, nemen het op in onze eigen studio in Gent en produceren het van eerste gesprek tot finale montage. De locatie is als filmlocatie ook beschikbaar voor andere filmploegen.",
+      body: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content. Kom bij ons met een idee; wij ontwikkelen het, nemen het op in onze eigen studio in Gent en produceren het van eerste gesprek tot finale montage. De locatie is als filmlocatie ook beschikbaar voor andere filmploegen. Bigeye Blue maakte al reportages voor VRT NWS, Canvas, VRT MAX en Motionmakers. Het productiehuis bedacht ook content voor Deloitte en BNP Paribas.",
     },
     location: {
       label: "Filmlocatie",
