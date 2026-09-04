@@ -3,6 +3,7 @@ import { useLang } from "@/i18n/LanguageProvider";
 
 import kitchen from "@/assets/house/kitchen.jpg";
 import guestRoom from "@/assets/house/guest-room.jpg";
+import bathroom from "@/assets/house/bathroom.jpg";
 
 export function GuesthouseSection() {
   const { t } = useLang();
@@ -49,6 +50,16 @@ export function GuesthouseSection() {
             {t.hero.ctaPrimary}
           </a>
         </div>
+
+        <Figure
+          src={bathroom}
+          alt={t.figures.bathroomAlt}
+          width={1920}
+          height={1278}
+          index="08"
+          caption={t.figures.bathroomCaption}
+          className="md:col-start-6 md:col-span-6 md:row-start-2 mt-12 md:mt-44 reveal reveal-delay-1"
+        />
       </div>
     </section>
   );
