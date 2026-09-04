@@ -1,10 +1,10 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import rainbowNation from "@/assets/rainbow-nation.jpg.asset.json";
-import popsong from "@/assets/european-citizen-popsong.jpg.asset.json";
-import jongEenzaam from "@/assets/jong-en-eenzaam.jpg.asset.json";
+import rainbowNation from "@/assets/rainbow-nation.jpg";
+import popsong from "@/assets/european-citizen-popsong.jpg";
+import jongEenzaam from "@/assets/jong-en-eenzaam.jpg";
 
-const images = [rainbowNation.url, popsong.url, jongEenzaam.url];
+const images = [rainbowNation, popsong, jongEenzaam];
 
 /**
  * Recent work: three cases carrying the proof — image, client, one line.
