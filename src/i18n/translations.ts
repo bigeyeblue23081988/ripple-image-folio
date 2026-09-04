@@ -95,10 +95,28 @@ export const translations = {
       "Guesthouse",
     ],
     footer: { place: "Bigeye Blue — Ghent, Belgium" },
+    seo: {
+      ariaLabel: "Services",
+      label: "Services",
+      title: "Documentary filmmaking & video production",
+      paragraphs: [
+        "Bigeye Blue creates documentaries, branded content and video productions for broadcasters, brands and organisations. Based in Ghent, we help clients across Belgium tell authentic stories through cinematic filmmaking and powerful storytelling.",
+        "From documentary series and television productions to brand films and digital content, we develop visual stories that connect with audiences and create impact.",
+        "Our services include documentary filmmaking, video production, corporate films, branded content and editorial productions — all from our studio and filming location in Ghent, Belgium.",
+      ],
+      keywords: [
+        "Documentary filmmaking",
+        "Video production",
+        "Branded content",
+        "Storytelling",
+        "Corporate films",
+        "Based in Ghent, Belgium",
+      ],
+    },
     meta: {
-      title: "Bigeye Blue | Production house for audiovisual content and filming location & guesthouse in Ghent",
+      title: "Bigeye Blue | Documentary filmmaking, video production & branded content in Ghent",
       description:
-        "Unique urban villa in Ghent available for film productions, photography, interviews, commercials and guest stays — with an in-house recording studio and production house.",
+        "Bigeye Blue is a Ghent-based production house for documentaries, branded content, video production and storytelling. With a filming location, recording studio and guesthouse in Belgium.",
     },
   },
   nl: {
