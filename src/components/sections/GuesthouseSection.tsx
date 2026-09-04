@@ -61,7 +61,6 @@ export function GuesthouseSection() {
           className="md:col-start-6 md:col-span-6 md:row-start-2 mt-12 md:mt-44 reveal reveal-delay-1"
         />
       </div>
-      </div>
     </section>
   );
 }
