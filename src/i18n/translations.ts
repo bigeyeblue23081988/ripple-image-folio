@@ -134,6 +134,7 @@ export const translations = {
         "We are curious about people. About what moves them, what they do not say right away, and about the stories that stay with you.",
       body: "Bigeye Blue is small on purpose: a documentary maker's eye for content, the flexibility of a compact crew, and a place of our own in Ghent where an idea can grow into a finished production.",
       cta: "Talk to us",
+      photoAlt: "Portrait of director Marieke Dermul, founder of Bigeye Blue",
     },
     location: {
       label: "Filming location",
