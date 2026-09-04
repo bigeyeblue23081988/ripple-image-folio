@@ -14,8 +14,9 @@ export function ContactSection() {
           <h2 className="md:col-start-1 md:col-span-6 text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight reveal">
             {t.contact.title.replace(/[?.!]$/, "")}
             {t.contact.title.match(/[?.!]$/)?.[0] === "?" ? (
-              <span className="bg-gradient-to-b from-background from-[80%] to-accent to-[80%] bg-clip-text text-transparent">
-                ?
+              <span className="relative inline-block" aria-hidden="true">
+                <span className="text-background [clip-path:inset(0_0_25%_0)]">?</span>
+                <span className="absolute inset-0 text-accent [clip-path:inset(75%_0_0_0)]">?</span>
               </span>
             ) : (
               <span className="text-accent">
