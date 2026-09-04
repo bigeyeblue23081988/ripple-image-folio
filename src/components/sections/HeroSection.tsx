@@ -1,6 +1,6 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import hallway from "@/assets/house/hallway.jpg";
+import hallway from "@/assets/house/hallway-wide-hero.jpg";
 
 export function HeroSection() {
   const { t } = useLang();
@@ -12,8 +12,8 @@ export function HeroSection() {
         <img
           src={hallway}
           alt={t.figures.hallAlt}
-          width={1920}
-          height={1279}
+          width={2528}
+          height={1696}
           fetchPriority="high"
           decoding="async"
           className="h-[68vh] min-h-[420px] md:h-[78vh] w-full object-cover"
