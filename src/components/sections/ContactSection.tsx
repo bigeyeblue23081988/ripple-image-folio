@@ -13,9 +13,15 @@ export function ContactSection() {
         <div className="md:grid md:grid-cols-12 md:gap-x-12">
           <h2 className="md:col-start-1 md:col-span-6 text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight reveal">
             {t.contact.title.replace(/[?.!]$/, "")}
-            <span className="text-accent">
-              {t.contact.title.match(/[?.!]$/)?.[0] ?? "."}
-            </span>
+            {t.contact.title.match(/[?.!]$/)?.[0] === "?" ? (
+              <span className="bg-gradient-to-b from-background from-[80%] to-accent to-[80%] bg-clip-text text-transparent">
+                ?
+              </span>
+            ) : (
+              <span className="text-accent">
+                {t.contact.title.match(/[?.!]$/)?.[0] ?? "."}
+              </span>
+            )}
           </h2>
 
           <p className="md:col-start-8 md:col-span-5 mt-6 md:mt-3 text-base md:text-lg leading-relaxed text-background/80 reveal reveal-delay-1">
