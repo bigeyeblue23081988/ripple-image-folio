@@ -11,7 +11,12 @@ export const translations = {
       backToTop: "Bigeye Blue — back to top",
     },
     intro: {
-      lead: "Bigeye Blue is a production house led by director Marieke Dermul. We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content. We are drawn to the unseen: stories that are hard to tell, whether they sit in a taboo sphere or are difficult for a broad audience to grasp. Bigeye Blue dives into the story — and, more importantly, into how it should be told so it can be seen.",
+      label: "Bigeye Blue",
+      lead: "A production house led by director Marieke Dermul",
+      body1:
+        "We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content.",
+      body2:
+        "We are drawn to the unseen: stories that are hard to tell, whether they sit in a taboo sphere or are difficult for a broad audience to grasp. We dive into the story — and, above all, into how it should be told so it can be seen.",
     },
     hero: {
       line1: "Looking beyond",
@@ -203,7 +208,12 @@ export const translations = {
       backToTop: "Bigeye Blue — terug naar boven",
     },
     intro: {
-      lead: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content. We zijn gefascineerd door het ongeziene: verhalen die niet makkelijk te vertellen zijn, omdat ze taboe zijn of omdat ze moeilijk te begrijpen zijn voor een breed publiek. Bigeye Blue duikt in het verhaal — en vooral in hoe het verteld moet worden, zodat het gezien wordt.",
+      label: "Bigeye Blue",
+      lead: "Een productiehuis onder leiding van regisseur Marieke Dermul",
+      body1:
+        "We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content.",
+      body2:
+        "We zijn gefascineerd door het ongeziene: verhalen die niet makkelijk te vertellen zijn, omdat ze taboe zijn of moeilijk te vatten voor een breed publiek. We duiken in het verhaal — en vooral in hoe het verteld moet worden, zodat het gezien wordt.",
     },
     hero: {
       line1: "Looking beyond",

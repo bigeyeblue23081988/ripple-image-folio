@@ -6,7 +6,7 @@ export function HeroSection() {
   const { t } = useLang();
 
   return (
-    <section className="pt-2 pb-24 md:pb-36">
+    <section className="pt-2">
       {/* One full-bleed visual that states, in one sentence, what this is. */}
       <div className="relative w-full overflow-hidden animate-hero-zoom">
         <img
@@ -53,11 +53,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="container-wide mt-12 md:mt-20">
-        <p className="max-w-2xl text-base md:text-lg leading-relaxed text-foreground/80 reveal">
-          {t.hero.tagline}
-        </p>
-      </div>
     </section>
   );
 }
