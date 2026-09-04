@@ -4,6 +4,7 @@ import { useLang } from "@/i18n/LanguageProvider";
 import patio from "@/assets/house/patio.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
+import hallWide from "@/assets/house/hallway-wide.jpg";
 
 export function LocationSection() {
   const { t } = useLang();
@@ -57,6 +58,16 @@ export function LocationSection() {
           index="05"
           caption={t.figures.gardenCaption}
           className="md:col-start-8 lg:col-start-7 md:col-span-5 lg:col-span-4 md:row-start-2 self-end mt-16 md:mt-0 reveal reveal-delay-1"
+        />
+
+        <Figure
+          src={hallWide}
+          alt={t.figures.hallAlt}
+          width={2476}
+          height={1668}
+          index="06"
+          caption={t.figures.hallCaption}
+          className="md:col-start-2 md:col-span-10 md:row-start-3 mt-16 md:mt-0 reveal"
         />
       </div>
     </section>
