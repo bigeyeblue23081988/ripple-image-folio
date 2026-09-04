@@ -8,28 +8,37 @@ export function CreateSection() {
       id="what-we-create"
       className="container-wide pb-28 md:pb-44 scroll-mt-24"
     >
-      <div className="md:grid md:grid-cols-12">
+      <div className="md:grid md:grid-cols-12 gap-y-14">
         <div className="md:col-start-2 md:col-span-10">
           <p className="plate-label mb-8 reveal">{t.create.label}</p>
-          <h2 className="statement text-3xl md:text-5xl lg:text-6xl reveal">
-            <strong>
-              {t.create.titleStrong}
-              <span className="text-accent">.</span>
-            </strong>
-            <span className="font-normal">{t.create.titleLight}</span>
+          <h2 className="statement text-4xl md:text-6xl lg:text-7xl reveal">
+            <strong>{t.create.titleStrong}</strong>
+            <span className="text-accent">.</span>
           </h2>
+        </div>
 
-          {/* Mobile — scannable lead + keyword pills */}
-          <div className="mt-10 max-w-3xl reveal reveal-delay-1 md:hidden">
-            <p className="text-base leading-relaxed text-foreground/90">
-              {t.create.body}
-            </p>
-          </div>
-
-          {/* Desktop — larger statement paragraph */}
-          <p className="hidden md:block mt-10 max-w-3xl text-2xl leading-[1.45] tracking-tight text-foreground reveal reveal-delay-1">
-            {t.create.body}
+        <div className="md:col-start-2 md:col-span-10 mt-10 md:mt-16">
+          <p className="text-2xl md:text-4xl lg:text-5xl leading-[1.15] tracking-tight font-semibold text-foreground reveal">
+            {t.create.lead}
           </p>
+        </div>
+
+        <div className="md:col-start-2 md:col-span-10 mt-10 md:mt-20">
+          <div className="grid md:grid-cols-3 gap-12 md:gap-8 lg:gap-14">
+            {t.create.blocks.map((block, i) => (
+              <div
+                key={block.label}
+                className={`reveal ${i === 1 ? "reveal-delay-1" : i === 2 ? "reveal-delay-2" : ""}`}
+              >
+                <p className="text-xs uppercase tracking-[0.12em] text-accent font-semibold mb-4">
+                  {block.label}
+                </p>
+                <p className="text-base md:text-lg leading-relaxed text-foreground/90">
+                  {block.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
