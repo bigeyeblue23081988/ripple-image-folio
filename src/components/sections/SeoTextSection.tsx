@@ -19,8 +19,10 @@ export function SeoTextSection() {
         <div className="md:col-start-2 md:col-span-10">
           <p className="plate-label mb-8 reveal">{t.seo.label}</p>
           <h2 className="statement text-3xl md:text-5xl lg:text-6xl reveal">
-            <strong>{t.seo.title}</strong>
-            <span className="text-accent">.</span>
+            <strong>
+              {t.seo.title}
+              <span className="text-accent">.</span>
+            </strong>
           </h2>
         </div>
 
