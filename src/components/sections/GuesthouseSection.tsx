@@ -29,7 +29,7 @@ export function GuesthouseSection() {
           alt={t.figures.kitchenAlt}
           width={900}
           height={478}
-          index="06"
+          index="07"
           caption={t.figures.kitchenCaption}
           className="md:col-start-1 md:col-span-6 md:row-start-1 reveal"
         />
@@ -39,7 +39,7 @@ export function GuesthouseSection() {
           alt={t.figures.guestRoomAlt}
           width={1536}
           height={1024}
-          index="07"
+          index="08"
           caption={t.figures.guestRoomCaption}
           className="md:col-start-8 md:col-span-5 md:row-start-1 self-end mt-10 md:mt-0 md:translate-y-20 reveal reveal-delay-1"
         />
@@ -56,7 +56,7 @@ export function GuesthouseSection() {
           alt={t.figures.bathroomAlt}
           width={1920}
           height={1278}
-          index="08"
+          index="09"
           caption={t.figures.bathroomCaption}
           className="md:col-start-6 md:col-span-6 md:row-start-2 mt-12 md:mt-44 reveal reveal-delay-1"
         />
