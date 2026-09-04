@@ -1,6 +1,6 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import mariekeAsset from "@/assets/marieke-dermul.jpg.asset.json";
+import mariekePortrait from "@/assets/marieke-dermul.jpg";
 
 /**
  * The human side: who leads Bigeye Blue, in her own words — with her portrait.
@@ -24,7 +24,7 @@ export function AboutSection() {
             <figure className="group">
               <div className="overflow-hidden bg-secondary">
                 <img
-                  src={mariekeAsset.url}
+                  src={mariekePortrait}
                   alt={t.about.photoAlt}
                   width={828}
                   height={1080}
