@@ -85,14 +85,13 @@ export function Clients() {
         ))}
       </div>
 
-      {/* Mobile — endless ticker */}
-      <div className="md:hidden relative overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]">
-        <ul className="flex w-max animate-marquee gap-10 py-2">
-          {[...clients, ...clients].map((client, i) => (
+      {/* Mobile — calm wrap, no second marquee */}
+      <div className="md:hidden">
+        <ul className="flex flex-wrap gap-x-6 gap-y-3">
+          {clients.map((client) => (
             <li
-              key={`${client.name}-${i}`}
-              aria-hidden={i >= clients.length}
-              className="text-lg font-medium tracking-[0.1em] text-foreground/90 whitespace-nowrap"
+              key={client.name}
+              className="text-base font-medium tracking-[0.08em] text-foreground/90"
             >
               {client.name}
             </li>

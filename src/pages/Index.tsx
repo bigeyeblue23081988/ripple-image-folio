@@ -28,7 +28,7 @@ const Index = () => {
         <GuesthouseSection />
         <PracticalSection />
         <ClientsSection />
-        <TickerBand />
+        <TickerBand className="hidden md:block" />
         <ContactSection />
       </main>
 
