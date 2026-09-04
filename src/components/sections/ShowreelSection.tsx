@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
 
-import showreelAsset from "@/assets/showreel.mp4.asset.json";
+const showreelUrl = "/showreel.mp4";
 import rainbowNation from "@/assets/rainbow-nation.jpg";
 
 /**
@@ -27,7 +27,7 @@ export function ShowreelSection() {
         <div className="relative overflow-hidden bg-foreground">
           <video
             ref={videoRef}
-            src={showreelAsset.url}
+            src={showreelUrl}
             poster={rainbowNation}
             autoPlay
             muted
