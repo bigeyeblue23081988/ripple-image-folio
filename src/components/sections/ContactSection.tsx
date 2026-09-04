@@ -15,8 +15,8 @@ export function ContactSection() {
             {t.contact.title.replace(/[?.!]$/, "")}
             {t.contact.title.match(/[?.!]$/)?.[0] === "?" ? (
               <span className="relative inline-block" aria-hidden="true">
-                <span className="text-background [clip-path:inset(0_0_25%_0)]">?</span>
-                <span className="absolute inset-0 text-accent [clip-path:inset(75%_0_0_0)]">?</span>
+                <span className="text-background [clip-path:inset(0_0_28%_0)]">?</span>
+                <span className="absolute inset-0 text-accent [clip-path:inset(68%_0_0_0)]">?</span>
               </span>
             ) : (
               <span className="text-accent">
