@@ -110,7 +110,7 @@ export const translations = {
       ],
     },
     proof: {
-      label: "Proof",
+      label: "Recognition",
       title: "Work that travelled",
       items: [
         {
@@ -123,12 +123,12 @@ export const translations = {
         },
         {
           k: "Europe and beyond",
-          v: "European Citizen Popsong toured internationally after its premiere",
+          v: "The documentaries Pride is protest!, Rainbow Nation and the project European Citizen Popsong toured internationally after its premiere.",
         },
       ],
     },
     about: {
-      label: "The people",
+      label: "Director",
       title: "Led by director Marieke Dermul",
       quote:
         "We are curious about people. About what moves them, what they do not say right away, and about the stories that stay with you.",
@@ -296,7 +296,7 @@ export const translations = {
       ],
     },
     proof: {
-      label: "Bewijs",
+      label: "Erkenning",
       title: "Werk dat verder ging",
       items: [
         {
@@ -309,12 +309,12 @@ export const translations = {
         },
         {
           k: "Europa en daarbuiten",
-          v: "European Citizen Popsong tourde internationaal na de première",
+          v: "De documentaires Pride is protest!, Rainbow Nation en het project European Citizen Popsong tourden internationaal na hun première.",
         },
       ],
     },
     about: {
-      label: "De mensen",
+      label: "Regisseur",
       title: "Onder leiding van regisseur Marieke Dermul",
       quote:
         "We zijn nieuwsgierig naar mensen. Naar wat hen beweegt, wat ze niet meteen vertellen en naar verhalen die blijven hangen.",
