@@ -306,6 +306,15 @@
     will-change: transform;
   }
 
+  /* Hide scrollbars for horizontal snap carousels. */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Gallery-gold scrollbar. */
   ::-webkit-scrollbar { width: 10px; }
   ::-webkit-scrollbar-track { background: hsl(var(--background)); }

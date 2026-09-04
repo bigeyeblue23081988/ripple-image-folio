@@ -18,7 +18,16 @@ export function CreateSection() {
             </strong>
             <span className="font-normal">{t.create.titleLight}</span>
           </h2>
-          <p className="mt-10 max-w-3xl text-lg md:text-2xl leading-[1.45] tracking-tight text-foreground reveal reveal-delay-1">
+
+          {/* Mobile — scannable lead + keyword pills */}
+          <div className="mt-10 max-w-3xl reveal reveal-delay-1 md:hidden">
+            <p className="text-base leading-relaxed text-foreground/90">
+              {t.create.body}
+            </p>
+          </div>
+
+          {/* Desktop — larger statement paragraph */}
+          <p className="hidden md:block mt-10 max-w-3xl text-2xl leading-[1.45] tracking-tight text-foreground reveal reveal-delay-1">
             {t.create.body}
           </p>
         </div>
