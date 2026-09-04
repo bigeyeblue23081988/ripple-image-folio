@@ -22,7 +22,7 @@ export const translations = {
     },
     showreel: {
       caption: "Showreel",
-      sub: "38 seconds of Bigeye Blue",
+      sub: "Bigeye Blue in 30 seconds",
       soundOn: "Sound on",
       soundOff: "Sound off",
       ariaLabel: "Bigeye Blue showreel — fragments of our documentaries and productions",
