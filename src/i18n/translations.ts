@@ -10,6 +10,9 @@ export const translations = {
       contact: "Contact",
       backToTop: "Bigeye Blue — back to top",
     },
+    intro: {
+      lead: "Bigeye Blue is a production house led by director Marieke Dermul. We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content. We are drawn to the unseen: stories that are hard to tell, whether they sit in a taboo sphere or are difficult for a broad audience to grasp. Bigeye Blue dives into the story — and, more importantly, into how it should be told so it can be seen.",
+    },
     hero: {
       line1: "Looking beyond",
       line2: "the obvious",
@@ -68,10 +71,10 @@ export const translations = {
         "Private bathroom of the Ghent guesthouse with a walk-in shower, washbasin and toilet",
     },
     create: {
-      label: "What we do",
-      titleStrong: "What we do",
+      label: "What we create",
+      titleStrong: "What we create",
       titleLight: "",
-      lead: "Bigeye Blue is a production house led by director Marieke Dermul. We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content.",
+      lead: "From first idea to final cut, we make documentary, branded content and podcast series in our own studio and on location.",
       blocks: [
         {
           label: "From idea to final cut",
@@ -199,6 +202,9 @@ export const translations = {
       contact: "Contact",
       backToTop: "Bigeye Blue — terug naar boven",
     },
+    intro: {
+      lead: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content. We zijn gefascineerd door het ongeziene: verhalen die niet makkelijk te vertellen zijn, omdat ze taboe zijn of omdat ze moeilijk te begrijpen zijn voor een breed publiek. Bigeye Blue duikt in het verhaal — en vooral in hoe het verteld moet worden, zodat het gezien wordt.",
+    },
     hero: {
       line1: "Looking beyond",
       line2: "the obvious",
@@ -257,10 +263,10 @@ export const translations = {
         "Private badkamer van het gastenverblijf in Gent met inloopdouche, lavabo en toilet",
     },
     create: {
-      label: "Wat we doen",
-      titleStrong: "Wat we doen",
+      label: "Wat we maken",
+      titleStrong: "Wat we maken",
       titleLight: "",
-      lead: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content.",
+      lead: "Van eerste idee tot finale montage maken we documentaires, branded content en podcastreeksen in onze eigen studio en op locatie.",
       blocks: [
         {
           label: "Van idee tot finale montage",
