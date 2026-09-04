@@ -165,6 +165,11 @@ export const translations = {
       { label: "Studio", href: "#filming-location" },
       { label: "Guesthouse", href: "#guesthouse" },
     ],
+    statement: {
+      label: "Bigeye Blue",
+      line1: "Looking beyond",
+      line2: "the obvious",
+    },
     footer: { place: "Bigeye Blue — Ghent, Belgium" },
     seo: {
       ariaLabel: "Services",
