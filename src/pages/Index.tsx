@@ -6,6 +6,7 @@ import { LocationSection } from "@/components/sections/LocationSection";
 import { GuesthouseSection } from "@/components/sections/GuesthouseSection";
 import { PracticalSection } from "@/components/sections/PracticalSection";
 import { ClientsSection } from "@/components/sections/ClientsSection";
+import { SeoTextSection } from "@/components/sections/SeoTextSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { useReveal } from "@/hooks/use-reveal";
 import { useLang } from "@/i18n/LanguageProvider";
