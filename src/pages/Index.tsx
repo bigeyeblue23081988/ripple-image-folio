@@ -32,6 +32,7 @@ const Index = () => {
         <ShowreelSection />
         <WorkSection />
         <CreateSection />
+        <StatementBand />
         <AboutSection />
         <ProofSection />
         <ClientsSection />
