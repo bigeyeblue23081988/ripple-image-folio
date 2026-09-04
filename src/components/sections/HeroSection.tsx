@@ -1,7 +1,7 @@
 import { Figure } from "@/components/Figure";
 import { useLang } from "@/i18n/LanguageProvider";
 
-import exterior from "@/assets/house/exterior.jpg";
+import exterior from "@/assets/house/exterior-dusk.jpg";
 import hallway from "@/assets/house/hallway.jpg";
 
 export function HeroSection() {
