@@ -1,7 +1,10 @@
 import { SiteNav } from "@/components/SiteNav";
 import { TickerBand } from "@/components/TickerBand";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { WorkSection } from "@/components/sections/WorkSection";
 import { CreateSection } from "@/components/sections/CreateSection";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { ProofSection } from "@/components/sections/ProofSection";
 import { LocationSection } from "@/components/sections/LocationSection";
 import { GuesthouseSection } from "@/components/sections/GuesthouseSection";
 import { PracticalSection } from "@/components/sections/PracticalSection";
@@ -24,15 +27,19 @@ const Index = () => {
       <main>
         <HeroSection />
         <TickerBand className="mb-28 md:mb-44" />
+        <WorkSection />
         <CreateSection />
+        <AboutSection />
+        <ProofSection />
+        <ClientsSection />
         <LocationSection />
         <GuesthouseSection />
         <PracticalSection />
-        <ClientsSection />
         <TickerBand className="hidden md:block" />
         <SeoTextSection />
         <ContactSection />
       </main>
+
 
       <footer className="container-wide pb-12">
         <div className="flex flex-col sm:flex-row justify-between gap-3 border-t border-separator pt-6 text-xs text-foreground/50">
