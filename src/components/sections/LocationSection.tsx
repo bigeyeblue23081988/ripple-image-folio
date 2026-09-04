@@ -63,8 +63,8 @@ export function LocationSection() {
         <Figure
           src={hallWide}
           alt={t.figures.hallAlt}
-          width={2476}
-          height={1668}
+          width={2528}
+          height={1696}
           index="06"
           caption={t.figures.hallCaption}
           className="md:col-start-2 md:col-span-10 md:row-start-3 mt-16 md:mt-0 reveal"
