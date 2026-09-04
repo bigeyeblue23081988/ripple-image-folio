@@ -209,7 +209,8 @@ export const translations = {
       ctaSecondary: "Praat met ons",
       ctaWork: "Bekijk ons werk",
       ctaLocation: "Bekijk de locatie",
-      overlay: "Een productiehuis in Gent, en een plek waar mensen en verhalen elkaar ontmoeten.",
+      overlayLine1: "Een productiehuis in Gent",
+      overlayLine2: "Een plek waar mensen en verhalen elkaar ontmoeten.",
     },
     showreel: {
       caption: "Showreel",
