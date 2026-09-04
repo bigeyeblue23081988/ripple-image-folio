@@ -49,15 +49,19 @@ export function Figure({
       </div>
 
       {(index || caption) && (
-        <figcaption className="mt-5 flex items-start justify-between gap-4">
-          <div className="flex items-start gap-3">
+        <figcaption className="mt-4 md:mt-5 flex items-start justify-between gap-4">
+          <div className="flex items-start gap-2 md:gap-3">
             <span
               aria-hidden
-              className="mt-0.5 block h-9 w-px shrink-0 bg-foreground"
+              className="mt-0.5 hidden md:block h-9 w-px shrink-0 bg-foreground"
+            />
+            <span
+              aria-hidden
+              className="mt-1.5 block md:hidden h-1.5 w-1.5 rounded-full bg-accent shrink-0"
             />
             <div>
               {caption && (
-                <p className="text-xs font-semibold uppercase tracking-wider">
+                <p className="text-[11px] md:text-xs font-semibold uppercase tracking-wider">
                   {caption}
                 </p>
               )}

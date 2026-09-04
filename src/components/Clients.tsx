@@ -85,15 +85,18 @@ export function Clients() {
         ))}
       </div>
 
-      {/* Mobile — calm wrap, no second marquee */}
-      <div className="md:hidden">
-        <ul className="flex flex-wrap gap-x-6 gap-y-3">
-          {clients.map((client) => (
+      {/* Mobile — snap-scroll cards */}
+      <div className="md:hidden -mx-6">
+        <ul className="flex snap-x snap-mandatory gap-3 overflow-x-auto px-6 pb-4 scrollbar-hide">
+          {clients.map((client, i) => (
             <li
               key={client.name}
-              className="text-base font-medium tracking-[0.08em] text-foreground/90"
+              className="snap-start shrink-0 w-[72vw] max-w-[280px] border border-separator bg-secondary/30 p-5 flex flex-col justify-between aspect-[4/3]"
             >
-              {client.name}
+              <span className="text-[10px] font-mono text-foreground/40">{String(i + 1).padStart(2, "0")}</span>
+              <span className="text-xl font-bold uppercase tracking-[0.04em] leading-none">
+                {client.name}
+              </span>
             </li>
           ))}
         </ul>

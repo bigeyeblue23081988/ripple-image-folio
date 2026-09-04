@@ -19,11 +19,12 @@ export function PracticalSection() {
           </strong>
         </h2>
 
-        <dl className="md:col-start-6 md:col-span-7 mt-8 md:mt-2 reveal reveal-delay-1">
+        {/* Desktop — definition list */}
+        <dl className="hidden md:grid md:col-start-6 md:col-span-7 mt-8 md:mt-2 reveal reveal-delay-1">
           {t.facts.items.map((item) => (
             <div
               key={item.k}
-              className="grid grid-cols-1 sm:grid-cols-[minmax(8rem,10rem)_1fr] gap-1 sm:gap-6 border-t border-separator py-4"
+              className="grid grid-cols-[minmax(8rem,10rem)_1fr] gap-6 border-t border-separator py-4"
             >
               <dt className="text-[11px] font-bold uppercase tracking-[0.14em] text-foreground/50">
                 {item.k}
@@ -32,6 +33,28 @@ export function PracticalSection() {
             </div>
           ))}
         </dl>
+
+        {/* Mobile — designed info cards */}
+        <div className="md:hidden mt-8 reveal reveal-delay-1">
+          <div className="grid grid-cols-2 gap-3">
+            {t.facts.items.map((item, i) => (
+              <div
+                key={item.k}
+                className="relative border-t-2 border-accent bg-secondary/40 p-4"
+              >
+                <span className="absolute -top-2.5 left-4 bg-background px-1 text-[10px] font-bold uppercase tracking-[0.14em] text-foreground/50">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.12em] text-foreground/50">
+                  {item.k}
+                </p>
+                <p className="mt-2 text-sm leading-snug text-foreground/90">
+                  {item.v}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
