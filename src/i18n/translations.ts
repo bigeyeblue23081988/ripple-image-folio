@@ -20,7 +20,8 @@ export const translations = {
       ctaSecondary: "Talk to us",
       ctaWork: "See our work",
       ctaLocation: "See the location",
-      overlay: "A production house in Ghent, and a place where people and stories meet.",
+      overlayLine1: "A production house in Ghent",
+      overlayLine2: "A place where people and stories meet.",
     },
     showreel: {
       caption: "Showreel",
@@ -164,6 +165,11 @@ export const translations = {
       { label: "Studio", href: "#filming-location" },
       { label: "Guesthouse", href: "#guesthouse" },
     ],
+    statement: {
+      label: "Bigeye Blue",
+      line1: "Looking beyond",
+      line2: "the obvious",
+    },
     footer: { place: "Bigeye Blue — Ghent, Belgium" },
     seo: {
       ariaLabel: "Services",
@@ -208,7 +214,8 @@ export const translations = {
       ctaSecondary: "Praat met ons",
       ctaWork: "Bekijk ons werk",
       ctaLocation: "Bekijk de locatie",
-      overlay: "Een productiehuis in Gent, en een plek waar mensen en verhalen elkaar ontmoeten.",
+      overlayLine1: "Een productiehuis in Gent",
+      overlayLine2: "Een plek waar mensen en verhalen elkaar ontmoeten.",
     },
     showreel: {
       caption: "Showreel",
@@ -352,6 +359,11 @@ export const translations = {
       { label: "Studio", href: "#filming-location" },
       { label: "Gastenverblijf", href: "#guesthouse" },
     ],
+    statement: {
+      label: "Bigeye Blue",
+      line1: "Looking beyond",
+      line2: "the obvious",
+    },
     footer: { place: "Bigeye Blue — Gent, België" },
     seo: {
       ariaLabel: "Diensten",

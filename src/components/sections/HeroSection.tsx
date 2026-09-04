@@ -28,11 +28,16 @@ export function HeroSection() {
 
         <div className="absolute inset-x-0 bottom-0">
           <div className="container-wide pb-8 md:pb-14">
-            <h1 className="max-w-3xl text-ink-foreground text-2xl sm:text-3xl md:text-5xl font-bold leading-[1.12] tracking-tight animate-fade-in-up">
-              {t.hero.overlay}
+            <h1 className="max-w-4xl text-ink-foreground animate-fade-in-up">
+              <span className="block text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
+                {t.hero.overlayLine1}
+              </span>
+              <span className="mt-2 md:mt-3 block text-xl sm:text-2xl md:text-4xl lg:text-5xl font-light leading-[1.15] tracking-tight text-ink-foreground/90">
+                {t.hero.overlayLine2}
+              </span>
             </h1>
 
-            <div className="mt-7 md:mt-9 flex flex-wrap items-center gap-3 md:gap-4 animate-fade-in">
+            <div className="mt-7 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4 animate-fade-in">
               <a
                 href="#work"
                 className="inline-block bg-ink-foreground px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-ink transition-colors duration-300 hover:bg-accent hover:text-accent-foreground"

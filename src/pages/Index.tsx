@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { ShowreelSection } from "@/components/sections/ShowreelSection";
 import { WorkSection } from "@/components/sections/WorkSection";
 import { CreateSection } from "@/components/sections/CreateSection";
+import { StatementBand } from "@/components/sections/StatementBand";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ProofSection } from "@/components/sections/ProofSection";
 import { LocationSection } from "@/components/sections/LocationSection";
@@ -31,6 +32,7 @@ const Index = () => {
         <ShowreelSection />
         <WorkSection />
         <CreateSection />
+        <StatementBand />
         <AboutSection />
         <ProofSection />
         <ClientsSection />
