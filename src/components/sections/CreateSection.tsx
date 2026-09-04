@@ -12,8 +12,10 @@ export function CreateSection() {
         <div className="md:col-start-2 md:col-span-10">
           <p className="plate-label mb-8 reveal">{t.create.label}</p>
           <h2 className="statement text-4xl md:text-6xl lg:text-7xl reveal">
-            <strong>{t.create.titleStrong}</strong>
-            <span className="text-accent">.</span>
+            <strong>
+              {t.create.titleStrong}
+              <span className="text-accent">.</span>
+            </strong>
           </h2>
         </div>
 

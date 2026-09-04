@@ -6,6 +6,9 @@ import jongEenzaam from "@/assets/jong-en-eenzaam.jpg";
 
 const images = [rainbowNation, popsong, jongEenzaam];
 
+// Per-image crop focus: popsong keeps the person fully in frame.
+const objectPositions = ["50% 50%", "25% 50%", "50% 50%"];
+
 /**
  * Recent work: three cases carrying the proof — image, client, one line.
  */
@@ -37,6 +40,7 @@ export function WorkSection() {
                 alt={item.alt}
                 loading="lazy"
                 decoding="async"
+                style={{ objectPosition: objectPositions[i] }}
                 className="aspect-[4/5] w-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
               />
             </div>
