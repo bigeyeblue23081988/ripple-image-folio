@@ -60,6 +60,10 @@ export default {
         hover: {
           bg: "hsl(var(--hover-bg))",
         },
+        ink: {
+          DEFAULT: "hsl(var(--ink))",
+          foreground: "hsl(var(--ink-foreground))",
+        },
         separator: "hsl(var(--separator))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
