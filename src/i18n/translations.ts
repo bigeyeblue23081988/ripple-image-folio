@@ -3,6 +3,7 @@ export type Lang = "en" | "nl";
 export const translations = {
   en: {
     nav: {
+      work: "Work",
       create: "What we create",
       location: "Filming location",
       guesthouse: "Guesthouse",
@@ -13,8 +14,11 @@ export const translations = {
       line1: "Looking beyond",
       line2: "the obvious",
       sub: "A house where people and stories meet.",
+      tagline:
+        "Bigeye Blue is a production house in Ghent for documentary, branded content, reportage and stories that go further than the obvious.",
       ctaPrimary: "Book the location",
       ctaSecondary: "Talk to us",
+      ctaWork: "See our work",
     },
     facts: {
       label: "Practical",
@@ -73,6 +77,57 @@ export const translations = {
         },
       ],
     },
+    work: {
+      label: "Recent work",
+      title: "Recent work",
+      cta: "Talk to us about your project",
+      items: [
+        {
+          title: "Rainbow Nation",
+          meta: "Documentary — Canvas",
+          text: "A documentary about LGBT rights in South Africa. Nominated for the Africa Movie Academy Awards 2024.",
+          alt: "Poster of the documentary Rainbow Nation by Marieke Dermul, about LGBT rights in South Africa",
+        },
+        {
+          title: "European Citizen Popsong",
+          meta: "Creative documentary project",
+          text: "A creative documentary project putting the unity of Europe under the magnifying glass. Nominated for the Filipa Bragança Award at the Edinburgh Festival Fringe and toured across Europe and beyond.",
+          alt: "A singer with a microphone and a portable amplifier on a pebble beach beside crashing waves, from European Citizen Popsong",
+        },
+        {
+          title: "Jong & Eenzaam",
+          meta: "Docuseries — VRT MAX",
+          text: "A documentary series for VRT MAX, made for De Warmste Week.",
+          alt: "A young man dancing on a bridge in Ghent, still from the docuseries Jong & Eenzaam for VRT MAX",
+        },
+      ],
+    },
+    proof: {
+      label: "Proof",
+      title: "Work that travelled",
+      items: [
+        {
+          k: "Africa Movie Academy Awards 2024",
+          v: "Nomination — Rainbow Nation, documentary for Canvas",
+        },
+        {
+          k: "Edinburgh Festival Fringe",
+          v: "Nomination Filipa Bragança Award — European Citizen Popsong",
+        },
+        {
+          k: "Europe and beyond",
+          v: "European Citizen Popsong toured internationally after its premiere",
+        },
+      ],
+    },
+    about: {
+      label: "The people",
+      title: "Led by director Marieke Dermul",
+      quote:
+        "We are curious about people. About what moves them, what they do not say right away, and about the stories that stay with you.",
+      body: "Bigeye Blue is small on purpose: a documentary maker's eye for content, the flexibility of a compact crew, and a place of our own in Ghent where an idea can grow into a finished production.",
+      cta: "Talk to us",
+    },
     location: {
       label: "Filming location",
       titleStrong: "Filming location",
@@ -80,19 +135,24 @@ export const translations = {
     },
     guesthouse: {
       label: "Guesthouse",
-      titleLine1: "Guesthouse,",
-      titleLine2: "where anyone is welcome",
-      body: "Once a 19th-century coach house, The Industrial Loft has been transformed into a distinctive guest house where heritage and contemporary comfort exist in perfect balance.",
+      titleLine1: "A production place",
+      titleLine2: "where you can stay",
+      body: "Studio, filming location, patio and guest rooms in one 19th-century coach house in Ghent. Handy for shooting days that run long, interview days with several guests, podcast recordings, and crews travelling in from further away — work downstairs, sleep upstairs.",
     },
     clients: { label: "Clients" },
-    contact: { label: "Contact" },
+    contact: {
+      label: "Contact",
+      title: "Do you have a story?",
+      body: "A documentary, a reportage, a company film, a podcast — or just an idea that could still go anywhere? Tell us about it.",
+      cta: "Talk to us",
+    },
     ticker: [
-      "Documentary",
-      "Podcast",
-      "Reportage",
-      "Interviews",
-      "Studio",
-      "Guesthouse",
+      { label: "Documentary", href: "#work" },
+      { label: "Podcast", href: "#what-we-create" },
+      { label: "Reportage", href: "#work" },
+      { label: "Interviews", href: "#filming-location" },
+      { label: "Studio", href: "#filming-location" },
+      { label: "Guesthouse", href: "#guesthouse" },
     ],
     footer: { place: "Bigeye Blue — Ghent, Belgium" },
     seo: {
@@ -121,6 +181,7 @@ export const translations = {
   },
   nl: {
     nav: {
+      work: "Werk",
       create: "Wat we maken",
       location: "Filmlocatie",
       guesthouse: "Gastenverblijf",
@@ -131,8 +192,11 @@ export const translations = {
       line1: "Looking beyond",
       line2: "the obvious",
       sub: "Een huis waar mensen en verhalen elkaar ontmoeten.",
+      tagline:
+        "Bigeye Blue is een productiehuis in Gent voor documentaires, branded content, reportages en verhalen die verder gaan dan het voor de hand liggende.",
       ctaPrimary: "Boek de locatie",
       ctaSecondary: "Praat met ons",
+      ctaWork: "Bekijk ons werk",
     },
     facts: {
       label: "Praktisch",
@@ -191,6 +255,57 @@ export const translations = {
         },
       ],
     },
+    work: {
+      label: "Recent werk",
+      title: "Recent werk",
+      cta: "Praat met ons over jouw project",
+      items: [
+        {
+          title: "Rainbow Nation",
+          meta: "Documentaire — Canvas",
+          text: "Een documentaire over de lgbt-rechten in Zuid-Afrika. Genomineerd voor de Africa Movie Academy Awards 2024.",
+          alt: "Affiche van de documentaire Rainbow Nation van Marieke Dermul, over de lgbt-rechten in Zuid-Afrika",
+        },
+        {
+          title: "European Citizen Popsong",
+          meta: "Creatief documentaireproject",
+          text: "Een creatief documentaireproject waarin de eenheid in Europa onder de loep genomen wordt. Genomineerd voor de Filipa Bragança Award op het Edinburgh Festival Fringe en daarna op tour door heel Europa en daarbuiten.",
+          alt: "Een zangeres met micro en draagbare versterker op een kiezelstrand naast opspattende golven, uit European Citizen Popsong",
+        },
+        {
+          title: "Jong & Eenzaam",
+          meta: "Docureeks — VRT MAX",
+          text: "Een docureeks voor VRT MAX, naar aanleiding van De Warmste Week.",
+          alt: "Een jonge man die danst op een brug in Gent, beeld uit de docureeks Jong & Eenzaam voor VRT MAX",
+        },
+      ],
+    },
+    proof: {
+      label: "Bewijs",
+      title: "Werk dat verder ging",
+      items: [
+        {
+          k: "Africa Movie Academy Awards 2024",
+          v: "Nominatie — Rainbow Nation, documentaire voor Canvas",
+        },
+        {
+          k: "Edinburgh Festival Fringe",
+          v: "Nominatie Filipa Bragança Award — European Citizen Popsong",
+        },
+        {
+          k: "Europa en daarbuiten",
+          v: "European Citizen Popsong tourde internationaal na de première",
+        },
+      ],
+    },
+    about: {
+      label: "De mensen",
+      title: "Onder leiding van regisseur Marieke Dermul",
+      quote:
+        "We zijn nieuwsgierig naar mensen. Naar wat hen beweegt, wat ze niet meteen vertellen en naar verhalen die blijven hangen.",
+      body: "Bigeye Blue is bewust klein: de inhoudelijke blik van een documentairemaker, de flexibiliteit van een kleine ploeg en een eigen plek in Gent waar een idee kan uitgroeien tot een afgewerkte productie.",
+      cta: "Praat met ons",
+    },
     location: {
       label: "Filmlocatie",
       titleStrong: "Filmlocatie",
@@ -198,19 +313,24 @@ export const translations = {
     },
     guesthouse: {
       label: "Gastenverblijf",
-      titleLine1: "Gastenverblijf,",
-      titleLine2: "waar iedereen welkom is",
-      body: "Ooit een 19de-eeuws koetshuis, vandaag The Industrial Loft: een bijzonder gastenverblijf waar erfgoed en hedendaags comfort perfect in balans zijn.",
+      titleLine1: "Een productieplek",
+      titleLine2: "waar je kan blijven",
+      body: "Studio, filmlocatie, patio en gastenkamers in één 19de-eeuws koetshuis in Gent. Handig voor draaidagen die uitlopen, interviewdagen met meerdere gasten, podcastopnames en ploegen die van verder komen — beneden werken, boven slapen.",
     },
     clients: { label: "Klanten" },
-    contact: { label: "Contact" },
+    contact: {
+      label: "Contact",
+      title: "Heb je een verhaal?",
+      body: "Een documentaire, een reportage, een bedrijfsfilm, een podcast — of gewoon een idee dat nog alle kanten uit kan? Vertel het ons.",
+      cta: "Praat met ons",
+    },
     ticker: [
-      "Documentaire",
-      "Podcast",
-      "Reportage",
-      "Interviews",
-      "Studio",
-      "Gastenverblijf",
+      { label: "Documentaire", href: "#work" },
+      { label: "Podcast", href: "#what-we-create" },
+      { label: "Reportage", href: "#work" },
+      { label: "Interviews", href: "#filming-location" },
+      { label: "Studio", href: "#filming-location" },
+      { label: "Gastenverblijf", href: "#guesthouse" },
     ],
     footer: { place: "Bigeye Blue — Gent, België" },
     seo: {

@@ -41,8 +41,15 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <div className="mt-8 flex flex-col items-start gap-3">
-            <a href="#contact" className="btn-solid">
+          <p className="mt-5 text-sm md:text-base leading-relaxed text-foreground/70">
+            {t.hero.tagline}
+          </p>
+
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#work" className="btn-solid">
+              {t.hero.ctaWork}
+            </a>
+            <a href="#contact" className="btn-quiet">
               {t.hero.ctaSecondary}
             </a>
           </div>

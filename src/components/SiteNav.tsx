@@ -7,6 +7,7 @@ export function SiteNav() {
   const { t, lang, setLang } = useLang();
 
   const links = [
+    { label: t.nav.work, href: "#work" },
     { label: t.nav.create, href: "#what-we-create" },
     { label: t.nav.location, href: "#filming-location" },
     { label: t.nav.guesthouse, href: "#guesthouse" },
