@@ -213,10 +213,28 @@ export const translations = {
       "Gastenverblijf",
     ],
     footer: { place: "Bigeye Blue — Gent, België" },
+    seo: {
+      ariaLabel: "Diensten",
+      label: "Diensten",
+      title: "Documentaire & videoproductie",
+      paragraphs: [
+        "Bigeye Blue maakt documentaires, branded content en videoproducties voor omroepen, merken en organisaties. Vanuit Gent helpen we klanten in heel België authentieke verhalen vertellen door middel van cinematografische beeldtaal en krachtige storytelling.",
+        "Van documentairereeksen en televisieproducties tot brand films en digitale content: we ontwikkelen visuele verhalen die raken en impact maken.",
+        "Onze diensten omvatten documentaire, videoproductie, bedrijfsfilms, branded content en editoriale producties — allemaal vanuit onze studio en filmlocatie in Gent, België.",
+      ],
+      keywords: [
+        "Documentaire",
+        "Videoproductie",
+        "Branded content",
+        "Storytelling",
+        "Bedrijfsfilms",
+        "Gevestigd in Gent, België",
+      ],
+    },
     meta: {
-      title: "Bigeye Blue | Productiehuis voor audiovisuele content, filmlocatie & gastenverblijf in Gent",
+      title: "Bigeye Blue | Documentaire, videoproductie & branded content in Gent",
       description:
-        "Unieke stadsvilla in Gent beschikbaar voor filmproducties, fotografie, interviews, commercials en gastenverblijf — met eigen opnamestudio en productiehuis.",
+        "Bigeye Blue is een productiehuis in Gent voor documentaires, branded content, videoproductie en storytelling. Met filmlocatie, opnamestudio en gastenverblijf in België.",
     },
   },
 } as const;
