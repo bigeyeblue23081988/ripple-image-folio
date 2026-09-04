@@ -37,6 +37,10 @@
 
     --radius: 0rem;
 
+    /* Deep royal blue for the dark bands and dark surfaces. */
+    --ink: 224 62% 14%;
+    --ink-foreground: 37 56% 92%;
+
     --hover-bg: 37 40% 88%;
     --separator: 30 16% 82%;
 
@@ -131,11 +135,11 @@
 
   /* Inverted section header for dark bands. */
   .plate-label--invert {
-    @apply text-background;
+    @apply text-ink-foreground;
   }
 
   .plate-label--invert::after {
-    @apply bg-background/25;
+    @apply bg-ink-foreground/25;
   }
 }
 

@@ -10,7 +10,7 @@ export function TickerBand({ className = "" }: { className?: string }) {
   const row = [...t.ticker, ...t.ticker];
   return (
     <div
-      className={`relative overflow-hidden bg-foreground py-4 md:py-5 select-none ${className}`}
+      className={`relative overflow-hidden bg-ink py-4 md:py-5 select-none ${className}`}
     >
       <div className="flex w-max animate-marquee items-center gap-8 md:gap-12">
         {[...row, ...row].map((item, i) => (
@@ -19,7 +19,7 @@ export function TickerBand({ className = "" }: { className?: string }) {
               href={item.href}
               tabIndex={i < t.ticker.length ? 0 : -1}
               aria-hidden={i >= t.ticker.length}
-              className="whitespace-nowrap text-sm md:text-base font-bold uppercase tracking-[0.2em] text-background transition-colors duration-300 hover:text-accent focus-visible:text-accent"
+              className="whitespace-nowrap text-sm md:text-base font-bold uppercase tracking-[0.2em] text-ink-foreground transition-colors duration-300 hover:text-accent focus-visible:text-accent"
             >
               {item.label}
             </a>

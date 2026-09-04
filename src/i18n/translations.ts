@@ -19,6 +19,8 @@ export const translations = {
       ctaPrimary: "Book the location",
       ctaSecondary: "Talk to us",
       ctaWork: "See our work",
+      ctaLocation: "See the location",
+      overlay: "A production house in Ghent, and a place where people and stories meet.",
     },
     showreel: {
       caption: "Showreel",
@@ -205,6 +207,8 @@ export const translations = {
       ctaPrimary: "Boek de locatie",
       ctaSecondary: "Praat met ons",
       ctaWork: "Bekijk ons werk",
+      ctaLocation: "Bekijk de locatie",
+      overlay: "Een productiehuis in Gent, en een plek waar mensen en verhalen elkaar ontmoeten.",
     },
     showreel: {
       caption: "Showreel",
