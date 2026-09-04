@@ -54,10 +54,24 @@ export const translations = {
         "Private bathroom of the Ghent guesthouse with a walk-in shower, washbasin and toilet",
     },
     create: {
-      label: "What we create",
-      titleStrong: "What we create",
-      titleLight: "Interviews. Podcasts. Documentaries. Stories.",
-      body: "Bigeye Blue is a production house led by director Marieke Dermul. We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content. Come to us with an idea; we develop it, record it in our own studio in Ghent, and produce it from first conversation to final cut. The location itself is also available for other film crews. Bigeye Blue already made reportages for VRT NWS, Canvas, VRT MAX and Motionmakers. The production house also made content ideas for different companies as Deloitte and BNP Paribas.",
+      label: "What we do",
+      titleStrong: "What we do",
+      titleLight: "",
+      lead: "Bigeye Blue is a production house led by director Marieke Dermul. We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content.",
+      blocks: [
+        {
+          label: "From idea to final cut",
+          text: "Come to us with an idea; we develop it, record it in our own studio in Ghent, and produce it from first conversation to final cut. The location itself is also available for other film crews.",
+        },
+        {
+          label: "Awarded work",
+          text: "Bigeye Blue already made reportages for VRT NWS, Canvas, VRT MAX and Motionmakers. The docu Rainbow nation for Canvas even had a nomination for the 2024 Africa Movie Academy Awards. The docu project 'European Citizen Popsong' received a nomination for the Filipa Filipa Bragança Award in the Edinburgh Festival Fringe. The project toured through whole Europe and beyond afterwards.",
+        },
+        {
+          label: "Clients",
+          text: "The production house also made content ideas for different companies as Deloitte and BNP Paribas.",
+        },
+      ],
     },
     location: {
       label: "Filming location",
@@ -140,10 +154,24 @@ export const translations = {
         "Private badkamer van het gastenverblijf in Gent met inloopdouche, lavabo en toilet",
     },
     create: {
-      label: "Wat we maken",
-      titleStrong: "Wat we maken",
-      titleLight: "Interviews. Podcasts. Documentaires. Verhalen.",
-      body: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content. Kom bij ons met een idee; wij ontwikkelen het, nemen het op in onze eigen studio in Gent en produceren het van eerste gesprek tot finale montage. De locatie is als filmlocatie ook beschikbaar voor andere filmploegen. Bigeye Blue maakte al reportages voor VRT NWS, Canvas, VRT MAX en Motionmakers. Het productiehuis bedacht ook content voor verschillende bedrijven zoals Deloitte en BNP Paribas.",
+      label: "Wat we doen",
+      titleStrong: "Wat we doen",
+      titleLight: "",
+      lead: "Bigeye Blue is een productiehuis onder leiding van regisseur Marieke Dermul. We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content.",
+      blocks: [
+        {
+          label: "Van idee tot finale montage",
+          text: "Kom bij ons met een idee; wij ontwikkelen het, nemen het op in onze eigen studio in Gent en produceren het van eerste gesprek tot finale montage. De locatie is als filmlocatie ook beschikbaar voor andere filmploegen.",
+        },
+        {
+          label: "Bekroond werk",
+          text: "Bigeye Blue maakte al reportages voor VRT NWS, Canvas, VRT MAX en Motionmakers. De docu Rainbow nation voor Canvas werd zelfs genomineerd voor de Africa Movie Academy Awards 2024. Het documentaireproject 'European Citizen Popsong' ontving een nominatie voor de Filipa Filipa Bragança Award op het Edinburgh Festival Fringe. Daarna tourde het project door heel Europa en daarbuiten.",
+        },
+        {
+          label: "Klanten",
+          text: "Het productiehuis bedacht ook content voor verschillende bedrijven zoals Deloitte en BNP Paribas.",
+        },
+      ],
     },
     location: {
       label: "Filmlocatie",
