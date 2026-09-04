@@ -24,7 +24,7 @@ export function TickerBand({ className = "" }: { className?: string }) {
               {item.label}
             </a>
             <span aria-hidden className="text-accent text-lg leading-none">
-              ✳
+              &#10033;&#65038;
             </span>
           </span>
         ))}
