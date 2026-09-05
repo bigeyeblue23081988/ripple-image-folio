@@ -1,5 +1,8 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
+const INTERIOR_IMAGE_URL =
+  "https://ripple-image-folio.lovable.app/__l5e/assets-v1/316e24a5-ec67-439c-b8a2-7c22ffc6cf9c/bigeye-blue-interior.webp";
+
 export function HeroSection() {
   const { t } = useLang();
 
@@ -7,7 +10,7 @@ export function HeroSection() {
     <section className="pt-2">
       <div className="relative h-[72svh] min-h-[520px] max-h-[760px] w-full overflow-hidden animate-hero-zoom sm:min-h-[580px] md:h-[min(70vh,720px)] md:min-h-[560px]">
         <img
-          src="/images/bigeye-blue-interior.webp"
+          src={INTERIOR_IMAGE_URL}
           alt={t.figures.hallAlt}
           width={1920}
           height={1288}
