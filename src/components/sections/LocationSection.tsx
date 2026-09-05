@@ -4,7 +4,7 @@ import { useLang } from "@/i18n/LanguageProvider";
 import patio from "@/assets/house/patio.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
-import hallWide from "@/assets/house/hallway-wide.jpg";
+import interiorAsset from "@/assets/house/bigeye-blue-interior.webp.asset.json";
 
 export function LocationSection() {
   const { t } = useLang();
@@ -71,10 +71,10 @@ export function LocationSection() {
         />
 
         <Figure
-          src={hallWide}
+          src={interiorAsset.url}
           alt={t.figures.hallAlt}
-          width={2528}
-          height={1696}
+          width={1920}
+          height={1288}
           index="05"
           caption={t.figures.hallCaption}
           className="md:col-start-2 md:col-span-10 md:row-start-4 mt-16 md:mt-0 reveal"
