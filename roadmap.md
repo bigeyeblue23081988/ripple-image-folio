@@ -12,6 +12,8 @@
 - Guesthouse reframed as production ecosystem
 - Showreel (38s) integrated as autoplay-muted looping player with sound toggle (CDN asset)
 - Portrait of Marieke added to the About section (CDN asset)
+- New straightened entrance-hall photo used consistently in the hero and location gallery via CDN
+- Hero title and actions positioned over the floor across phone, tablet and desktop layouts
 
 ## Open / needs material from Marieke
 - Photos framed as production use (interview setup, crew, workspace) instead of real-estate style
