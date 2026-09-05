@@ -11,8 +11,8 @@ export function HeroSection() {
         <img
           src={hallway}
           alt={t.figures.hallAlt}
-          width={2528}
-          height={1696}
+          width={2460}
+          height={1628}
           fetchPriority="high"
           decoding="async"
           className="block h-auto w-full md:h-[min(70vh,720px)] md:object-cover md:object-center"
