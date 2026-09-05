@@ -1,6 +1,6 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import exterior from "@/assets/house/exterior.jpg";
+import exterior from "@/assets/house/exterior-wide.jpg";
 
 export function HeroSection() {
   const { t } = useLang();
@@ -13,7 +13,7 @@ export function HeroSection() {
           src={exterior}
           alt={t.figures.houseAlt}
           width={900}
-          height={491}
+          height={600}
           fetchPriority="high"
           decoding="async"
           className="h-[68vh] min-h-[420px] md:h-[78vh] w-full object-cover"
