@@ -13,7 +13,7 @@ export function HeroSection() {
           src={exterior}
           alt={t.figures.houseAlt}
           width={900}
-          height={491}
+          height={600}
           fetchPriority="high"
           decoding="async"
           className="h-[68vh] min-h-[420px] md:h-[78vh] w-full object-cover"
