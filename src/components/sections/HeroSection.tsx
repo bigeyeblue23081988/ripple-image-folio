@@ -16,7 +16,7 @@ export function HeroSection() {
           height={768}
           fetchPriority="high"
           decoding="async"
-          className="h-[62vh] min-h-[440px] md:h-[74vh] w-full object-cover object-[center_35%]"
+          className="h-[66vh] min-h-[460px] md:h-[80vh] w-full object-cover object-[center_68%]"
         />
 
         <div
