@@ -24,6 +24,27 @@ export function IntroSection() {
               {t.intro.body2}
             </p>
           </div>
+
+          <div className="mt-10 md:mt-14 flex flex-wrap items-center gap-3 md:gap-4 reveal reveal-delay-2">
+            <a
+              href="#work"
+              className="inline-block bg-ink px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-ink-foreground transition-colors duration-300 hover:bg-accent hover:text-accent-foreground"
+            >
+              {t.hero.ctaWork}
+            </a>
+            <a
+              href="#filming-location"
+              className="inline-block border border-ink/20 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-ink transition-colors duration-300 hover:border-accent hover:text-accent"
+            >
+              {t.hero.ctaLocation}
+            </a>
+            <a
+              href="#guesthouse"
+              className="inline-block border border-ink/20 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-ink transition-colors duration-300 hover:border-accent hover:text-accent"
+            >
+              {t.hero.ctaGuesthouse}
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -165,8 +165,8 @@ export const translations = {
     clients: { label: "Clients" },
     contact: {
       label: "Contact",
-      title: "Do you have a story?",
-      body: "A documentary, a reportage, a company film, a podcast — or just an idea that could still go anywhere? Tell us about it.",
+      title: "Would you like to work with us?",
+      body: "Do you have an idea for a reportage, a company film, a podcast — or just an idea that could still go anywhere? Would you like to book our location for a beautiful film shoot? Or stay in our guesthouse? Feel free to get in touch! We are ready with passion for you.",
       cta: "Talk to us",
     },
     ticker: [
@@ -366,8 +366,8 @@ export const translations = {
     clients: { label: "Klanten" },
     contact: {
       label: "Contact",
-      title: "Heb je een verhaal?",
-      body: "Een documentaire, een reportage, een bedrijfsfilm, een podcast — of gewoon een idee dat nog alle kanten uit kan? Vertel het ons.",
+      title: "Wil je met ons samenwerken?",
+      body: "Heb je een idee voor een reportage, een bedrijfsfilm, een podcast — of gewoon een idee dat nog alle kanten uit kan? Wil je onze locatie boeken voor een mooie filmopname? Of verblijven in ons gastenverblijf? Neem gerust contact met ons op! Wij staan met onze passie voor je klaar!",
       cta: "Praat met ons",
     },
     ticker: [
