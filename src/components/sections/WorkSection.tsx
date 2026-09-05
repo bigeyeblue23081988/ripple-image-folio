@@ -4,10 +4,10 @@ import rainbowNation from "@/assets/rainbow-nation.jpg";
 import popsong from "@/assets/european-citizen-popsong.jpg";
 import jongEenzaam from "@/assets/jong-en-eenzaam.jpg";
 
-const images = [rainbowNation, popsong, jongEenzaam];
+const images = [rainbowNation, jongEenzaam, popsong];
 
 // Per-image crop focus: popsong centres the main character instead of the foreground.
-const objectPositions = ["50% 50%", "76% 52%", "50% 50%"];
+const objectPositions = ["50% 50%", "50% 50%", "76% 52%"];
 
 /**
  * Recent work: three cases carrying the proof — image, client, one line.
