@@ -1,6 +1,6 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import exterior from "@/assets/house/exterior-pano.jpg";
+import exterior from "@/assets/house/exterior-frontal.jpg";
 
 export function HeroSection() {
   const { t } = useLang();
@@ -12,11 +12,11 @@ export function HeroSection() {
         <img
           src={exterior}
           alt={t.figures.houseAlt}
-          width={1600}
-          height={900}
+          width={1188}
+          height={768}
           fetchPriority="high"
           decoding="async"
-          className="h-[62vh] min-h-[440px] md:h-[74vh] w-full object-cover object-[center_30%]"
+          className="h-[62vh] min-h-[440px] md:h-[74vh] w-full object-cover object-[center_35%]"
         />
 
         <div
