@@ -1,7 +1,7 @@
 import { Figure } from "@/components/Figure";
 import { useLang } from "@/i18n/LanguageProvider";
 
-import exteriorFrontal from "@/assets/house/bigeye-blue-house-frontal.jpg.asset.json";
+import exteriorFrontal from "@/assets/house/bigeye-blue-house-frontal-2.jpg.asset.json";
 import patio from "@/assets/house/patio.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
