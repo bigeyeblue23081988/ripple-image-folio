@@ -1,6 +1,6 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import hallway from "@/assets/house/hallway-wide-hero.jpg";
+import exterior from "@/assets/house/exterior.jpg";
 
 export function HeroSection() {
   const { t } = useLang();
@@ -10,10 +10,10 @@ export function HeroSection() {
       {/* One full-bleed visual that states, in one sentence, what this is. */}
       <div className="relative w-full overflow-hidden animate-hero-zoom">
         <img
-          src={hallway}
-          alt={t.figures.hallAlt}
-          width={2528}
-          height={1696}
+          src={exterior}
+          alt={t.figures.houseAlt}
+          width={900}
+          height={491}
           fetchPriority="high"
           decoding="async"
           className="h-[68vh] min-h-[420px] md:h-[78vh] w-full object-cover"
