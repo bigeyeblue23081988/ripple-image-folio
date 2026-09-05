@@ -9,14 +9,15 @@ export function HeroSection() {
     <section className="pt-2">
       {/* One full-bleed visual that states, in one sentence, what this is. */}
       <div className="relative w-full overflow-hidden animate-hero-zoom">
+        {/* Full photo, natural ratio on every screen — no crop. */}
         <img
           src={exterior}
           alt={t.figures.houseAlt}
-          width={1188}
-          height={768}
+          width={1334}
+          height={1194}
           fetchPriority="high"
           decoding="async"
-          className="h-[66vh] min-h-[460px] md:h-[80vh] w-full object-cover object-[center_68%]"
+          className="block h-auto w-full"
         />
 
         <div
