@@ -22,11 +22,12 @@ export function HeroSection() {
 
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/35 to-ink/10"
+          className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/35 to-ink/10 max-md:hidden"
         />
 
-        <div className="absolute inset-x-0 bottom-0">
-          <div className="container-wide pb-8 md:pb-14">
+        {/* Desktop: text overlays the street. Mobile: dark band below the full photo. */}
+        <div className="md:absolute md:inset-x-0 md:bottom-0 bg-ink md:bg-transparent">
+          <div className="container-wide py-8 md:pb-14">
             <h1 className="max-w-4xl text-ink-foreground animate-fade-in-up">
               <span className="block text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
                 {t.hero.overlayLine1}
