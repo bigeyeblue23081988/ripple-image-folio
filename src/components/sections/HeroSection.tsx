@@ -37,16 +37,22 @@ export function HeroSection() {
 
             <div className="mt-5 sm:mt-7 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4 animate-fade-in">
               <a
-                href="#work"
+                href="#contact"
                 className="inline-block bg-ink-foreground px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-ink transition-colors duration-300 hover:bg-accent hover:text-accent-foreground"
               >
-                {t.hero.ctaWork}
+                {t.hero.ctaProduction}
               </a>
               <a
-                href="#filming-location"
+                href="#contact"
                 className="inline-block border border-ink-foreground/60 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-ink-foreground transition-colors duration-300 hover:border-accent hover:text-accent"
               >
-                {t.hero.ctaLocation}
+                {t.hero.ctaBookLocation}
+              </a>
+              <a
+                href="#contact"
+                className="inline-block border border-ink-foreground/60 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-ink-foreground transition-colors duration-300 hover:border-accent hover:text-accent"
+              >
+                {t.hero.ctaBookGuesthouse}
               </a>
             </div>
           </div>
