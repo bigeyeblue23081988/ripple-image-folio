@@ -165,7 +165,7 @@ export const translations = {
     clients: { label: "Clients" },
     contact: {
       label: "Contact",
-      title: "Would you like to work with us?",
+      title: "Would you like to work with us or book our location?",
       body: "Do you have an idea for a reportage, a company film, a podcast — or just an idea that could still go anywhere? Would you like to book our location for a beautiful film shoot? Or stay in our guesthouse? Feel free to get in touch! We are ready with passion for you.",
       cta: "Talk to us",
     },
@@ -366,7 +366,7 @@ export const translations = {
     clients: { label: "Klanten" },
     contact: {
       label: "Contact",
-      title: "Wil je met ons samenwerken?",
+      title: "Wil je met ons samenwerken of onze locatie boeken?",
       body: "Heb je een idee voor een reportage, een bedrijfsfilm, een podcast — of gewoon een idee dat nog alle kanten uit kan? Wil je onze locatie boeken voor een mooie filmopname? Of verblijven in ons gastenverblijf? Neem gerust contact met ons op! Wij staan met onze passie voor je klaar!",
       cta: "Praat met ons",
     },
