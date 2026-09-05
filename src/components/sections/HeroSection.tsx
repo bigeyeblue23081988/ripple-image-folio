@@ -1,6 +1,6 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import exterior from "@/assets/house/exterior-frontal.jpg";
+import hallway from "@/assets/house/hallway-wide.jpg";
 
 export function HeroSection() {
   const { t } = useLang();
@@ -11,10 +11,10 @@ export function HeroSection() {
       <div className="relative w-full overflow-hidden animate-hero-zoom">
         {/* Full photo, natural ratio on every screen — no crop. */}
         <img
-          src={exterior}
-          alt={t.figures.houseAlt}
-          width={1334}
-          height={1194}
+          src={hallway}
+          alt={t.figures.hallAlt}
+          width={2528}
+          height={1696}
           fetchPriority="high"
           decoding="async"
           className="block h-auto w-full"
