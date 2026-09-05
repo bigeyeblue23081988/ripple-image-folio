@@ -1,7 +1,5 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import interiorAsset from "@/assets/house/bigeye-blue-interior.webp.asset.json";
-
 export function HeroSection() {
   const { t } = useLang();
 
@@ -9,7 +7,7 @@ export function HeroSection() {
     <section className="pt-2">
       <div className="relative h-[72svh] min-h-[520px] max-h-[760px] w-full overflow-hidden animate-hero-zoom sm:min-h-[580px] md:h-[min(70vh,720px)] md:min-h-[560px]">
         <img
-          src={interiorAsset.url}
+          src="/images/bigeye-blue-interior.webp"
           alt={t.figures.hallAlt}
           width={1920}
           height={1288}

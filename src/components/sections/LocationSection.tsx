@@ -4,7 +4,6 @@ import { useLang } from "@/i18n/LanguageProvider";
 import patio from "@/assets/house/patio.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
-import interiorAsset from "@/assets/house/bigeye-blue-interior.webp.asset.json";
 
 export function LocationSection() {
   const { t } = useLang();
@@ -71,7 +70,7 @@ export function LocationSection() {
         />
 
         <Figure
-          src={interiorAsset.url}
+          src="/images/bigeye-blue-interior.webp"
           alt={t.figures.hallAlt}
           width={1920}
           height={1288}
