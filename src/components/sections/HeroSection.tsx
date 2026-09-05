@@ -1,6 +1,6 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import exterior from "@/assets/house/exterior.jpg";
+import exterior from "@/assets/house/exterior-wide.jpg";
 
 export function HeroSection() {
   const { t } = useLang();
