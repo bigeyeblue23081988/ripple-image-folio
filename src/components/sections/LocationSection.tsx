@@ -4,7 +4,9 @@ import { useLang } from "@/i18n/LanguageProvider";
 import patio from "@/assets/house/patio.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
-import interiorAsset from "@/assets/house/bigeye-blue-interior.webp.asset.json";
+
+const INTERIOR_IMAGE_URL =
+  "https://ripple-image-folio.lovable.app/__l5e/assets-v1/316e24a5-ec67-439c-b8a2-7c22ffc6cf9c/bigeye-blue-interior.webp";
 
 export function LocationSection() {
   const { t } = useLang();
@@ -71,7 +73,7 @@ export function LocationSection() {
         />
 
         <Figure
-          src={interiorAsset.url}
+          src={INTERIOR_IMAGE_URL}
           alt={t.figures.hallAlt}
           width={1920}
           height={1288}

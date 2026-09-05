@@ -1,6 +1,7 @@
 import { useLang } from "@/i18n/LanguageProvider";
 
-import interiorAsset from "@/assets/house/bigeye-blue-interior.webp.asset.json";
+const INTERIOR_IMAGE_URL =
+  "https://ripple-image-folio.lovable.app/__l5e/assets-v1/316e24a5-ec67-439c-b8a2-7c22ffc6cf9c/bigeye-blue-interior.webp";
 
 export function HeroSection() {
   const { t } = useLang();
@@ -9,13 +10,13 @@ export function HeroSection() {
     <section className="pt-2">
       <div className="relative h-[72svh] min-h-[520px] max-h-[760px] w-full overflow-hidden animate-hero-zoom sm:min-h-[580px] md:h-[min(70vh,720px)] md:min-h-[560px]">
         <img
-          src={interiorAsset.url}
+          src={INTERIOR_IMAGE_URL}
           alt={t.figures.hallAlt}
           width={1920}
           height={1288}
           fetchPriority="high"
           decoding="async"
-          className="block h-full w-full object-cover object-[50%_50%] sm:object-center"
+          className="block h-full w-full object-cover object-[62%_72%] sm:object-[58%_62%] lg:object-center"
         />
 
         <div
@@ -25,11 +26,11 @@ export function HeroSection() {
 
         <div className="absolute inset-x-0 bottom-0">
           <div className="container-wide pb-7 sm:pb-10 md:pb-14">
-            <h1 className="max-w-4xl text-ink-foreground animate-fade-in-up">
+            <h1 className="max-w-[19rem] sm:max-w-sm md:max-w-md lg:max-w-xl text-ink-foreground animate-fade-in-up">
               <span className="block text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
                 {t.hero.overlayLine1}
               </span>
-              <span className="mt-2 md:mt-3 block max-w-3xl text-lg sm:text-2xl md:text-4xl lg:text-5xl font-light leading-[1.15] tracking-tight text-ink-foreground/90">
+              <span className="mt-2 md:mt-3 block max-w-[19rem] sm:max-w-sm md:max-w-md lg:max-w-xl text-lg sm:text-2xl md:text-4xl lg:text-5xl font-light leading-[1.15] tracking-tight text-ink-foreground/90">
                 {t.hero.overlayLine2}
               </span>
             </h1>
