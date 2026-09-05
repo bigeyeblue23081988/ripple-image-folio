@@ -1,7 +1,7 @@
 import { Figure } from "@/components/Figure";
 import { useLang } from "@/i18n/LanguageProvider";
 
-import exteriorDusk from "@/assets/house/exterior-dusk.jpg";
+import exteriorFrontal from "@/assets/house/bigeye-blue-house-frontal.jpg.asset.json";
 import patio from "@/assets/house/patio.jpg";
 import stairwell from "@/assets/house/stairwell.jpg";
 import gardenTable from "@/assets/house/garden-table.jpg";
@@ -19,10 +19,10 @@ export function LocationSection() {
 
       <div className="md:grid md:grid-cols-12 md:gap-x-12 md:gap-y-24 lg:gap-y-32">
         <Figure
-          src={exteriorDusk}
+          src={exteriorFrontal.url}
           alt={t.figures.houseAlt}
-          width={900}
-          height={482}
+          width={1188}
+          height={768}
           index="01"
           caption={t.figures.houseCaption}
           className="md:col-start-2 md:col-span-10 md:row-start-1 mb-16 md:mb-0 reveal"
