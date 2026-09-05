@@ -18,3 +18,4 @@
 
 ## Open / needs material from Marieke
 - Photos framed as production use (interview setup, crew, workspace) instead of real-estate style
+- Remove the published “Powered by Netlify” badge from bigeyeblue.be
