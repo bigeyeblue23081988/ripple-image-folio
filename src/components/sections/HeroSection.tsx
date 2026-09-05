@@ -7,9 +7,7 @@ export function HeroSection() {
 
   return (
     <section className="pt-2">
-      {/* One full-bleed visual that states, in one sentence, what this is. */}
       <div className="relative w-full overflow-hidden animate-hero-zoom">
-        {/* Full photo, natural ratio on every screen — no crop. */}
         <img
           src={hallway}
           alt={t.figures.hallAlt}
@@ -17,7 +15,7 @@ export function HeroSection() {
           height={1696}
           fetchPriority="high"
           decoding="async"
-          className="block h-auto w-full"
+          className="block h-auto w-full md:h-[min(70vh,720px)] md:object-cover md:object-center"
         />
 
         <div
@@ -25,7 +23,6 @@ export function HeroSection() {
           className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/35 to-ink/10 max-md:hidden"
         />
 
-        {/* Desktop: text overlays the street. Mobile: dark band below the full photo. */}
         <div className="md:absolute md:inset-x-0 md:bottom-0 bg-ink md:bg-transparent">
           <div className="container-wide py-8 md:pb-14">
             <h1 className="max-w-4xl text-ink-foreground animate-fade-in-up">

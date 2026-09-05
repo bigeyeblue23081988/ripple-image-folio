@@ -1,6 +1,8 @@
 # Roadmap
 
 ## Done in this pass
+- House facade image now uses a Netlify-compatible public path
+- Desktop hero cropped so the full headline is visible without scrolling
 - Hero: concrete second line + "See our work" CTA
 - New "Recent work" section with 3 cases (Rainbow Nation, European Citizen Popsong, Jong & Eenzaam)
 - Awards/proof block, clients more prominent
