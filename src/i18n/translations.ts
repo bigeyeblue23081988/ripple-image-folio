@@ -96,8 +96,8 @@ export const translations = {
       ],
     },
     work: {
-      label: "Recent work",
-      title: "Recent work",
+      label: "Creative work",
+      title: "Creative work",
       cta: "Talk to us about your project",
       items: [
         {
@@ -293,8 +293,8 @@ export const translations = {
       ],
     },
     work: {
-      label: "Recent werk",
-      title: "Recent werk",
+      label: "Creatief werk",
+      title: "Creatief werk",
       cta: "Praat met ons over jouw project",
       items: [
         {
