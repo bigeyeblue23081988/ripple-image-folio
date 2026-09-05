@@ -16,7 +16,7 @@ export function HeroSection() {
           height={1288}
           fetchPriority="high"
           decoding="async"
-          className="block h-full w-full object-cover object-[50%_50%] sm:object-center"
+          className="block h-full w-full object-cover object-[62%_50%] sm:object-[58%_50%] lg:object-center"
         />
 
         <div
@@ -26,7 +26,7 @@ export function HeroSection() {
 
         <div className="absolute inset-x-0 bottom-0">
           <div className="container-wide pb-7 sm:pb-10 md:pb-14">
-            <h1 className="max-w-4xl text-ink-foreground animate-fade-in-up">
+            <h1 className="max-w-[19rem] sm:max-w-md md:max-w-xl lg:max-w-3xl text-ink-foreground animate-fade-in-up">
               <span className="block text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
                 {t.hero.overlayLine1}
               </span>
