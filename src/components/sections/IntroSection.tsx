@@ -11,7 +11,7 @@ export function IntroSection() {
         </div>
 
         <div className="md:col-span-8">
-          <p className="max-w-3xl text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight reveal">
+          <p className="max-w-3xl text-2xl md:text-4xl lg:text-5xl font-medium leading-[1.12] tracking-tight reveal">
             {t.intro.lead}
             <span className="text-accent">.</span>
           </p>
