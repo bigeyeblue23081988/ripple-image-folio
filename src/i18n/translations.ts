@@ -12,11 +12,11 @@ export const translations = {
     },
     intro: {
       label: "Bigeye Blue",
-      lead: "Bigeye Blue, a production house, driven by Marieke Dermul",
+      lead: "Bigeye Blue is a small-scale production house for stories that set things in motion",
       body1:
-        "We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content.",
+        "We believe good ideas don't come from having many people around the table. They come when the right people join forces. So we like to work small. Personal. With short lines and deep involvement. From the first thought to the final frame, we're involved.",
       body2:
-        "We are drawn to the unseen: stories that are hard to tell, whether they sit in a taboo sphere or are difficult for a broad audience to grasp. We dive into the story — and, above all, into how it should be told so it can be seen.",
+        "We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content.",
     },
     hero: {
       line1: "Looking beyond",
@@ -209,11 +209,11 @@ export const translations = {
     },
     intro: {
       label: "Bigeye Blue",
-      lead: "Bigeye Blue, een productiehuis, gedreven door Marieke Dermul",
+      lead: "Bigeye Blue is een kleinschalig productiehuis voor verhalen die iets in beweging zetten",
       body1:
-        "We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content.",
+        "We geloven dat goede ideeën niet ontstaan omdat er veel mensen rond de tafel zitten. Ze ontstaan wanneer de juiste mensen de krachten bundelen. Dus werken we graag klein. Persoonlijk. Met korte lijnen en veel betrokkenheid. Van de eerste gedachte tot het laatste frame zijn we betrokken.",
       body2:
-        "We zijn gefascineerd door het ongeziene: verhalen die niet makkelijk te vertellen zijn, omdat ze taboe zijn of moeilijk te vatten voor een breed publiek. We duiken in het verhaal — en vooral in hoe het verteld moet worden, zodat het gezien wordt.",
+        "We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content.",
     },
     hero: {
       line1: "Looking beyond",
