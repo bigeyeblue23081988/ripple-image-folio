@@ -14,6 +14,7 @@
 - Portrait of Marieke added to the About section (CDN asset)
 - New straightened entrance-hall photo used consistently in the hero and location gallery via an absolute public media URL compatible with Netlify
 - Hero title and actions positioned over the floor across phone, tablet and desktop layouts
+- Keep the reclining woman sculpture fully visible in the hero, with no text crossing her
 
 ## Open / needs material from Marieke
 - Photos framed as production use (interview setup, crew, workspace) instead of real-estate style
