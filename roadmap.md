@@ -19,6 +19,7 @@
 - Site no longer blanks when the language provider reloads; hero image no longer logs a React prop warning
 - Clients section removed from the page again; corporate client names (Deloitte, BNP Paribas) stay out of all copy
 - Contact paragraph: "een bedrijfsfilm" / "a company film" gone; final wording "een reportage, een podcast, een docu of gewoon een idee" (English mirrored)
+- Services (Diensten) texts rewritten in Dutch and English; "bedrijfsfilms" / "corporate films" also out of the keyword lists and site metadata
 
 ## Open / needs material from Marieke
 - Photos framed as production use (interview setup, crew, workspace) instead of real-estate style
