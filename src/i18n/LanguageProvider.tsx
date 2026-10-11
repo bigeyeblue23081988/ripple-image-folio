@@ -57,6 +57,15 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 // eslint-disable-next-line react-refresh/only-export-components
 export function useLang() {
   const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error("useLang must be used within LanguageProvider");
+  // A hot module reload can leave this module with a context object that the
+  // mounted provider no longer knows about. Fall back to the default language
+  // instead of throwing, so the page never goes blank.
+  if (!ctx) {
+    return {
+      lang: "en" as Lang,
+      setLang: () => {},
+      t: translations.en as unknown as Dict,
+    };
+  }
   return ctx;
 }

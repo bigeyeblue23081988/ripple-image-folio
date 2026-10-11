@@ -14,7 +14,6 @@ export function HeroSection() {
           alt={t.figures.hallAlt}
           width={1920}
           height={1288}
-          fetchPriority="high"
           decoding="async"
           className="block h-full w-full object-cover object-[62%_72%] sm:object-[58%_62%] lg:object-center"
         />
