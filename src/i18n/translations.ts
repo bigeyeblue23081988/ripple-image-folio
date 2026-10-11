@@ -93,10 +93,6 @@ export const translations = {
           label: "Awarded work",
           text: "Bigeye Blue already made reportages for VRT NWS, Canvas, VRT MAX and Motionmakers. The docu Rainbow nation for Canvas even had a nomination for the 2024 Africa Movie Academy Awards. The docu project 'European Citizen Popsong' received a nomination for the Filipa Filipa Bragança Award in the Edinburgh Festival Fringe. The project toured through whole Europe and beyond afterwards.",
         },
-        {
-          label: "Clients",
-          text: "The production house also made content ideas for different companies as Deloitte and BNP Paribas.",
-        },
       ],
     },
     work: {
@@ -292,10 +288,6 @@ export const translations = {
         {
           label: "Bekroond werk",
           text: "Bigeye Blue maakte al reportages voor VRT NWS, Canvas, VRT MAX en Motionmakers. De docu Rainbow nation voor Canvas werd zelfs genomineerd voor de Africa Movie Academy Awards 2024. Het documentaireproject 'European Citizen Popsong' ontving een nominatie voor de Filipa Filipa Bragança Award op het Edinburgh Festival Fringe. Daarna tourde het project door heel Europa en daarbuiten.",
-        },
-        {
-          label: "Klanten",
-          text: "Het productiehuis bedacht ook content voor verschillende bedrijven zoals Deloitte en BNP Paribas.",
         },
       ],
     },
