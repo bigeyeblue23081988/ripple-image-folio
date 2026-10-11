@@ -8,7 +8,6 @@ import { CreateSection } from "@/components/sections/CreateSection";
 
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ProofSection } from "@/components/sections/ProofSection";
-import { ClientsSection } from "@/components/sections/ClientsSection";
 import { LocationSection } from "@/components/sections/LocationSection";
 import { GuesthouseSection } from "@/components/sections/GuesthouseSection";
 import { PracticalSection } from "@/components/sections/PracticalSection";
@@ -37,7 +36,6 @@ const Index = () => {
         
         <AboutSection />
         <ProofSection />
-        <ClientsSection />
         <LocationSection />
         <GuesthouseSection />
         <PracticalSection />

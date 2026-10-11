@@ -17,7 +17,7 @@
 - Keep the reclining woman sculpture fully visible in the hero, with no text crossing her
 - Removed every mention of "branded content" from the Dutch and English copy, page title and SEO metadata
 - Site no longer blanks when the language provider reloads; hero image no longer logs a React prop warning
-- Clients section back on the page; corporate client names (Deloitte, BNP Paribas) and the "content for companies such as ..." line stay out
+- Clients section removed from the page again; corporate client names (Deloitte, BNP Paribas) stay out of all copy
 
 ## Open / needs material from Marieke
 - Photos framed as production use (interview setup, crew, workspace) instead of real-estate style

@@ -351,7 +351,7 @@ export const translations = {
     guesthouse: {
       label: "Gastenverblijf",
       titleLine1: "Een productieplek",
-      titleLine2: "waar je kan blijven",
+      titleLine2: "waar je kan verblijven",
       body: "Studio, filmlocatie, patio en gastenkamers in één 19de-eeuws koetshuis in Gent. Handig voor draaidagen die uitlopen, interviewdagen met meerdere gasten, podcastopnames en ploegen die van verder komen — beneden werken, boven slapen.",
     },
     clients: { label: "Klanten" },
