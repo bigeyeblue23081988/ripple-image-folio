@@ -16,7 +16,7 @@ export const translations = {
       body1:
         "We believe good ideas don't come from having many people around the table. They come when the right people join forces. So we like to work small. Personal. With short lines and deep involvement. From the first thought to the final frame, we're involved.",
       body2:
-        "We tell stories for broadcasters and organisations.",
+        "We make documentaries, reportages and podcasts for broadcasters, cultural organisations and social initiatives.",
     },
     hero: {
       line1: "Looking beyond",
@@ -179,7 +179,7 @@ export const translations = {
       label: "Services",
       title: "Documentary filmmaking & video production",
       paragraphs: [
-        "Bigeye Blue creates documentaries and video productions. Based in Ghent, we help tell authentic stories through cinematic filmmaking and powerful storytelling. The core is meaningful storytelling and socially relevant stories that set things in motion.",
+        "Bigeye Blue makes documentaries, reportages, podcasts and audiovisual stories. Based in Ghent, we help tell authentic stories through cinematic filmmaking and powerful storytelling. The core is meaningful storytelling and socially relevant stories that set things in motion.",
         "From documentary series and television productions to digital content: we develop visual stories that connect and make an impact.",
         "Our services include documentary and video production — all from our studio and filming location in Ghent, Belgium.",
       ],
@@ -211,7 +211,7 @@ export const translations = {
       body1:
         "We geloven dat goede ideeën niet ontstaan omdat er veel mensen rond de tafel zitten. Ze ontstaan wanneer de juiste mensen de krachten bundelen. Dus werken we graag klein. Persoonlijk. Met korte lijnen en veel betrokkenheid. Van de eerste gedachte tot het laatste frame zijn we betrokken.",
       body2:
-        "We vertellen verhalen voor omroepen en organisaties.",
+        "We maken documentaires, reportages en podcasts voor omroepen, culturele organisaties en maatschappelijke initiatieven.",
     },
     hero: {
       line1: "Looking beyond",
@@ -374,7 +374,7 @@ export const translations = {
       label: "Diensten",
       title: "Documentaire & videoproductie",
       paragraphs: [
-        "Bigeye Blue maakt documentaires en videoproducties. Vanuit Gent helpen we authentieke verhalen vertellen door middel van cinematografische beeldtaal en krachtige storytelling. De \"core\" is inhoudelijke storytelling en sociaal maatschappelijke verhalen, die iets in beweging zetten.",
+        "Bigeye Blue maakt documentaires, reportages, podcasts en audiovisuele verhalen. Vanuit Gent helpen we authentieke verhalen vertellen door middel van cinematografische beeldtaal en krachtige storytelling. De \"core\" is inhoudelijke storytelling en sociaal maatschappelijke verhalen, die iets in beweging zetten.",
         "Van documentairereeksen en televisieproducties tot digital content: we ontwikkelen visuele verhalen die raken en impact maken.",
         "Onze diensten omvatten documentaire en videoproductie — allemaal vanuit onze studio en filmlocatie in Gent, België.",
       ],
