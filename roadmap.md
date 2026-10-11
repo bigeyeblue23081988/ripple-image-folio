@@ -20,6 +20,7 @@
 - Clients section removed from the page again; business client names (Deloitte, BNP Paribas) stay out of all copy
 - Contact paragraph: the company-film item is gone; final wording "een reportage, een podcast, een docu of gewoon een idee" (English mirrored)
 - Services (Diensten) texts rewritten in Dutch and English; keyword lists and site metadata no longer mention company films
+- Intro now says stories for broadcasters and organisations only, in both languages; image descriptions no longer mention commercials, and metadata remains free of corporate references
 
 ## Open / needs material from Marieke
 - Photos framed as production use (interview setup, crew, workspace) instead of real-estate style

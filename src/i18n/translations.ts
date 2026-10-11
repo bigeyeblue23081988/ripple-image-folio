@@ -16,7 +16,7 @@ export const translations = {
       body1:
         "We believe good ideas don't come from having many people around the table. They come when the right people join forces. So we like to work small. Personal. With short lines and deep involvement. From the first thought to the final frame, we're involved.",
       body2:
-        "We tell stories for broadcasters, brands and organisations — from documentary and reportage to podcast series and online content.",
+        "We tell stories for broadcasters and organisations.",
     },
     hero: {
       line1: "Looking beyond",
@@ -71,7 +71,7 @@ export const translations = {
         "A long wooden table in the garden of the urban villa in Ghent, sheltered between climbing green walls",
       kitchenCaption: "The kitchen",
       kitchenAlt:
-        "The kitchen under whitewashed timber beams, with a wooden worktop and a long dining table — available for film productions and commercials",
+        "The kitchen under whitewashed timber beams, with a wooden worktop and a long dining table — available for film productions",
       guestRoomCaption: "Guest room",
       guestRoomAlt:
         "Guest room of the Ghent guesthouse under white timber trusses, with a box-spring bed and skylights",
@@ -211,7 +211,7 @@ export const translations = {
       body1:
         "We geloven dat goede ideeën niet ontstaan omdat er veel mensen rond de tafel zitten. Ze ontstaan wanneer de juiste mensen de krachten bundelen. Dus werken we graag klein. Persoonlijk. Met korte lijnen en veel betrokkenheid. Van de eerste gedachte tot het laatste frame zijn we betrokken.",
       body2:
-        "We vertellen verhalen voor omroepen, merken en organisaties — van documentaire en reportage tot podcastreeksen en online content.",
+        "We vertellen verhalen voor omroepen en organisaties.",
     },
     hero: {
       line1: "Looking beyond",
@@ -266,7 +266,7 @@ export const translations = {
         "Een lange houten tafel in de tuin van de urban villa in Gent, beschut tussen begroeide muren",
       kitchenCaption: "De keuken",
       kitchenAlt:
-        "De keuken onder witgekalkte balken, met houten werkblad en een lange eettafel — beschikbaar voor filmproducties en commercials",
+        "De keuken onder witgekalkte balken, met houten werkblad en een lange eettafel — beschikbaar voor filmproducties",
       guestRoomCaption: "Gastenkamer",
       guestRoomAlt:
         "Gastenkamer van het gastenverblijf in Gent onder witte houten spanten, met boxspringbed en dakramen",
