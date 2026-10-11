@@ -23,7 +23,7 @@ export const translations = {
       line2: "the obvious",
       sub: "A house where people and stories meet.",
       tagline:
-        "Bigeye Blue is a production house in Ghent for documentary, branded content, reportage and stories that go further than the obvious.",
+        "Bigeye Blue is a production house in Ghent for documentary, reportage and stories that go further than the obvious.",
       ctaPrimary: "Book the location",
       ctaSecondary: "Talk to us",
       ctaWork: "See our work",
@@ -83,7 +83,7 @@ export const translations = {
       label: "What we create",
       titleStrong: "What we create",
       titleLight: "",
-      lead: "From first idea to final cut, we make documentary, branded content and podcast series in our own studio and on location.",
+      lead: "From first idea to final cut, we make documentary and podcast series in our own studio and on location.",
       blocks: [
         {
           label: "From idea to final cut",
@@ -183,23 +183,22 @@ export const translations = {
       label: "Services",
       title: "Documentary filmmaking & video production",
       paragraphs: [
-        "Bigeye Blue creates documentaries, branded content and video productions for broadcasters, brands and organisations. Based in Ghent, we help clients across Belgium tell authentic stories through cinematic filmmaking and powerful storytelling.",
+        "Bigeye Blue creates documentaries and video productions for broadcasters, brands and organisations. Based in Ghent, we help clients across Belgium tell authentic stories through cinematic filmmaking and powerful storytelling.",
         "From documentary series and television productions to brand films and digital content, we develop visual stories that connect with audiences and create impact.",
-        "Our services include documentary filmmaking, video production, corporate films, branded content and editorial productions — all from our studio and filming location in Ghent, Belgium.",
+        "Our services include documentary filmmaking, video production, corporate films and editorial productions — all from our studio and filming location in Ghent, Belgium.",
       ],
       keywords: [
         "Documentary filmmaking",
         "Video production",
-        "Branded content",
         "Storytelling",
         "Corporate films",
         "Based in Ghent, Belgium",
       ],
     },
     meta: {
-      title: "Bigeye Blue | Documentary filmmaking, video production & branded content in Ghent",
+      title: "Bigeye Blue | Documentary filmmaking & video production in Ghent",
       description:
-        "Bigeye Blue is a Ghent-based production house for documentaries, branded content, video production and storytelling. With a filming location, recording studio and guesthouse in Belgium.",
+        "Bigeye Blue is a Ghent-based production house for documentaries, video production and storytelling. With a filming location, recording studio and guesthouse in Belgium.",
     },
   },
   nl: {
@@ -224,7 +223,7 @@ export const translations = {
       line2: "the obvious",
       sub: "Een huis waar mensen en verhalen elkaar ontmoeten.",
       tagline:
-        "Bigeye Blue is een productiehuis in Gent voor documentaires, branded content, reportages en verhalen die verder gaan dan het voor de hand liggende.",
+        "Bigeye Blue is een productiehuis in Gent voor documentaires, reportages en verhalen die verder gaan dan het voor de hand liggende.",
       ctaPrimary: "Boek de locatie",
       ctaSecondary: "Praat met ons",
       ctaWork: "Bekijk ons werk",
@@ -284,7 +283,7 @@ export const translations = {
       label: "Wat we maken",
       titleStrong: "Wat we maken",
       titleLight: "",
-      lead: "Van eerste idee tot finale montage maken we documentaires, branded content en podcastreeksen in onze eigen studio en op locatie.",
+      lead: "Van eerste idee tot finale montage maken we documentaires en podcastreeksen in onze eigen studio en op locatie.",
       blocks: [
         {
           label: "Van idee tot finale montage",
@@ -384,23 +383,22 @@ export const translations = {
       label: "Diensten",
       title: "Documentaire & videoproductie",
       paragraphs: [
-        "Bigeye Blue maakt documentaires, branded content en videoproducties voor omroepen, merken en organisaties. Vanuit Gent helpen we klanten in heel België authentieke verhalen vertellen door middel van cinematografische beeldtaal en krachtige storytelling.",
+        "Bigeye Blue maakt documentaires en videoproducties voor omroepen, merken en organisaties. Vanuit Gent helpen we klanten in heel België authentieke verhalen vertellen door middel van cinematografische beeldtaal en krachtige storytelling.",
         "Van documentairereeksen en televisieproducties tot brand films en digitale content: we ontwikkelen visuele verhalen die raken en impact maken.",
-        "Onze diensten omvatten documentaire, videoproductie, bedrijfsfilms, branded content en editoriale producties — allemaal vanuit onze studio en filmlocatie in Gent, België.",
+        "Onze diensten omvatten documentaire, videoproductie, bedrijfsfilms en editoriale producties — allemaal vanuit onze studio en filmlocatie in Gent, België.",
       ],
       keywords: [
         "Documentaire",
         "Videoproductie",
-        "Branded content",
         "Storytelling",
         "Bedrijfsfilms",
         "Gevestigd in Gent, België",
       ],
     },
     meta: {
-      title: "Bigeye Blue | Documentaire, videoproductie & branded content in Gent",
+      title: "Bigeye Blue | Documentaire & videoproductie in Gent",
       description:
-        "Bigeye Blue is een productiehuis in Gent voor documentaires, branded content, videoproductie en storytelling. Met filmlocatie, opnamestudio en gastenverblijf in België.",
+        "Bigeye Blue is een productiehuis in Gent voor documentaires, videoproductie en storytelling. Met filmlocatie, opnamestudio en gastenverblijf in België.",
     },
   },
 } as const;

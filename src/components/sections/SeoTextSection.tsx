@@ -3,7 +3,7 @@ import { useLang } from "@/i18n/LanguageProvider";
 /**
  * SEO-rich services block.
  * Gives Google plain-text context about documentary filmmaking,
- * video production, branded content and storytelling — without
+ * video production and storytelling — without
  * changing the visual rhythm of the page.
  */
 export function SeoTextSection() {
